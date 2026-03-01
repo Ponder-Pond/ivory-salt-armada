@@ -1,0 +1,33 @@
+
+#include "Cleft.h"
+
+#include "world/common/enemy/ai/CleftAI.inc.c"
+
+MobileAISettings AISettings_Cleft = {
+    .moveSpeed = 1.0f,
+    .moveTime = 30,
+    .waitTime = 30,
+    .alertRadius = 120.0f,
+    .playerSearchInterval = 3,
+    .chaseSpeed = 7.0f,
+    .chaseTurnRate = 60,
+    .chaseUpdateInterval = 5,
+    .chaseRadius = 100.0f,
+    .chaseOffsetDist = 60.0f,
+    .unk_AI_2C = 1,
+};
+
+EvtScript EVS_NpcAI_Cleft = {
+    Call(N(CleftAI_Main), Ref(AISettings_Cleft), 16)
+    Return
+    End
+};
+
+NpcSettings NpcSettings_Cleft = {
+    .height = 26,
+    .radius = 24,
+    .ai = &EVS_NpcAI_Cleft,
+    .onHit = &EnemyNpcHit,
+    .onDefeat = &EnemyNpcDefeat,
+    .level = ACTOR_LEVEL_CLEFT,
+};

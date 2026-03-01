@@ -1,3 +1,27 @@
+# NEW MAPFS #
+- prt_00_shape
+- prt_00_hit
+- trp_00_shape
+- trp_00_hit
+- trp_01_shape
+- trp_01_hit
+- grs_01_shape
+- grs_01_hit
+- dst_00_shape
+- dst_00_hit
+- dst_01_shape
+- dst_01_hit
+- dst_05_shape
+- dst_05_hit
+- shp_bt00_shape
+- shp_bt00_hit
+- shp_tex
+- trp_tex
+- grs_tex
+- dst_tex
+- shp_bg
+
+# VANILLA MAPFS #
 - dro_01_shape
 - dro_01_hit
 - dro_02_shape

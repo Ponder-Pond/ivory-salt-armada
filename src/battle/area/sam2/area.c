@@ -1,6 +1,6 @@
 #include "area.h"
 
-extern ActorBlueprint A(monstar);
+// extern ActorBlueprint A(monstar);
 extern ActorBlueprint A(paragoomba);
 extern ActorBlueprint A(gray_magikoopa);
 
@@ -13,9 +13,9 @@ extern Stage A(sam_03);
 
 Vec3i A(MonstarPos) = { 75, 16, 5 };
 
-Formation A(Formation_01) = {
-    ACTOR_BY_POS(A(monstar), A(MonstarPos), 10),
-};
+// Formation A(Formation_01) = {
+//     ACTOR_BY_POS(A(monstar), A(MonstarPos), 10),
+// };
 
 Formation A(Formation_02) = {
     ACTOR_BY_IDX(A(paragoomba), BTL_POS_AIR_B, 10),
@@ -23,7 +23,7 @@ Formation A(Formation_02) = {
 };
 
 BattleList A(Formations) = {
-    BATTLE(A(Formation_01), A(sam_03), "かいぶつ"),
+    // BATTLE(A(Formation_01), A(sam_03), "かいぶつ"),
     BATTLE(A(Formation_02), A(sam_01), "パタクリ,グレイカメック（チェックよう）"),
     {},
 };

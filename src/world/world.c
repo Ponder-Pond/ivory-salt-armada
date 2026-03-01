@@ -865,6 +865,33 @@ MapConfig gv_maps[] = {
     { MAP(gv_01) },
 };
 
+/// Port
+#include "area_prt/prt.h"
+MapConfig prt_maps[] = {
+    { MAP_WITH_INIT(prt_00), .bgName = "net_bg" },
+};
+
+/// Tropical
+#include "area_trp/trp.h"
+MapConfig trp_maps[] = {
+    { MAP_WITH_INIT(trp_00), .bgName = "net_bg" },
+    { MAP_WITH_INIT(trp_01), .bgName = "net_bg" },
+};
+
+/// Grass
+#include "area_grs/grs.h"
+MapConfig grs_maps[] = {
+    { MAP_WITH_INIT(grs_01), .bgName = "net_bg" },
+};
+
+/// Desert
+#include "area_dst/dst.h"
+MapConfig dst_maps[] = {
+    { MAP_WITH_INIT(dst_00), .bgName = "net_bg" },
+    { MAP_WITH_INIT(dst_01), .bgName = "net_bg" },
+    { MAP(dst_05) },
+};
+
 AreaConfig gAreas[] = {
     AREA(kmr, "クリむら"),  // kuri mura [kuribou village, Goomba Village]
     AREA(mac, "まち"),  // machi [town, Toad Town]
@@ -894,5 +921,9 @@ AreaConfig gAreas[] = {
     AREA(mgm, "ミニゲーム"),  // minige-mu [Minigames]
     AREA(gv, "ゲームオーバー"),  // ge-mu o-ba- [Game Over]
     AREA(tst, "テストマップ"),  // tesuto mappu [Test map]
+    AREA(prt, "Port"),
+    AREA(trp, "Tropical"),
+    AREA(grs, "Grass"),
+    AREA(dst, "Desert"),
     {},
 };
