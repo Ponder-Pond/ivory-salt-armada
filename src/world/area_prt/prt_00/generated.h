@@ -35,14 +35,14 @@
 {}
 
 // type: Marker:NPC
-// name: FBobomb
+// name: Grob
 // anim: ANIM_WorldBobomb_Green_Still
-#define GEN_F_BOBOMB_X -441
-#define GEN_F_BOBOMB_Y -10
-#define GEN_F_BOBOMB_Z -4
-#define GEN_F_BOBOMB_DIR 0
-#define GEN_F_BOBOMB_VEC -441,-10,-4
-#define GEN_F_BOBOMB_TERRITORY \
+#define GEN_GROB_X -441
+#define GEN_GROB_Y -10
+#define GEN_GROB_Z -4
+#define GEN_GROB_DIR 0
+#define GEN_GROB_VEC -441,-10,-4
+#define GEN_GROB_TERRITORY \
 {}
 
 // type: Marker:NPC
@@ -57,14 +57,14 @@
 {}
 
 // type: Marker:NPC
-// name: ToadGuard
+// name: BarrT
 // anim: ANIM_ToadGuard_Green_Still
-#define GEN_TOAD_GUARD_X 430
-#define GEN_TOAD_GUARD_Y 0
-#define GEN_TOAD_GUARD_Z -403
-#define GEN_TOAD_GUARD_DIR 0
-#define GEN_TOAD_GUARD_VEC 430,0,-403
-#define GEN_TOAD_GUARD_TERRITORY \
+#define GEN_BARR_T_X 430
+#define GEN_BARR_T_Y 0
+#define GEN_BARR_T_Z -403
+#define GEN_BARR_T_DIR 0
+#define GEN_BARR_T_VEC 430,0,-403
+#define GEN_BARR_T_TERRITORY \
 {}
 
 // type: Marker:NPC
@@ -79,35 +79,35 @@
 {}
 
 // type: Marker:NPC
-// name: DryiteIO
+// name: Dryden
 // anim: ANIM_Dryite_Yellow_Still
-#define GEN_DRYITE_IO_X 336
-#define GEN_DRYITE_IO_Y 0
-#define GEN_DRYITE_IO_Z -472
-#define GEN_DRYITE_IO_DIR 0
-#define GEN_DRYITE_IO_VEC 336,0,-472
-#define GEN_DRYITE_IO_TERRITORY \
+#define GEN_DRYDEN_X 336
+#define GEN_DRYDEN_Y 0
+#define GEN_DRYDEN_Z -472
+#define GEN_DRYDEN_DIR 0
+#define GEN_DRYDEN_VEC 336,0,-472
+#define GEN_DRYDEN_TERRITORY \
 {}
 
 // type: Marker:NPC
-// name: FBandit
+// name: Slyden
 // anim: ANIM_Bandit_Still
-#define GEN_F_BANDIT_X -311
-#define GEN_F_BANDIT_Y 0
-#define GEN_F_BANDIT_Z -276
-#define GEN_F_BANDIT_DIR 0
-#define GEN_F_BANDIT_VEC -311,0,-276
-#define GEN_F_BANDIT_TERRITORY \
+#define GEN_SLYDEN_X -311
+#define GEN_SLYDEN_Y 0
+#define GEN_SLYDEN_Z -276
+#define GEN_SLYDEN_DIR 0
+#define GEN_SLYDEN_VEC -311,0,-276
+#define GEN_SLYDEN_TERRITORY \
 {}
 
 // type: Marker:NPC
-// name: FGloomba
+// name: Gloomothy
 // anim: ANIM_Goomba_Dark_Still
-#define GEN_F_GLOOMBA_X 554
-#define GEN_F_GLOOMBA_Y 0
-#define GEN_F_GLOOMBA_Z -237
-#define GEN_F_GLOOMBA_DIR 0
-#define GEN_F_GLOOMBA_VEC 554,0,-237
-#define GEN_F_GLOOMBA_TERRITORY \
+#define GEN_GLOOMOTHY_X 554
+#define GEN_GLOOMOTHY_Y 0
+#define GEN_GLOOMOTHY_Z -237
+#define GEN_GLOOMOTHY_DIR 0
+#define GEN_GLOOMOTHY_VEC 554,0,-237
+#define GEN_GLOOMOTHY_TERRITORY \
 {}
 

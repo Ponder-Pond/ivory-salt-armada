@@ -45,25 +45,25 @@ NpcData NpcData_HarryT = {
 
 #include "world/common/npc/Bobomb.inc.cpp"
 
-EvtScript EVS_NpcInteract_Green_Bobomb = {
+EvtScript EVS_NpcInteract_Grob = {
     // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
 
-EvtScript EVS_NpcInit_Green_Bobomb = {
-    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_Green_Bobomb))
+EvtScript EVS_NpcInit_Grob = {
+    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_Grob))
     Return
     End
 };
 
-NpcData NpcData_Green_Bobomb = {
-    .id = NPC_Green_Bobomb,
+NpcData NpcData_Grob = {
+    .id = NPC_Grob,
     .settings = &NpcSettings_Bobomb,
-    .pos = { GEN_F_BOBOMB_VEC },
+    .pos = { GEN_GROB_VEC },
     .flags = COMMON_PASSIVE_FLAGS,
-    .init = &EVS_NpcInit_Green_Bobomb,
-    .yaw = GEN_F_BOBOMB_DIR,
+    .init = &EVS_NpcInit_Grob,
+    .yaw = GEN_GROB_DIR,
     .drops = NO_DROPS,
     .animations = BOBOMB_GREEN_ANIMS,
 };
@@ -114,25 +114,25 @@ NpcData NpcData_RipCheato = {
     },
 };
 
-EvtScript EVS_NpcInteract_ToadGuard = {
+EvtScript EVS_NpcInteract_BarrT = {
     // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
 
-EvtScript EVS_NpcInit_ToadGuard = {
-    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_ToadGuard))
+EvtScript EVS_NpcInit_BarrT = {
+    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_BarrT))
     Return
     End
 };
 
-NpcData NpcData_ToadGuard = {
-        .id = NPC_ToadGuard,
+NpcData NpcData_BarrT = {
+        .id = NPC_BarrT,
         .settings = &N(NpcSettings_Toad_Stationary),
-        .pos = { GEN_TOAD_GUARD_VEC },
+        .pos = { GEN_BARR_T_VEC },
         .flags = COMMON_PASSIVE_FLAGS,
-        .init = &EVS_NpcInit_ToadGuard,
-        .yaw = GEN_TOAD_GUARD_DIR,
+        .init = &EVS_NpcInit_BarrT,
+        .yaw = GEN_BARR_T_DIR,
         .drops  = NO_DROPS,
         .animations = TOAD_GUARD_RED_ANIMS,
 };
@@ -164,62 +164,62 @@ NpcData NpcData_Fishmael = {
 
 #include "world/common/enemy/Bandit.inc.cpp"
 
-EvtScript EVS_NpcInteract_F_Bandit = {
+EvtScript EVS_NpcInteract_Slyden = {
     // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
 
-EvtScript EVS_NpcInit_F_Bandit = {
-    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_F_Bandit))
+EvtScript EVS_NpcInit_Slyden = {
+    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_Slyden))
     Return
     End
 };
 
-NpcData NpcData_F_Bandit = {
-    .id = NPC_F_Bandit,
+NpcData NpcData_Slyden = {
+    .id = NPC_Slyden,
     .settings = &NpcSettings_Bandit_Stationary,
-    .pos = { GEN_F_BANDIT_VEC },
+    .pos = { GEN_SLYDEN_VEC },
     .flags = COMMON_PASSIVE_FLAGS,
-    .init = &EVS_NpcInit_F_Bandit,
-    .yaw = GEN_F_BANDIT_DIR,
+    .init = &EVS_NpcInit_Slyden,
+    .yaw = GEN_SLYDEN_DIR,
     .drops = NO_DROPS,
     .animations = BANDIT_ANIMS,
 };
 
 #include "world/common/enemy/Gloomba_Stationary.inc.cpp"
 
-EvtScript EVS_NpcInteract_F_Gloomba = {
+EvtScript EVS_NpcInteract_Gloomothy = {
     // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
 
-EvtScript EVS_NpcInit_F_Gloomba = {
-    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_F_Gloomba))
+EvtScript EVS_NpcInit_Gloomothy = {
+    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_Gloomothy))
     Return
     End
 };
 
-NpcData NpcData_F_Gloomba = {
-    .id = NPC_F_Gloomba,
+NpcData NpcData_Gloomothy = {
+    .id = NPC_Gloomothy,
     .settings = &NpcSettings_Gloomba_Stationary,
-    .pos = { GEN_F_GLOOMBA_VEC },
+    .pos = { GEN_GLOOMOTHY_VEC },
     .flags = COMMON_PASSIVE_FLAGS,
-    .init = &EVS_NpcInit_F_Gloomba,
-    .yaw = GEN_F_GLOOMBA_DIR,
+    .init = &EVS_NpcInit_Gloomothy,
+    .yaw = GEN_GLOOMOTHY_DIR,
     .drops = NO_DROPS,
     .animations = GLOOMBA_ANIMS,
 };
 
 NpcGroupList DefaultNPCs = {
     NPC_GROUP(NpcData_HarryT),
-    NPC_GROUP(NpcData_Green_Bobomb),
+    NPC_GROUP(NpcData_Grob),
     NPC_GROUP(NpcData_RipCheato),
-    NPC_GROUP(NpcData_ToadGuard),
+    NPC_GROUP(NpcData_BarrT),
     NPC_GROUP(NpcData_Fishmael),
-    NPC_GROUP(NpcData_F_Bandit),
-    NPC_GROUP(NpcData_F_Gloomba),
+    NPC_GROUP(NpcData_Slyden),
+    NPC_GROUP(NpcData_Gloomothy),
     {},
 };
 

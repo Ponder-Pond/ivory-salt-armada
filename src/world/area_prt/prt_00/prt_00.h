@@ -16,13 +16,13 @@ namespace prt_00 {
 
 enum {
     NPC_HarryT,
-    NPC_Green_Bobomb,
+    NPC_Grob,
     NPC_RipCheato,
-    NPC_ToadGuard,
+    NPC_BarrT,
     NPC_Fishmael,
-    NPC_Dryite_InnOwner,
-    NPC_F_Bandit,
-    NPC_F_Gloomba,
+    NPC_Dryden,
+    NPC_Slyden,
+    NPC_Gloomothy,
 };
 
 extern EvtScript EVS_Main;

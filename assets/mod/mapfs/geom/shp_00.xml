@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map desc="Ship Exterior" background="shp_bg" textures="net_tex">
 	<Editor>
-		<Camera pos="-255.154312,282.295410,550.624695" pitch="36.399994" yaw="356.440735"/>
+		<Camera pos="-123.356956,124.172485,146.059433" pitch="8.000053" yaw="23.483475"/>
 		<Camera pos="-27.000000,65536.000000,167.000000"/>
 		<Camera pos="65536.000000,227.000000,167.000000"/>
 		<Camera pos="-30.412441,259.709717,65536.000000"/>
@@ -3638,7 +3638,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="MoneyBags" id="25"/>
-			<ShapeMesh ver="3" texture="net_masttif">
+			<ShapeMesh ver="3" texture="shp_masttif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -4220,7 +4220,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Chest" id="22"/>
-			<ShapeMesh ver="3" texture="net_planks4tif">
+			<ShapeMesh ver="3" texture="shp_planks4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -4470,7 +4470,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="GoldPile" id="21"/>
-			<ShapeMesh ver="3" texture="net_goldtif">
+			<ShapeMesh ver="3" texture="shp_goldtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -4544,7 +4544,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="CannonStands" id="20"/>
-			<ShapeMesh ver="3" texture="net_trim2tif">
+			<ShapeMesh ver="3" texture="shp_trim2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -4926,7 +4926,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Cannon" id="1F"/>
-			<ShapeMesh ver="3" texture="net_trim2tif">
+			<ShapeMesh ver="3" texture="shp_trim2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -6780,7 +6780,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="TableCloth" id="1E"/>
-			<ShapeMesh ver="3" texture="net_clothtif">
+			<ShapeMesh ver="3" texture="shp_clothtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -6860,7 +6860,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Papers" id="1D"/>
-			<ShapeMesh ver="3" texture="net_maptif">
+			<ShapeMesh ver="3" texture="shp_maptif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -6902,7 +6902,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Crates" id="1C"/>
-			<ShapeMesh ver="3" texture="net_crate1tif">
+			<ShapeMesh ver="3" texture="shp_crate1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7288,7 +7288,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="CannonballPile" id="1A"/>
-			<ShapeMesh ver="3" texture="net_cannonballstif">
+			<ShapeMesh ver="3" texture="shp_cannonballstif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7414,7 +7414,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="WheelPole" id="19"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7632,7 +7632,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Wheel" id="18"/>
-			<ShapeMesh ver="3" texture="net_wheeltif">
+			<ShapeMesh ver="3" texture="shp_wheeltif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7660,7 +7660,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="DoorTrim" id="17"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7716,7 +7716,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Door" id="16"/>
-			<ShapeMesh ver="3" texture="net_door2tif">
+			<ShapeMesh ver="3" texture="shp_door2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7744,7 +7744,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Trim" id="15"/>
-			<ShapeMesh ver="3" texture="net_sidingtif">
+			<ShapeMesh ver="3" texture="shp_sidingtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7914,7 +7914,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Ladders" id="14"/>
-			<ShapeMesh ver="3" texture="net_laddertif">
+			<ShapeMesh ver="3" texture="shp_laddertif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7970,7 +7970,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="LatchDoorBase" id="13"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -7998,7 +7998,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="LatchDoor" id="12"/>
-			<ShapeMesh ver="3" texture="net_door3tif">
+			<ShapeMesh ver="3" texture="shp_door3tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8058,7 +8058,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Railing" id="11"/>
-			<ShapeMesh ver="3" texture="net_railingtif">
+			<ShapeMesh ver="3" texture="shp_railingtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8228,7 +8228,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="SailsBack" id="10"/>
-			<ShapeMesh ver="3" texture="net_clothtif">
+			<ShapeMesh ver="3" texture="shp_clothtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8382,7 +8382,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="SailLogo" id="F"/>
-			<ShapeMesh ver="3" texture="net_logotif">
+			<ShapeMesh ver="3" texture="shp_logotif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8472,7 +8472,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Sails" id="E"/>
-			<ShapeMesh ver="3" texture="cloth">
+			<ShapeMesh ver="3" texture="shp_clothtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8593,7 +8593,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Grate" id="D"/>
-			<ShapeMesh ver="3" texture="net_grate1tif">
+			<ShapeMesh ver="3" texture="shp_grate1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -8635,7 +8635,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Staircases" id="C"/>
-			<ShapeMesh ver="3" texture="net_planks4tif">
+			<ShapeMesh ver="3" texture="shp_planks4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9183,7 +9183,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="SailMast3" id="B"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9233,7 +9233,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="SailMast2" id="A"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9301,7 +9301,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="SailMast1" id="9"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9369,7 +9369,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="CrowsNestRailing" id="8"/>
-			<ShapeMesh ver="3" texture="net_railingtif">
+			<ShapeMesh ver="3" texture="shp_railingtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9539,7 +9539,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="CrowsNest" id="6"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9719,7 +9719,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="MastBase" id="5"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9791,7 +9791,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Mast" id="4"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -9907,7 +9907,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Walls" id="3"/>
-			<ShapeMesh ver="3" texture="net_frametif">
+			<ShapeMesh ver="3" texture="shp_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -10001,7 +10001,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Deck" id="2"/>
-			<ShapeMesh ver="3" texture="net_planks4tif">
+			<ShapeMesh ver="3" texture="shp_planks4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -10181,7 +10181,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Windows" id="1"/>
-			<ShapeMesh ver="3" texture="net_window1tif">
+			<ShapeMesh ver="3" texture="shp_window1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -10265,7 +10265,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Hull" id="0"/>
-			<ShapeMesh ver="3" texture="net_planks4tif">
+			<ShapeMesh ver="3" texture="shp_planks4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -12048,7 +12048,7 @@
 			<HitObject type="ROOT"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="Floor" id="0"/>
+			<MapObject name="Floor" id="0" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
