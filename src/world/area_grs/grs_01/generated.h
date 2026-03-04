@@ -6,7 +6,7 @@
 
 // type: EntryList
 #define GEN_ENTRY_LIST \
-    { -1030.0,    6.0,    0.0,    0.0 },
+    { -1030.0,    6.0,    0.0,  180.0 },
 
 // type: TexPanner
 #define GEN_TEX_PANNER_1 \
@@ -20,106 +20,18 @@
 #define GEN_ENTRY0_X -1030
 #define GEN_ENTRY0_Y 6
 #define GEN_ENTRY0_Z 0
-#define GEN_ENTRY0_DIR 0
+#define GEN_ENTRY0_DIR 180
 #define GEN_ENTRY0_VEC -1030,6,0
 
 // type: Marker:NPC
 // name: Goomba1
 // anim: ANIM_Goomba_Still
-#define GEN_GOOMBA1_X 591
-#define GEN_GOOMBA1_Y -139
-#define GEN_GOOMBA1_Z 30
+#define GEN_GOOMBA1_X -179
+#define GEN_GOOMBA1_Y 0
+#define GEN_GOOMBA1_Z -251
 #define GEN_GOOMBA1_DIR 0
-#define GEN_GOOMBA1_VEC 591,-139,30
+#define GEN_GOOMBA1_VEC -179,0,-251
 #define GEN_GOOMBA1_TERRITORY \
-{ \
-    .wander = { \
-        .centerPos   = { 591, -139, 30 }, \
-        .wanderSize  = { 50 }, \
-        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
-        .detectPos   = { 591, -139, 30 }, \
-        .detectSize  = { 150, 80 }, \
-        .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
-    }, \
-}
-
-// type: Marker:NPC
-// name: KoopaTroopa1
-// anim: ANIM_KoopaTroopa_Still
-#define GEN_KOOPA_TROOPA1_X -69
-#define GEN_KOOPA_TROOPA1_Y -139
-#define GEN_KOOPA_TROOPA1_Z 644
-#define GEN_KOOPA_TROOPA1_DIR 0
-#define GEN_KOOPA_TROOPA1_VEC -69,-139,644
-#define GEN_KOOPA_TROOPA1_TERRITORY \
-{ \
-    .wander = { \
-        .centerPos   = { -69, -139, 644 }, \
-        .wanderSize  = { 50, 20 }, \
-        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_RECT, \
-        .detectPos   = { -69, -139, 644 }, \
-        .detectSize  = { 250 }, \
-        .detectShape = SHAPE_CYLINDER, \
-        .isFlying = false, \
-    }, \
-}
-
-// type: Marker:NPC
-// name: Goomba2
-// anim: ANIM_Goomba_Still
-#define GEN_GOOMBA2_X 421
-#define GEN_GOOMBA2_Y -139
-#define GEN_GOOMBA2_Z -128
-#define GEN_GOOMBA2_DIR 0
-#define GEN_GOOMBA2_VEC 421,-139,-128
-#define GEN_GOOMBA2_TERRITORY \
-{ \
-    .wander = { \
-        .centerPos   = { 421, -139, -128 }, \
-        .wanderSize  = { 50 }, \
-        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
-        .detectPos   = { 421, -139, -128 }, \
-        .detectSize  = { 150, 80 }, \
-        .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
-    }, \
-}
-
-// type: Marker:NPC
-// name: Goomba3
-// anim: ANIM_Goomba_Still
-#define GEN_GOOMBA3_X -381
-#define GEN_GOOMBA3_Y 0
-#define GEN_GOOMBA3_Z 468
-#define GEN_GOOMBA3_DIR 0
-#define GEN_GOOMBA3_VEC -381,0,468
-#define GEN_GOOMBA3_TERRITORY \
-{ \
-    .wander = { \
-        .centerPos   = { -381, 0, 468 }, \
-        .wanderSize  = { 50 }, \
-        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
-        .detectPos   = { -381, 0, 468 }, \
-        .detectSize  = { 150, 80 }, \
-        .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
-    }, \
-}
-
-// type: Marker:NPC
-// name: Goomba4
-// anim: ANIM_Goomba_Still
-#define GEN_GOOMBA4_X -179
-#define GEN_GOOMBA4_Y 0
-#define GEN_GOOMBA4_Z -251
-#define GEN_GOOMBA4_DIR 0
-#define GEN_GOOMBA4_VEC -179,0,-251
-#define GEN_GOOMBA4_TERRITORY \
 { \
     .wander = { \
         .centerPos   = { -179, 0, -251 }, \
@@ -134,14 +46,58 @@
 }
 
 // type: Marker:NPC
-// name: KoopaTroopa2
+// name: Goomba2
+// anim: ANIM_Goomba_Still
+#define GEN_GOOMBA2_X -440
+#define GEN_GOOMBA2_Y 0
+#define GEN_GOOMBA2_Z 220
+#define GEN_GOOMBA2_DIR 0
+#define GEN_GOOMBA2_VEC -440,0,220
+#define GEN_GOOMBA2_TERRITORY \
+{ \
+    .wander = { \
+        .centerPos   = { -440, 0, 220 }, \
+        .wanderSize  = { 50 }, \
+        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
+        .wanderShape = SHAPE_CYLINDER, \
+        .detectPos   = { -440, 0, 220 }, \
+        .detectSize  = { 150, 80 }, \
+        .detectShape = SHAPE_RECT, \
+        .isFlying = false, \
+    }, \
+}
+
+// type: Marker:NPC
+// name: SpikedGoomba
+// anim: ANIM_SpikedGoomba_Idle
+#define GEN_SPIKED_GOOMBA_X 421
+#define GEN_SPIKED_GOOMBA_Y -139
+#define GEN_SPIKED_GOOMBA_Z -128
+#define GEN_SPIKED_GOOMBA_DIR 0
+#define GEN_SPIKED_GOOMBA_VEC 421,-139,-128
+#define GEN_SPIKED_GOOMBA_TERRITORY \
+{ \
+    .wander = { \
+        .centerPos   = { 421, -139, -128 }, \
+        .wanderSize  = { 50 }, \
+        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
+        .wanderShape = SHAPE_CYLINDER, \
+        .detectPos   = { 421, -139, -128 }, \
+        .detectSize  = { 150, 80 }, \
+        .detectShape = SHAPE_RECT, \
+        .isFlying = false, \
+    }, \
+}
+
+// type: Marker:NPC
+// name: KoopaTroopa1
 // anim: ANIM_KoopaTroopa_Still
-#define GEN_KOOPA_TROOPA2_X 32
-#define GEN_KOOPA_TROOPA2_Y 0
-#define GEN_KOOPA_TROOPA2_Z 143
-#define GEN_KOOPA_TROOPA2_DIR 0
-#define GEN_KOOPA_TROOPA2_VEC 32,0,143
-#define GEN_KOOPA_TROOPA2_TERRITORY \
+#define GEN_KOOPA_TROOPA1_X 32
+#define GEN_KOOPA_TROOPA1_Y 0
+#define GEN_KOOPA_TROOPA1_Z 143
+#define GEN_KOOPA_TROOPA1_DIR 0
+#define GEN_KOOPA_TROOPA1_VEC 32,0,143
+#define GEN_KOOPA_TROOPA1_TERRITORY \
 { \
     .wander = { \
         .centerPos   = { 32, 0, 143 }, \
@@ -155,16 +111,70 @@
     }, \
 }
 
+// type: Marker:NPC
+// name: KoopaTroopa2
+// anim: ANIM_KoopaTroopa_Idle
+#define GEN_KOOPA_TROOPA2_X 591
+#define GEN_KOOPA_TROOPA2_Y -139
+#define GEN_KOOPA_TROOPA2_Z 30
+#define GEN_KOOPA_TROOPA2_DIR 0
+#define GEN_KOOPA_TROOPA2_VEC 591,-139,30
+#define GEN_KOOPA_TROOPA2_TERRITORY \
+{ \
+    .wander = { \
+        .centerPos   = { 591, -139, 30 }, \
+        .wanderSize  = { 50 }, \
+        .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
+        .wanderShape = SHAPE_CYLINDER, \
+        .detectPos   = { 591, -139, 30 }, \
+        .detectSize  = { 150, 80 }, \
+        .detectShape = SHAPE_RECT, \
+        .isFlying = false, \
+    }, \
+}
+
+// type: Marker:NPC
+// name: Kroxin
+// anim: ANIM_KentCKoopa_Kroxin_Anim01
+#define GEN_KROXIN_X -125
+#define GEN_KROXIN_Y -139
+#define GEN_KROXIN_Z 625
+#define GEN_KROXIN_DIR 0
+#define GEN_KROXIN_VEC -125,-139,625
+#define GEN_KROXIN_TERRITORY \
+{}
+
 // type: Marker:Entity:YellowBlock
 // name: YellowBlock
 #define GEN_YELLOW_BLOCK_X 220
-#define GEN_YELLOW_BLOCK_Y 52
+#define GEN_YELLOW_BLOCK_Y 60
 #define GEN_YELLOW_BLOCK_Z -318
 #define GEN_YELLOW_BLOCK_DIR 0
-#define GEN_YELLOW_BLOCK_VEC 220,52,-318
-#define GEN_YELLOW_BLOCK_XYZA 220, 52, -318, 0
-#define GEN_YELLOW_BLOCK_ITEM ITEM_NONE
+#define GEN_YELLOW_BLOCK_VEC 220,60,-318
+#define GEN_YELLOW_BLOCK_XYZA 220, 60, -318, 0
+#define GEN_YELLOW_BLOCK_ITEM ITEM_MUSHROOM
 #define GEN_YELLOW_BLOCK_PARAMS GEN_YELLOW_BLOCK_XYZA, GEN_YELLOW_BLOCK_ITEM
+
+// type: Marker:Entity:SimpleSpring
+// name: Spring1
+#define GEN_SPRING1_X 245
+#define GEN_SPRING1_Y -139
+#define GEN_SPRING1_Z 625
+#define GEN_SPRING1_DIR 2655
+#define GEN_SPRING1_VEC 245,-139,625
+#define GEN_SPRING1_XYZA 245, -139, 625, 2655
+#define GEN_SPRING1_HEIGHT 60
+#define GEN_SPRING1_PARAMS GEN_SPRING1_XYZA, GEN_SPRING1_HEIGHT
+
+// type: Marker:Entity:Padlock
+// name: Padlock
+#define GEN_PADLOCK_X 260
+#define GEN_PADLOCK_Y -135
+#define GEN_PADLOCK_Z 642
+#define GEN_PADLOCK_DIR 40
+#define GEN_PADLOCK_VEC 260,-135,642
+#define GEN_PADLOCK_XYZA 260, -135, 642, 40
+#define GEN_PADLOCK_PARAMS GEN_PADLOCK_XYZA
 
 // type: Marker:Entity:Chest
 // name: Chest
@@ -175,6 +185,17 @@
 #define GEN_CHEST_VEC -155,-139,539
 #define GEN_CHEST_XYZA -155, -139, 539, 10
 #define GEN_CHEST_PARAMS GEN_CHEST_XYZA
+
+// type: Marker:Entity:SimpleSpring
+// name: Spring2
+#define GEN_SPRING2_X 95
+#define GEN_SPRING2_Y -139
+#define GEN_SPRING2_Z 670
+#define GEN_SPRING2_DIR 2655
+#define GEN_SPRING2_VEC 95,-139,670
+#define GEN_SPRING2_XYZA 95, -139, 670, 2655
+#define GEN_SPRING2_HEIGHT 60
+#define GEN_SPRING2_PARAMS GEN_SPRING2_XYZA, GEN_SPRING2_HEIGHT
 
 // type: Marker:Position
 // name: Tree1
@@ -204,17 +225,17 @@
 // name: Bush1
 #define GEN_BUSH1_X -545
 #define GEN_BUSH1_Y 0
-#define GEN_BUSH1_Z 252
+#define GEN_BUSH1_Z 220
 #define GEN_BUSH1_DIR 0
-#define GEN_BUSH1_VEC -545,0,252
+#define GEN_BUSH1_VEC -545,0,220
 
 // type: Marker:Position
 // name: Bush2
-#define GEN_BUSH2_X -294
+#define GEN_BUSH2_X -330
 #define GEN_BUSH2_Y 0
-#define GEN_BUSH2_Z 433
+#define GEN_BUSH2_Z 220
 #define GEN_BUSH2_DIR 0
-#define GEN_BUSH2_VEC -294,0,433
+#define GEN_BUSH2_VEC -330,0,220
 
 // type: Marker:Position
 // name: Bush3

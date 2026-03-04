@@ -8,16 +8,19 @@
 #include "mapfs/prt_00_hit.h"
 
 #include "sprite/npc/HarryT.h"
-#include "sprite/npc/SpearGuy.h"
-#include "sprite/npc/RipCheato.h"
+#include "sprite/npc/WorldBobomb.h"
+#include "sprite/npc/Archeologist.h"
+#include "sprite/npc/ToadGuard.h"
 #include "sprite/npc/Fishmael.h"
+#include "sprite/npc/Bandit.h"
+#include "sprite/npc/FriendlyGoomba.h"
 
 namespace prt_00 {
 
 enum {
     NPC_HarryT,
     NPC_Grob,
-    NPC_RipCheato,
+    NPC_Karter,
     NPC_BarrT,
     NPC_Fishmael,
     NPC_Dryden,

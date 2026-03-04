@@ -25,7 +25,7 @@
 
 // type: Marker:NPC
 // name: Pokey1
-// anim: ANIM_Pokey_Still4
+// anim: ANIM_Pokey_Idle4
 #define GEN_POKEY1_X -343
 #define GEN_POKEY1_Y 0
 #define GEN_POKEY1_Z 260
@@ -47,7 +47,7 @@
 
 // type: Marker:NPC
 // name: Bandit1
-// anim: ANIM_Bandit_Still
+// anim: ANIM_Bandit_Idle
 #define GEN_BANDIT1_X 255
 #define GEN_BANDIT1_Y 0
 #define GEN_BANDIT1_Z 594
@@ -69,7 +69,7 @@
 
 // type: Marker:NPC
 // name: Pokey2
-// anim: ANIM_Pokey_Still4
+// anim: ANIM_Pokey_Idle4
 #define GEN_POKEY2_X -38
 #define GEN_POKEY2_Y 0
 #define GEN_POKEY2_Z -512
@@ -91,7 +91,7 @@
 
 // type: Marker:NPC
 // name: Bandit2
-// anim: ANIM_Bandit_Still
+// anim: ANIM_Bandit_Idle
 #define GEN_BANDIT2_X 490
 #define GEN_BANDIT2_Y 0
 #define GEN_BANDIT2_Z -205
@@ -113,7 +113,7 @@
 
 // type: Marker:NPC
 // name: Cleft
-// anim: ANIM_Cleft_Anim00
+// anim: ANIM_Cleft_Anim02
 #define GEN_CLEFT_X 93
 #define GEN_CLEFT_Y 0
 #define GEN_CLEFT_Z 254
@@ -135,12 +135,12 @@
 
 // type: Marker:Entity:Chest
 // name: Chest
-#define GEN_CHEST_X 189
+#define GEN_CHEST_X 0
 #define GEN_CHEST_Y 0
-#define GEN_CHEST_Z -571
-#define GEN_CHEST_DIR -20
-#define GEN_CHEST_VEC 189,0,-571
-#define GEN_CHEST_XYZA 189, 0, -571, -20
+#define GEN_CHEST_Z -610
+#define GEN_CHEST_DIR 0
+#define GEN_CHEST_VEC 0,0,-610
+#define GEN_CHEST_XYZA 0, 0, -610, 0
 #define GEN_CHEST_PARAMS GEN_CHEST_XYZA
 
 // type: Marker:Entity:YellowBlock
@@ -153,6 +153,28 @@
 #define GEN_YELLOW_BLOCK_XYZA 479, 60, -360, 0
 #define GEN_YELLOW_BLOCK_ITEM ITEM_NONE
 #define GEN_YELLOW_BLOCK_PARAMS GEN_YELLOW_BLOCK_XYZA, GEN_YELLOW_BLOCK_ITEM
+
+// type: Marker:Entity:Chest
+// name: EnemyChest
+#define GEN_ENEMY_CHEST_X 75
+#define GEN_ENEMY_CHEST_Y 80
+#define GEN_ENEMY_CHEST_Z -40
+#define GEN_ENEMY_CHEST_DIR 0
+#define GEN_ENEMY_CHEST_VEC 75,80,-40
+#define GEN_ENEMY_CHEST_XYZA 75, 80, -40, 0
+#define GEN_ENEMY_CHEST_PARAMS GEN_ENEMY_CHEST_XYZA
+
+// type: Marker:Entity:Item
+// name: DriedFruit
+#define GEN_DRIED_FRUIT_X 446
+#define GEN_DRIED_FRUIT_Y 27
+#define GEN_DRIED_FRUIT_Z 432
+#define GEN_DRIED_FRUIT_DIR 0
+#define GEN_DRIED_FRUIT_VEC 446,27,432
+#define GEN_DRIED_FRUIT_PARAMS GEN_DRIED_FRUIT_ITEM, GEN_DRIED_FRUIT_VEC, GEN_DRIED_FRUIT_SPAWN, GEN_DRIED_FRUIT_FLAG
+#define GEN_DRIED_FRUIT_ITEM ITEM_DRIED_FRUIT
+#define GEN_DRIED_FRUIT_SPAWN ITEM_SPAWN_MODE_FIXED_NEVER_VANISH
+#define GEN_DRIED_FRUIT_FLAG GF_DST01_ItemDriedFruit
 
 // type: Marker:Position
 // name: Tree1

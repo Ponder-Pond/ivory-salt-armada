@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Map desc="Beach" background="net_bg" textures="trp_tex">
+<Map desc="Beach" background="shp_bg" textures="trp_tex">
 	<Editor>
-		<Camera pos="-269.869446,107.907654,422.047974" pitch="32.639999" yaw="343.760040"/>
+		<Camera pos="-143.060883,150.801453,505.587097" pitch="6.119991" yaw="14.200800"/>
 		<Camera pos="426.000000,65536.000000,-58.000000"/>
 		<Camera pos="65536.000000,76.000000,-58.000000"/>
 		<Camera pos="426.000000,74.159492,65536.000000"/>
@@ -5403,7 +5403,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="Trim" id="4"/>
-			<ShapeMesh ver="3" texture="trp_trimtif">
+			<ShapeMesh ver="3" texture="trp_terraintif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -6093,7 +6093,7 @@
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="LeafFlower3" id="1D" hidden="true"/>
+			<MapObject name="LeafFlower3" id="1D"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6162,7 +6162,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="LeafFlower2" id="1C" hidden="true"/>
+			<MapObject name="LeafFlower2" id="1C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6231,7 +6231,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="LeafFlower1" id="1B" hidden="true"/>
+			<MapObject name="LeafFlower1" id="1B"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6339,7 +6339,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Fence" id="1A" hidden="true"/>
+			<MapObject name="Fence" id="1A"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6583,7 +6583,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Campfire" id="19" hidden="true"/>
+			<MapObject name="Campfire" id="19"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6635,7 +6635,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Rock" id="18" hidden="true"/>
+			<MapObject name="Rock" id="18"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6839,7 +6839,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush11" id="17" hidden="true"/>
+			<MapObject name="Bush11" id="17"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6867,7 +6867,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush10" id="16" hidden="true"/>
+			<MapObject name="Bush10" id="16"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6895,7 +6895,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush9" id="15" hidden="true"/>
+			<MapObject name="Bush9" id="15"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6921,7 +6921,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush8" id="14" hidden="true"/>
+			<MapObject name="Bush8" id="14"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6947,7 +6947,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush7" id="13" hidden="true"/>
+			<MapObject name="Bush7" id="13"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6973,7 +6973,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush6" id="12" hidden="true"/>
+			<MapObject name="Bush6" id="12"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -6999,7 +6999,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush5" id="11" hidden="true"/>
+			<MapObject name="Bush5" id="11"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7025,7 +7025,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush4" id="10" hidden="true"/>
+			<MapObject name="Bush4" id="10"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7051,7 +7051,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush3" id="F" hidden="true"/>
+			<MapObject name="Bush3" id="F"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7077,7 +7077,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush2" id="E" hidden="true"/>
+			<MapObject name="Bush2" id="E"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7103,7 +7103,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush1" id="D" hidden="true"/>
+			<MapObject name="Bush1" id="D"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7129,7 +7129,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree10" id="C" hidden="true"/>
+			<MapObject name="Tree10" id="C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7181,7 +7181,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree9" id="B" hidden="true"/>
+			<MapObject name="Tree9" id="B"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7233,7 +7233,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree8" id="A" hidden="true"/>
+			<MapObject name="Tree8" id="A"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7285,7 +7285,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree7" id="9" hidden="true"/>
+			<MapObject name="Tree7" id="9"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7337,7 +7337,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree6" id="8" hidden="true"/>
+			<MapObject name="Tree6" id="8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7389,7 +7389,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree5" id="7" hidden="true"/>
+			<MapObject name="Tree5" id="7"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7441,7 +7441,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree4" id="6" hidden="true"/>
+			<MapObject name="Tree4" id="6"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7493,7 +7493,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree3" id="5" hidden="true"/>
+			<MapObject name="Tree3" id="5"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7545,7 +7545,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree2" id="4" hidden="true"/>
+			<MapObject name="Tree2" id="4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7597,7 +7597,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree1" id="3" hidden="true"/>
+			<MapObject name="Tree1" id="3"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7631,7 +7631,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Dock" id="2" hidden="true"/>
+			<MapObject name="Dock" id="2"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7673,7 +7673,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="WallsIsland" id="1" hidden="true"/>
+			<MapObject name="WallsIsland" id="1"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -7893,7 +7893,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="FloorIsland" id="0" hidden="true"/>
+			<MapObject name="FloorIsland" id="0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8249,27 +8249,27 @@
 		<Marker ver="4" type="NPC" pos="350,59,-163" yaw="0.000000">
 			<MapObject name="SpearGuy3" id="5"/>
 			<Movement type="Wander" data="15E,3B,FFFFFF5D,14,0,FFFF8001,0,15E,3B,FFFFFF5D,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_SpearGuy_Anim00"/>
+			<Sprite animation="ANIM_SpearGuy_Anim03"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="550,0,200" yaw="0.000000">
 			<MapObject name="JungleFuzzy2" id="4"/>
 			<Movement type="Wander" data="226,0,C8,32,0,FFFF8001,0,226,0,C8,C8,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Fuzzy_Jungle_Still"/>
+			<Sprite animation="ANIM_Fuzzy_Jungle_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="70,0,110" yaw="0.000000">
 			<MapObject name="SpearGuy2" id="3"/>
 			<Movement type="Wander" data="46,0,6E,14,0,FFFF8001,0,46,0,6E,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_SpearGuy_Anim00"/>
+			<Sprite animation="ANIM_SpearGuy_Anim03"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-420,0,-290" yaw="0.000000">
 			<MapObject name="SpearGuy1" id="2"/>
 			<Movement type="Wander" data="FFFFFE5C,0,FFFFFEDE,14,0,FFFF8001,0,FFFFFE5C,0,FFFFFEDE,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_SpearGuy_Anim00"/>
+			<Sprite animation="ANIM_SpearGuy_Anim03"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-550,0,290" yaw="0.000000">
 			<MapObject name="JungleFuzzy1" id="1"/>
 			<Movement type="Wander" data="FFFFFDDA,0,122,32,0,FFFF8001,0,FFFFFDDA,0,122,C8,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Fuzzy_Jungle_Still"/>
+			<Sprite animation="ANIM_Fuzzy_Jungle_Idle"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="Entries" id="0"/>

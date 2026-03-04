@@ -10,7 +10,7 @@ EvtScript EVS_FocusCam_OnChest = {
     Call(SetCamDistance, CAM_DEFAULT, Float(350.0))
     Call(SetCamPitch, CAM_DEFAULT, Float(12.0), Float(-5.5))
     Call(SetCamPosB, CAM_DEFAULT, Float(500.0), Float(20.0))
-    Call(SetPanTarget, CAM_DEFAULT, GEN_CHEST_VEC)
+    Call(SetPanTarget, CAM_DEFAULT, GEN_ENEMY_CHEST_VEC)
     Call(PanToTarget, CAM_DEFAULT, 0, true)
     Call(WaitForCam, CAM_DEFAULT, Float(1.0))
     Return
@@ -19,7 +19,7 @@ EvtScript EVS_FocusCam_OnChest = {
 
 #include "world/common/entity/Chest.inc.c"
 
-EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+EvtScript EVS_OpenEnemyChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
 
 API_CALLABLE(PlayBigSmokePuff) {
     Bytecode* args = script->ptrReadPos;
@@ -32,7 +32,7 @@ API_CALLABLE(PlayBigSmokePuff) {
     return ApiStatus_DONE2;
 }
 
-EvtScript EVS_SpawnChest = {
+EvtScript EVS_SpawnEnemyChest = {
     Loop(0)
         IfEq(MV_EnemiesDefeated, 5)
             BreakLoop
@@ -42,11 +42,11 @@ EvtScript EVS_SpawnChest = {
     Call(DisablePlayerInput, true)
     Call(PlaySound, SOUND_CHIME_SOLVED_PUZZLE)
     Wait(30)
-    Call((PlayBigSmokePuff), GEN_CHEST_VEC)
-    Call(PlaySoundAt, SOUND_SMOKE_BURST, SOUND_SPACE_DEFAULT, GEN_CHEST_VEC)
-    Call(MakeEntity, Ref(Entity_Chest), GEN_CHEST_PARAMS, MAKE_ENTITY_END)
+    Call(PlayBigSmokePuff, GEN_ENEMY_CHEST_VEC)
+    Call(PlaySoundAt, SOUND_SMOKE_BURST, SOUND_SPACE_DEFAULT, GEN_ENEMY_CHEST_VEC)
+    Call(MakeEntity, Ref(Entity_Chest), GEN_ENEMY_CHEST_PARAMS, MAKE_ENTITY_END)
     Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
-    Call(AssignScript, Ref(EVS_OpenChest))
+    Call(AssignScript, Ref(EVS_OpenEnemyChest))
     SetF(LVarA, Float(3.0))
     ExecWait(EVS_FocusCam_OnChest)
     Wait(45)
@@ -55,9 +55,16 @@ EvtScript EVS_SpawnChest = {
     End
 };
 
+EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+
+
 EvtScript EVS_MakeEntities = {
     Call(MakeEntity, Ref(Entity_YellowBlock), GEN_YELLOW_BLOCK_PARAMS, MAKE_ENTITY_END)
     Call(AssignBlockFlag, GF_TRP00_ItemBlock_Coin)
+    Call(MakeEntity, Ref(Entity_Chest), GEN_CHEST_PARAMS, MAKE_ENTITY_END)
+    Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
+    Call(AssignScript, Ref(EVS_OpenChest))
+    Call(MakeItemEntity, GEN_DRIED_FRUIT_PARAMS)
     Return
     End
 };

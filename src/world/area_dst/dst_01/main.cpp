@@ -201,14 +201,16 @@ NpcGroupList DefaultNPCs = {
 EvtScript EVS_Main = {
     Call(SetSpriteShading, SHADING_NONE)
     EVT_SETUP_CAMERA_NO_LEAD(0, 0, 0)
-    // Call(SetMusicTrack, 0, SONG_SHOOTING_STAR_SUMMIT, 0, 8)
+    Call(SetMusic, 0, SONG_DRY_DRY_DESERT, 0, VOL_LEVEL_FULL)
+    Call(ClearAmbientSounds, 250)
+    Call(PlayAmbientSounds, AMBIENT_BEACH)
     Exec(EVS_TexPan)
     // Call(DisablePlayerInput, true)
     // Call(DisablePlayerPhysics, true)
     Exec(EVS_SetFoliage)
     Call(MakeNpcs, true, Ref(DefaultNPCs))
     ExecWait(EVS_MakeEntities)
-    Exec(EVS_SpawnChest)
+    Exec(EVS_SpawnEnemyChest)
     Return
     End
 };
@@ -223,6 +225,6 @@ MapSettings dst_01_settings = {
 };
 
 s32 dst_01_map_init(void) {
-    sprintf(wMapBgName, "net_bg");
+    sprintf(wMapBgName, "shp_bg");
     return false;
 }

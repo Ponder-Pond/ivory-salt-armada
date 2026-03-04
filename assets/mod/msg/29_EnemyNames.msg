@@ -522,6 +522,10 @@
 	R Paragoomba[End]
 }
 
+#message:29:(EnemyName_Kroxin) {
+	Kroxin[End]
+}
+
 #message:29:(EnemyName_BlueMate) {
 	Blue Mate[End]
 }

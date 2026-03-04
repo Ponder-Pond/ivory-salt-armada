@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Map desc="Beach" background="net_bg" textures="dst_tex">
+<Map desc="Beach" background="shp_bg" textures="dst_tex">
 	<Editor>
-		<Camera pos="403.706451,512.385742,590.128723" pitch="63.520092" yaw="326.483826"/>
-		<Camera pos="584.500122,65536.000000,-65.670883"/>
-		<Camera pos="65536.000000,0.000000,-67.000000"/>
-		<Camera pos="598.628784,19.238256,65536.000000"/>
+		<Camera pos="313.108551,96.630051,420.549866" pitch="19.040030" yaw="63.760567"/>
+		<Camera pos="73.000000,65536.000000,-35.000000"/>
+		<Camera pos="65536.000000,80.000000,-35.000000"/>
+		<Camera pos="73.000000,80.000000,65536.000000"/>
 	</Editor>
 	<ModelTree>
 		<Node name="Root" id="14">
@@ -59,7 +59,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="D">
+		<Node name="Root" id="F">
 			<Node name="Entries" id="0">
 				<Node name="Entry0" id="FFFFFFFF"/>
 			</Node>
@@ -70,13 +70,15 @@
 				<Node name="Bandit2" id="4"/>
 				<Node name="Cleft" id="5"/>
 			</Node>
-			<Node name="Entities" id="9">
+			<Node name="Entities" id="B">
 				<Node name="Chest" id="7"/>
 				<Node name="YellowBlock" id="8"/>
+				<Node name="EnemyChest" id="9"/>
+				<Node name="DriedFruit" id="A"/>
 			</Node>
-			<Node name="Foliage" id="C">
-				<Node name="Tree1" id="A"/>
-				<Node name="Bush1" id="B"/>
+			<Node name="Foliage" id="E">
+				<Node name="Tree1" id="C"/>
+				<Node name="Bush1" id="D"/>
 			</Node>
 		</Node>
 	</MarkerTree>
@@ -11860,25 +11862,33 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="D"/>
+			<MapObject name="Root" id="F"/>
 		</Marker>
 		<Marker ver="4" type="Group">
-			<MapObject name="Foliage" id="C"/>
+			<MapObject name="Foliage" id="E"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="-102,0,-331" yaw="0.000000">
-			<MapObject name="Bush1" id="B"/>
+			<MapObject name="Bush1" id="D"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="594,0,-66" yaw="0.000000">
-			<MapObject name="Tree1" id="A"/>
+			<MapObject name="Tree1" id="C"/>
 		</Marker>
 		<Marker ver="4" type="Group">
-			<MapObject name="Entities" id="9"/>
+			<MapObject name="Entities" id="B"/>
+		</Marker>
+		<Marker ver="4" type="Entity" pos="446,27,432" yaw="0.000000">
+			<MapObject name="DriedFruit" id="A"/>
+			<Entity type="Item" item="ITEM_DRIED_FRUIT" gameFlag="GF_DST01_ItemDriedFruit" spawnMode="ITEM_SPAWN_MODE_FIXED_NEVER_VANISH"/>
+		</Marker>
+		<Marker ver="4" type="Entity" pos="75,80,-40" yaw="0.000000">
+			<MapObject name="EnemyChest" id="9"/>
+			<Entity type="Chest"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="479,60,-360" yaw="0.000000">
 			<MapObject name="YellowBlock" id="8"/>
 			<Entity type="YellowBlock" item="ITEM_NONE"/>
 		</Marker>
-		<Marker ver="4" type="Entity" pos="189,0,-571" yaw="-20.000000">
+		<Marker ver="4" type="Entity" pos="0,0,-610" yaw="-0.000000">
 			<MapObject name="Chest" id="7"/>
 			<Entity type="Chest"/>
 		</Marker>
@@ -11888,27 +11898,27 @@
 		<Marker ver="4" type="NPC" pos="93,0,254" yaw="0.000000">
 			<MapObject name="Cleft" id="5"/>
 			<Movement type="Wander" data="5D,0,FE,0,0,FFFF8001,0,5D,0,FE,7D,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Cleft_Anim00"/>
+			<Sprite animation="ANIM_Cleft_Anim02"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="490,0,-205" yaw="0.000000">
 			<MapObject name="Bandit2" id="4"/>
 			<Movement type="Wander" data="1EA,0,FFFFFF33,64,0,FFFF8001,0,1EA,0,FFFFFF33,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Bandit_Still"/>
+			<Sprite animation="ANIM_Bandit_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-38,0,-512" yaw="0.000000">
 			<MapObject name="Pokey2" id="3"/>
 			<Movement type="Wander" data="FFFFFFDA,0,FFFFFE00,64,0,FFFF8001,0,FFFFFFDA,0,FFFFFE00,12C,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Pokey_Still4"/>
+			<Sprite animation="ANIM_Pokey_Idle4"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="255,0,594" yaw="0.000000">
 			<MapObject name="Bandit1" id="2"/>
 			<Movement type="Wander" data="FF,0,252,64,0,FFFF8001,0,FF,0,252,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Bandit_Still"/>
+			<Sprite animation="ANIM_Bandit_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-343,0,260" yaw="0.000000">
 			<MapObject name="Pokey1" id="1"/>
 			<Movement type="Wander" data="FFFFFEA9,0,104,64,0,FFFF8001,0,FFFFFEA9,0,104,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Pokey_Still4"/>
+			<Sprite animation="ANIM_Pokey_Idle4"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="Entries" id="0"/>

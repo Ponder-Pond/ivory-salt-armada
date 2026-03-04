@@ -2334,6 +2334,17 @@
     stepDelay: [ 30, 30 ]
     tattleCamOffset: [ 0, 0, 0 ]
     shadowOffset: 0
+- Kroxin:
+    level: 55
+    nameMsg: MSG_EnemyName_Kroxin
+    tattleMsg: MSG_EnemyTattle_Kroxin
+    walkSound: [ SOUND_HEAVY_NPC_STEP_A, SOUND_HEAVY_NPC_STEP_A ]
+    flySound: [ SOUND_NONE, SOUND_NONE ]
+    jumpSound: SOUND_NONE
+    hurtSound: SOUND_NONE
+    stepDelay: [ 30, 30 ]
+    tattleCamOffset: [ 0, 0, 0 ]
+    shadowOffset: 0
 - BlueMate:
     level: 0
     nameMsg: MSG_EnemyName_BlueMate
@@ -2389,14 +2400,3 @@
     stepDelay: [ 30, 30 ]
     tattleCamOffset: [ 0, 0, 0 ]
     shadowOffset: 0
-# - MechaBlooper:
-#     level: 65
-#     nameMsg: MSG_EnemyName_MechaBlooper
-#     tattleMsg: MSG_EnemyTattle_MechaBlooper
-#     walkSound: [ SOUND_NONE, SOUND_NONE ]
-#     flySound: [ SOUND_NONE, SOUND_NONE ]
-#     jumpSound: SOUND_NONE
-#     hurtSound: SOUND_NONE
-#     stepDelay: [ 25, 25 ]
-#     tattleCamOffset: [ 0, 0, 0 ]
-#     shadowOffset: 0

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Map desc="Beach" background="net_bg" textures="dst_tex">
+<Map desc="Beach" background="shp_bg" textures="dst_tex">
 	<Editor>
 		<Camera pos="5.248291,265.740753,316.318573" pitch="50.120033" yaw="356.080688"/>
 		<Camera pos="-560.000000,65536.000000,0.000000"/>

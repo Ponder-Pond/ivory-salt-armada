@@ -78,37 +78,35 @@ Vec3i GreenHeart2Pos = { 125, 0, 30 };
 
 // Vec3i MonstarPos = { 75, 16, 5 };
 
-// Formation Formation_Goomba1 = { // Formation 0
-//     ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_C, 9),
-// };
+Formation Formation_Goomba1 = { // Formation 0
+    ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
+    ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_C, 9),
+};
 
-// Formation Formation_Goomba2 = { // Formation 1
-//     ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(Paragoomba, BTL_POS_AIR_C, 9),
-// };
+Formation Formation_Goomba2 = { // Formation 1
+    ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
+    ACTOR_BY_IDX(Paragoomba, BTL_POS_AIR_C, 9),
+};
 
-// Formation Formation_Goomba3 = { // Formation 2
-//     ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(SpikedGoomba, BTL_POS_GROUND_C, 9),
-// };
+Formation Formation_SpikedGoomba = { // Formation 2
+    ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
+    ACTOR_BY_IDX(SpikedGoomba, BTL_POS_GROUND_C, 9),
+};
 
-// Formation Formation_Goomba4 = { // Formation 3
-//     ACTOR_BY_IDX(Goomba, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(Paragoomba, BTL_POS_AIR_C, 9),
-//     ACTOR_BY_IDX(SpikedGoomba, BTL_POS_GROUND_D, 8),
-// };
+Formation Formation_KoopaTroopa1 = { // Formation 3
+    ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_B, 10),
+    ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_C, 9),
+};
 
-// Formation Formation_KoopaTroopa1 = { // Formation 4
-//     ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_C, 9),
-// };
+Formation Formation_KoopaTroopa2 = { // Formation 4
+    ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_B, 10),
+    ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_C, 9),
+    ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_D, 8),
+};
 
-// Formation Formation_KoopaTroopa2 = { // Formation 5
-//     ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_B, 10),
-//     ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_C, 9),
-//     ACTOR_BY_IDX(KoopaTroopa, BTL_POS_GROUND_D, 8),
-// };
+Formation Formation_Kroxin = { // Formation 5
+    ACTOR_BY_IDX(Kroxin, BTL_POS_GROUND_B, 10),
+};
 
 // Formation Formation_SpearGuy = { // Formation 6
 //     ACTOR_BY_IDX(SpearGuy, BTL_POS_GROUND_B, 10, .var0 = 1),
@@ -136,53 +134,48 @@ Vec3i GreenHeart2Pos = { 125, 0, 30 };
 //     ACTOR_BY_POS(SuperBlooper, BlooperPos, 10),
 // };
 
-Formation Formation_CaptainKuribo = { // Formation 0
-    ACTOR_BY_POS(CaptainKuribo, CaptainKuriboPos, 8),
-    ACTOR_BY_POS(RedMate, RedMatePos, 9),
-    ACTOR_BY_POS(BlueMate, BlueMatePos, 10),
-};
-
-Formation Formation_Clubbeard = { // Formation 1
-    ACTOR_BY_POS(Clubbeard, ClubbeardPos, 10),
-    ACTOR_BY_POS(GreenHeart, GreenHeart1Pos, 9),
-    ACTOR_BY_POS(GreenHeart, GreenHeart2Pos, 8),
-};
-
-// Formation Formation_KentCKoopa = { // Formation 14
-//     ACTOR_BY_IDX(KentCKoopa, BTL_POS_GROUND_B, 10),
+// Formation Formation_CaptainKuribo = { // Formation 12
+//     ACTOR_BY_POS(CaptainKuribo, CaptainKuriboPos, 8),
+//     ACTOR_BY_POS(RedMate, RedMatePos, 9),
+//     ACTOR_BY_POS(BlueMate, BlueMatePos, 10),
 // };
 
-// Formation Formation_Buzzar = { // Formation 15
+// Formation Formation_Clubbeard = { // Formation 13
+//     ACTOR_BY_POS(Clubbeard, ClubbeardPos, 10),
+//     ACTOR_BY_POS(GreenHeart, GreenHeart1Pos, 9),
+//     ACTOR_BY_POS(GreenHeart, GreenHeart2Pos, 8),
+// };
+
+// Formation Formation_Buzzar = { // Formation 14
 //     ACTOR_BY_POS(Buzzar, BuzzarPos, 10),
 // };
 
-// Formation Formation_Monstar = { // Formation 16
+// Formation Formation_Monstar = { // Formation 15
 //     ACTOR_BY_POS(Monstar, MonstarPos, 10),
 // };
 
-// Formation Formation_MageJrTroopa = { // Formation 17
+// Formation Formation_MageJrTroopa = { // Formation 16
 //     ACTOR_BY_IDX(MageJrTroopa, BTL_POS_GROUND_C, 10),
 // };
 
 BattleList Battles = {
-    // BATTLE(Formation_Goomba1, PleasantPath, "Goomba"), // Formation 0
-    // BATTLE(Formation_Goomba2, PleasantPath, "Paragoomba"), // Formation 1
-    // BATTLE(Formation_Goomba3, PleasantPath, "Spiked Goomba"), // Formation 2
-    // BATTLE(Formation_Goomba4, PleasantPath, "Goomba Trio"), // Formation 3
-    // BATTLE(Formation_KoopaTroopa1, PleasantPath, "Koopa Troopa Duo"), // Formation 4
-    // BATTLE(Formation_KoopaTroopa2, PleasantPath, "Koopa Troopa Trio"), // Formation 5
+    BATTLE(Formation_Goomba1, PleasantPath, "Goomba"), // Formation 0
+    BATTLE(Formation_Goomba2, PleasantPath, "Paragoomba"), // Formation 1
+    BATTLE(Formation_SpikedGoomba, PleasantPath, "Spiked Goomba"), // Formation 2
+    BATTLE(Formation_KoopaTroopa1, PleasantPath, "Koopa Troopa Duo"), // Formation 3
+    BATTLE(Formation_KoopaTroopa2, PleasantPath, "Koopa Troopa Trio"), // Formation 4
+    BATTLE(Formation_Kroxin, PleasantPath, "Kroxin"), // Formation 5
     // BATTLE(Formation_SpearGuy, Beach, "Uno Spear Guy"), // Formation 6
     // BATTLE(Formation_JungleFuzzy, Beach, "Uno Jungle Fuzzy"), // Formation 7
     // BATTLE(Formation_Pokey, DryDryDesert, "Pokey"), // Formation 8
     // BATTLE(Formation_Bandit, DryDryDesert, "Bandit"), // Formation 9
     // BATTLE(Formation_Cleft, DryDryDesert, "Cleft"), // Formation 10
     // BATTLE(Formation_SuperBlooper, ShipDeck, "Super Blooper"), // Formation 11
-    BATTLE(Formation_CaptainKuribo, ShipDeck, "Captain Kuribo"), // Formation 0
-    BATTLE(Formation_Clubbeard, ShipDeck, "Clubbeard"), // Formation 1
-    // BATTLE(Formation_KentCKoopa, ShipDeck, "Kent C. Koopa"), // Formation 14
-    // BATTLE(Formation_Buzzar, ShipDeck, "Buzzar"), // Formation 15
-    // BATTLE(Formation_Monstar, ShipDeck, "Monstar"), // Formation 16
-    // BATTLE(Formation_MageJrTroopa, ShipDeck, "Mage Jr. Troopa"), // Formation 17
+    // BATTLE(Formation_CaptainKuribo, ShipDeck, "Captain Kuribo"), // Formation 12
+    // BATTLE(Formation_Clubbeard, ShipDeck, "Clubbeard"), // Formation 13
+    // BATTLE(Formation_Buzzar, ShipDeck, "Buzzar"), // Formation 14
+    // BATTLE(Formation_Monstar, ShipDeck, "Monstar"), // Formation 15
+    // BATTLE(Formation_MageJrTroopa, ShipDeck, "Mage Jr. Troopa"), // Formation 16
     {},
 };
 

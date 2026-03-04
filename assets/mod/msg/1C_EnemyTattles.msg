@@ -2965,6 +2965,15 @@
 	peeved.[Wait][End]
 }
 
+#message:1C:(EnemyTattle_Kroxin) {
+	[Style right]
+	This is Kroxin.[BR]
+	[Wait][Next]
+	Max HP: 12, Attack Power: 3,[BR]
+	Defense Power: 3[BR]
+	[Wait][End]
+}
+
 #message:1C:(EnemyTattle_BlueMate) {
 	[Style right]
 	This is Blue Mate.[BR]

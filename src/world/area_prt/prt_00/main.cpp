@@ -46,7 +46,7 @@ NpcData NpcData_HarryT = {
 #include "world/common/npc/Bobomb.inc.cpp"
 
 EvtScript EVS_NpcInteract_Grob = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
@@ -68,54 +68,54 @@ NpcData NpcData_Grob = {
     .animations = BOBOMB_GREEN_ANIMS,
 };
 
-EvtScript EVS_NpcInteract_RipCheato = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+EvtScript EVS_NpcInteract_Karter = {
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
 
-EvtScript EVS_NpcInit_RipCheato = {
-    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_RipCheato))
+EvtScript EVS_NpcInit_Karter = {
+    Call(BindNpcInteract, NPC_SELF, Ref(EVS_NpcInteract_Karter))
     Return
     End
 };
 
-NpcSettings NpcSettings_RipCheato = {
-    .height = 30,
+NpcSettings NpcSettings_Karter = {
+    .height = 42,
     .radius = 24,
     .level = ACTOR_LEVEL_NONE,
 };
 
-NpcData NpcData_RipCheato = {
-    .id = NPC_RipCheato,
-    .settings = &NpcSettings_RipCheato,
-    .pos = { GEN_RIP_CHEATO_VEC },
+NpcData NpcData_Karter = {
+    .id = NPC_Karter,
+    .settings = &NpcSettings_Karter,
+    .pos = { GEN_KARTER_VEC },
     .flags = BASE_PASSIVE_FLAGS,
-    .init = &EVS_NpcInit_RipCheato,
-    .yaw = GEN_RIP_CHEATO_DIR,
+    .init = &EVS_NpcInit_Karter,
+    .yaw = GEN_KARTER_DIR,
     .drops = NO_DROPS,
     .animations = {
-        .idle   = ANIM_RipCheato_Idle,
-        .walk   = ANIM_RipCheato_Idle,
-        .run    = ANIM_RipCheato_Idle,
-        .chase  = ANIM_RipCheato_Idle,
-        .anim_4 = ANIM_RipCheato_Idle,
-        .anim_5 = ANIM_RipCheato_Idle,
-        .death  = ANIM_RipCheato_Idle,
-        .hit    = ANIM_RipCheato_Idle,
-        .anim_8 = ANIM_RipCheato_Idle,
-        .anim_9 = ANIM_RipCheato_Idle,
-        .anim_A = ANIM_RipCheato_Idle,
-        .anim_B = ANIM_RipCheato_Idle,
-        .anim_C = ANIM_RipCheato_Idle,
-        .anim_D = ANIM_RipCheato_Idle,
-        .anim_E = ANIM_RipCheato_Idle,
-        .anim_F = ANIM_RipCheato_Idle,
+        .idle   = ANIM_Archeologist_Idle,
+        .walk   = ANIM_Archeologist_Walk,
+        .run    = ANIM_Archeologist_Run,
+        .chase  = ANIM_Archeologist_Run,
+        .anim_4 = ANIM_Archeologist_Idle,
+        .anim_5 = ANIM_Archeologist_Idle,
+        .death  = ANIM_Archeologist_Idle,
+        .hit    = ANIM_Archeologist_Idle,
+        .anim_8 = ANIM_Archeologist_Idle,
+        .anim_9 = ANIM_Archeologist_Idle,
+        .anim_A = ANIM_Archeologist_Idle,
+        .anim_B = ANIM_Archeologist_Idle,
+        .anim_C = ANIM_Archeologist_Idle,
+        .anim_D = ANIM_Archeologist_Idle,
+        .anim_E = ANIM_Archeologist_Idle,
+        .anim_F = ANIM_Archeologist_Idle,
     },
 };
 
 EvtScript EVS_NpcInteract_BarrT = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
@@ -138,7 +138,7 @@ NpcData NpcData_BarrT = {
 };
 
 EvtScript EVS_NpcInteract_Fishmael = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
@@ -165,7 +165,7 @@ NpcData NpcData_Fishmael = {
 #include "world/common/enemy/Bandit.inc.cpp"
 
 EvtScript EVS_NpcInteract_Slyden = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
@@ -187,10 +187,10 @@ NpcData NpcData_Slyden = {
     .animations = BANDIT_ANIMS,
 };
 
-#include "world/common/enemy/Gloomba_Stationary.inc.cpp"
+#include "world/common/enemy/FriendlyGloomba_Stationary.inc.cpp"
 
 EvtScript EVS_NpcInteract_Gloomothy = {
-    // Call(SpeakToPlayer, NPC_RipCheato, ANIM_RipCheato_Talk, ANIM_RipCheato_Idle, 0, MSG_MGM_0004)
+    // Call(SpeakToPlayer, NPC_Karter, ANIM_Karter_Talk, ANIM_Karter_Idle, 0, MSG_MGM_0004)
     Return
     End
 };
@@ -203,19 +203,19 @@ EvtScript EVS_NpcInit_Gloomothy = {
 
 NpcData NpcData_Gloomothy = {
     .id = NPC_Gloomothy,
-    .settings = &NpcSettings_Gloomba_Stationary,
+    .settings = &NpcSettings_FriendlyGloomba_Stationary,
     .pos = { GEN_GLOOMOTHY_VEC },
     .flags = COMMON_PASSIVE_FLAGS,
     .init = &EVS_NpcInit_Gloomothy,
     .yaw = GEN_GLOOMOTHY_DIR,
     .drops = NO_DROPS,
-    .animations = GLOOMBA_ANIMS,
+    .animations = FRIENDLY_GLOOMBA_ANIMS,
 };
 
 NpcGroupList DefaultNPCs = {
     NPC_GROUP(NpcData_HarryT),
     NPC_GROUP(NpcData_Grob),
-    NPC_GROUP(NpcData_RipCheato),
+    NPC_GROUP(NpcData_Karter),
     NPC_GROUP(NpcData_BarrT),
     NPC_GROUP(NpcData_Fishmael),
     NPC_GROUP(NpcData_Slyden),
@@ -245,6 +245,6 @@ MapSettings prt_00_settings = {
 };
 
 s32 prt_00_map_init(void) {
-    sprintf(wMapBgName, "net_bg");
+    sprintf(wMapBgName, "shp_bg");
     return false;
 }

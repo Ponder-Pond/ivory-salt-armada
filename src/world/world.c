@@ -868,27 +868,27 @@ MapConfig gv_maps[] = {
 /// Port
 #include "area_prt/prt.h"
 MapConfig prt_maps[] = {
-    { MAP_WITH_INIT(prt_00), .bgName = "net_bg" },
+    { MAP_WITH_INIT(prt_00), .bgName = "shp_bg" },
 };
 
 /// Tropical
 #include "area_trp/trp.h"
 MapConfig trp_maps[] = {
-    { MAP_WITH_INIT(trp_00), .bgName = "net_bg" },
-    { MAP_WITH_INIT(trp_01), .bgName = "net_bg" },
+    { MAP_WITH_INIT(trp_00), .bgName = "shp_bg" },
+    { MAP_WITH_INIT(trp_01), .bgName = "shp_bg" },
 };
 
 /// Grass
 #include "area_grs/grs.h"
 MapConfig grs_maps[] = {
-    { MAP_WITH_INIT(grs_01), .bgName = "net_bg" },
+    { MAP_WITH_INIT(grs_01), .bgName = "shp_bg" },
 };
 
 /// Desert
 #include "area_dst/dst.h"
 MapConfig dst_maps[] = {
-    { MAP_WITH_INIT(dst_00), .bgName = "net_bg" },
-    { MAP_WITH_INIT(dst_01), .bgName = "net_bg" },
+    { MAP_WITH_INIT(dst_00), .bgName = "shp_bg" },
+    { MAP_WITH_INIT(dst_01), .bgName = "shp_bg" },
     { MAP(dst_05) },
 };
 

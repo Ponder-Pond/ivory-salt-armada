@@ -25,7 +25,7 @@
 
 // type: Marker:NPC
 // name: HarryT
-// anim: ANIM_HarryT_Still
+// anim: ANIM_HarryT_Idle
 #define GEN_HARRY_T_X -551
 #define GEN_HARRY_T_Y -10
 #define GEN_HARRY_T_Z 68
@@ -36,7 +36,7 @@
 
 // type: Marker:NPC
 // name: Grob
-// anim: ANIM_WorldBobomb_Green_Still
+// anim: ANIM_WorldBobomb_Green_Idle
 #define GEN_GROB_X -441
 #define GEN_GROB_Y -10
 #define GEN_GROB_Z -4
@@ -46,19 +46,19 @@
 {}
 
 // type: Marker:NPC
-// name: RipCheato
-// anim: ANIM_RipCheato_Still
-#define GEN_RIP_CHEATO_X -26
-#define GEN_RIP_CHEATO_Y 5
-#define GEN_RIP_CHEATO_Z -441
-#define GEN_RIP_CHEATO_DIR 0
-#define GEN_RIP_CHEATO_VEC -26,5,-441
-#define GEN_RIP_CHEATO_TERRITORY \
+// name: Karter
+// anim: ANIM_RipCheato_Idle
+#define GEN_KARTER_X -26
+#define GEN_KARTER_Y 5
+#define GEN_KARTER_Z -441
+#define GEN_KARTER_DIR 0
+#define GEN_KARTER_VEC -26,5,-441
+#define GEN_KARTER_TERRITORY \
 {}
 
 // type: Marker:NPC
 // name: BarrT
-// anim: ANIM_ToadGuard_Green_Still
+// anim: ANIM_ToadGuard_Green_Idle
 #define GEN_BARR_T_X 430
 #define GEN_BARR_T_Y 0
 #define GEN_BARR_T_Z -403
@@ -69,7 +69,7 @@
 
 // type: Marker:NPC
 // name: Fishmael
-// anim: ANIM_Fishmael_Still
+// anim: ANIM_Fishmael_Idle
 #define GEN_FISHMAEL_X 194
 #define GEN_FISHMAEL_Y -10
 #define GEN_FISHMAEL_Z -144
@@ -80,7 +80,7 @@
 
 // type: Marker:NPC
 // name: Dryden
-// anim: ANIM_Dryite_Yellow_Still
+// anim: ANIM_Dryite_Yellow_Idle
 #define GEN_DRYDEN_X 336
 #define GEN_DRYDEN_Y 0
 #define GEN_DRYDEN_Z -472
@@ -91,7 +91,7 @@
 
 // type: Marker:NPC
 // name: Slyden
-// anim: ANIM_Bandit_Still
+// anim: ANIM_Bandit_Idle
 #define GEN_SLYDEN_X -311
 #define GEN_SLYDEN_Y 0
 #define GEN_SLYDEN_Z -276
@@ -102,7 +102,7 @@
 
 // type: Marker:NPC
 // name: Gloomothy
-// anim: ANIM_Goomba_Dark_Still
+// anim: ANIM_Goomba_Dark_Idle
 #define GEN_GLOOMOTHY_X 554
 #define GEN_GLOOMOTHY_Y 0
 #define GEN_GLOOMOTHY_Z -237

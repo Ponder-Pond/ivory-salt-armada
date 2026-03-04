@@ -70,6 +70,6 @@ MapSettings dst_00_settings = {
 };
 
 s32 dst_00_map_init(void) {
-    sprintf(wMapBgName, "net_bg");
+    sprintf(wMapBgName, "shp_bg");
     return false;
 }

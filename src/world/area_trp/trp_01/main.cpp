@@ -278,6 +278,6 @@ MapSettings trp_01_settings = {
 };
 
 s32 trp_01_map_init(void) {
-    sprintf(wMapBgName, "net_bg");
+    sprintf(wMapBgName, "shp_bg");
     return false;
 }
