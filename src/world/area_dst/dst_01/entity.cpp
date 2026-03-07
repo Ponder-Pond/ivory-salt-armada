@@ -19,7 +19,7 @@ EvtScript EVS_FocusCam_OnChest = {
 
 #include "world/common/entity/Chest.inc.c"
 
-EvtScript EVS_OpenEnemyChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+EvtScript EVS_OpenEnemyChest = EVT_OPEN_CHEST(ITEM_POWER_PLUS_A, GF_DST01_EnemyChest_PowerPlusA);
 
 API_CALLABLE(PlayBigSmokePuff) {
     Bytecode* args = script->ptrReadPos;
@@ -33,6 +33,9 @@ API_CALLABLE(PlayBigSmokePuff) {
 }
 
 EvtScript EVS_SpawnEnemyChest = {
+    IfEq(GF_DST01_EnemyChestSpawned, true)
+        Return
+    EndIf
     Loop(0)
         IfEq(MV_EnemiesDefeated, 5)
             BreakLoop
@@ -45,7 +48,7 @@ EvtScript EVS_SpawnEnemyChest = {
     Call(PlayBigSmokePuff, GEN_ENEMY_CHEST_VEC)
     Call(PlaySoundAt, SOUND_SMOKE_BURST, SOUND_SPACE_DEFAULT, GEN_ENEMY_CHEST_VEC)
     Call(MakeEntity, Ref(Entity_Chest), GEN_ENEMY_CHEST_PARAMS, MAKE_ENTITY_END)
-    Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
+    Call(AssignChestFlag, GF_DST01_EnemyChest_PowerPlusA)
     Call(AssignScript, Ref(EVS_OpenEnemyChest))
     SetF(LVarA, Float(3.0))
     ExecWait(EVS_FocusCam_OnChest)
@@ -55,14 +58,16 @@ EvtScript EVS_SpawnEnemyChest = {
     End
 };
 
-EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_DEFEND_PLUS_A, GF_DST01_Chest_DefendPlusA);
 
 
 EvtScript EVS_MakeEntities = {
     Call(MakeEntity, Ref(Entity_YellowBlock), GEN_YELLOW_BLOCK_PARAMS, MAKE_ENTITY_END)
-    Call(AssignBlockFlag, GF_TRP00_ItemBlock_Coin)
+    Call(AssignBlockFlag, GEN_YELLOW_BLOCK_FLAG)
+    Call(MakeEntity, Ref(Entity_MulticoinBlock), GEN_YELLOW_BLOCK_PARAMS, MAKE_ENTITY_END)
+    Call(AssignBlockFlag, GEN_MULTICOIN_BLOCK_FLAG)
     Call(MakeEntity, Ref(Entity_Chest), GEN_CHEST_PARAMS, MAKE_ENTITY_END)
-    Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
+    Call(AssignChestFlag, GF_DST01_Chest_DefendPlusA)
     Call(AssignScript, Ref(EVS_OpenChest))
     Call(MakeItemEntity, GEN_DRIED_FRUIT_PARAMS)
     Return

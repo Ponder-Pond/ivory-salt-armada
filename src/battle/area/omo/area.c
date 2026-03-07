@@ -13,77 +13,77 @@ extern Stage A(omo_05b);
 extern Stage A(omo_06);
 extern Stage A(omo_07);
 
-Formation A(Formation_00) = {
-    OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_B, 10),
-    OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_C, 9),
-};
+// Formation A(Formation_00) = {
+//     OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_B, 10),
+//     OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_C, 9),
+// };
 
-Formation A(Formation_01) = {
-    OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_B, 10),
-    OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_C, 9),
-};
+// Formation A(Formation_01) = {
+//     OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_B, 10),
+//     OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_C, 9),
+// };
 
-Formation A(Formation_02) = {
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_B, 10),
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 9),
-};
+// Formation A(Formation_02) = {
+//     OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_B, 10),
+//     OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 9),
+// };
 
-Formation A(Formation_03) = {
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_B, 9),
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 8),
-};
+// Formation A(Formation_03) = {
+//     OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
+//     OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_B, 9),
+//     OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 8),
+// };
 
-Formation A(Formation_04) = {
-    OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_B, 10),
-    OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_C, 9),
-};
+// Formation A(Formation_04) = {
+//     OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_B, 10),
+//     OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_C, 9),
+// };
 
-Formation A(Formation_05) = {
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 10),
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_C, 9),
-};
+// Formation A(Formation_05) = {
+//     OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 10),
+//     OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_C, 9),
+// };
 
 Formation A(Formation_06) = {
-    OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_A, 10),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
 
 Formation A(Formation_07) = {
-    OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_A, 10),
     ACTOR_BY_IDX(A(groove_guy), BTL_POS_GROUND_B, 9),
-    OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
+    // OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
 
 Formation A(Formation_08) = {
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
     OVL_ACTOR_BY_IDX("spy_guy", BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
 
-Formation A(Formation_09) = {
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
-    OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_C, 8),
-    OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_D, 7),
-};
+// Formation A(Formation_09) = {
+    // OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
+    // OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_C, 8),
+    // OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_D, 7),
+// };
 
 Formation A(Formation_0A) = {
-    OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_A, 10),
     OVL_ACTOR_BY_IDX("pyro_guy", BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
 
 Formation A(Formation_0B) = {
-    OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("pink_shy_guy", BTL_POS_GROUND_A, 10),
     ACTOR_BY_IDX(A(groove_guy), BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_D, 7),
 };
 
 Formation A(Formation_0C) = {
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_A, 10),
+    // OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_A, 10),
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
@@ -95,13 +95,13 @@ Formation A(Formation_0D) = {
 
 Formation A(Formation_0E) = {
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_B, 10),
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 9),
+    // OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 9),
 };
 
 Formation A(Formation_0F) = {
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_A, 10),
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_B, 9),
-    OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 8),
+    // OVL_ACTOR_BY_IDX("yellow_shy_guy", BTL_POS_GROUND_C, 8),
 };
 
 Formation A(Formation_10) = {
@@ -117,13 +117,13 @@ Formation A(Formation_11) = {
 
 Formation A(Formation_12) = {
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_A, 10),
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
+    // OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
 };
 
 Formation A(Formation_13) = {
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_A, 10),
-    OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
+    // OVL_ACTOR_BY_IDX("green_shy_guy", BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_C, 8),
     OVL_ACTOR_BY_IDX("medi_guy", BTL_POS_AIR_D, 7),
 };
@@ -268,7 +268,7 @@ Formation A(Formation_2A) = {
 
 Formation A(Formation_2B) = {
     ACTOR_BY_IDX(A(groove_guy), BTL_POS_GROUND_A, 10),
-    OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_B, 9),
+    // OVL_ACTOR_BY_IDX("blue_shy_guy", BTL_POS_GROUND_B, 9),
     OVL_ACTOR_BY_IDX("sky_guy", BTL_POS_AIR_C, 8),
 };
 
@@ -277,16 +277,16 @@ Formation A(Formation_2C) = {
 };
 
 BattleList A(Formations) = {
-    BATTLE(A(Formation_00), A(omo_04), "あかx２"),
-    BATTLE(A(Formation_01), A(omo_04), "あおx２"),
-    BATTLE(A(Formation_02), A(omo_04), "きいろx２"),
-    BATTLE(A(Formation_03), A(omo_04), "きいろx３"),
-    BATTLE(A(Formation_04), A(omo_04), "ももx２"),
-    BATTLE(A(Formation_05), A(omo_04), "みどりx２"),
+    // BATTLE(A(Formation_00), A(omo_04), "あかx２"),
+    // BATTLE(A(Formation_01), A(omo_04), "あおx２"),
+    // BATTLE(A(Formation_02), A(omo_04), "きいろx２"),
+    // BATTLE(A(Formation_03), A(omo_04), "きいろx３"),
+    // BATTLE(A(Formation_04), A(omo_04), "ももx２"),
+    // BATTLE(A(Formation_05), A(omo_04), "みどりx２"),
     BATTLE(A(Formation_06), A(omo_04), "あか,かいふくx２"),
     BATTLE(A(Formation_07), A(omo_04), "あお,ダンシング,かいふく"),
     BATTLE(A(Formation_08), A(omo_04), "きいろ,コマンド,かいふく"),
-    BATTLE(A(Formation_09), A(omo_04), "きいろ,みどり,あか,あお"),
+    // BATTLE(A(Formation_09), A(omo_04), "きいろ,みどり,あか,あお"),
     BATTLE(A(Formation_0A), A(omo_04), "もも,ファイア,かいふく"),
     BATTLE(A(Formation_0B), A(omo_04), "もも,ダンシング,かいふくx２"),
     BATTLE(A(Formation_0C), A(omo_04), "みどり,バルーン,かいふく"),

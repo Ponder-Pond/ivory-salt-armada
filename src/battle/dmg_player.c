@@ -789,7 +789,7 @@ HitResult calc_player_damage_enemy(void) {
 
         // try generating flip trigger events
         if (gBattleStatus.flags1 & BS_FLAGS1_TRIGGER_EVENTS
-            && (battleStatus->curAttackElement & (DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_POW | DAMAGE_TYPE_JUMP))
+            && (battleStatus->curAttackElement & (DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_POW | DAMAGE_TYPE_JUMP | DAMAGE_TYPE_SMASH))
             && targetPart->eventFlags & ACTOR_EVENT_FLAG_FLIPABLE
         ) {
             if (dispatchEvent == EVENT_HIT) {
@@ -808,7 +808,7 @@ HitResult calc_player_damage_enemy(void) {
 
     // try generating flip trigger events
     if (!(gBattleStatus.flags1 & BS_FLAGS1_TRIGGER_EVENTS)
-        && battleStatus->curAttackElement & (DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_POW | DAMAGE_TYPE_JUMP)
+        && battleStatus->curAttackElement & (DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_POW | DAMAGE_TYPE_JUMP | DAMAGE_TYPE_SMASH)
         && targetPart->eventFlags & ACTOR_EVENT_FLAG_FLIPABLE
     ) {
         if (dispatchEvent == EVENT_HIT_COMBO) {

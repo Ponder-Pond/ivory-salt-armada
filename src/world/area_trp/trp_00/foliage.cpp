@@ -3,10 +3,10 @@
 
 namespace trp_00 {
 
-DEFINE_TREE(Tree1, MODEL_TreeLeaves, MODEL_TreeTrunk, GEN_TREE1_VEC, 0.0f)
+DEFINE_PALM_TREE(PalmTree1, MODEL_TreeLeaves, MODEL_Coconuts, MODEL_TreeTrunk, GEN_PALM_TREE1_VEC, 0.0f)
 
 EvtScript EVS_SetFoliage = {
-    BIND_TREE(Tree1, COLLIDER_Tree)
+    BIND_TREE(PalmTree1, COLLIDER_PalmTree)
     Return
     End
 };

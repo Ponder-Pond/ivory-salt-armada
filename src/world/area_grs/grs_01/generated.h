@@ -25,7 +25,7 @@
 
 // type: Marker:NPC
 // name: Goomba1
-// anim: ANIM_Goomba_Still
+// anim: ANIM_Goomba_Idle
 #define GEN_GOOMBA1_X -179
 #define GEN_GOOMBA1_Y 0
 #define GEN_GOOMBA1_Z -251
@@ -35,19 +35,19 @@
 { \
     .wander = { \
         .centerPos   = { -179, 0, -251 }, \
-        .wanderSize  = { 50 }, \
+        .wanderSize  = { 30, 20 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
+        .wanderShape = SHAPE_RECT, \
         .detectPos   = { -179, 0, -251 }, \
-        .detectSize  = { 150, 80 }, \
+        .detectSize  = { 120, 130 }, \
         .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: Goomba2
-// anim: ANIM_Goomba_Still
+// anim: ANIM_Goomba_Idle
 #define GEN_GOOMBA2_X -440
 #define GEN_GOOMBA2_Y 0
 #define GEN_GOOMBA2_Z 220
@@ -57,13 +57,13 @@
 { \
     .wander = { \
         .centerPos   = { -440, 0, 220 }, \
-        .wanderSize  = { 50 }, \
+        .wanderSize  = { 30, 20 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
+        .wanderShape = SHAPE_RECT, \
         .detectPos   = { -440, 0, 220 }, \
-        .detectSize  = { 150, 80 }, \
+        .detectSize  = { 120, 130 }, \
         .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
@@ -79,19 +79,19 @@
 { \
     .wander = { \
         .centerPos   = { 421, -139, -128 }, \
-        .wanderSize  = { 50 }, \
+        .wanderSize  = { 40, 20 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
+        .wanderShape = SHAPE_RECT, \
         .detectPos   = { 421, -139, -128 }, \
-        .detectSize  = { 150, 80 }, \
+        .detectSize  = { 165, 150 }, \
         .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: KoopaTroopa1
-// anim: ANIM_KoopaTroopa_Still
+// anim: ANIM_KoopaTroopa_Idle
 #define GEN_KOOPA_TROOPA1_X 32
 #define GEN_KOOPA_TROOPA1_Y 0
 #define GEN_KOOPA_TROOPA1_Z 143
@@ -107,7 +107,7 @@
         .detectPos   = { 32, 0, 143 }, \
         .detectSize  = { 250 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
@@ -123,13 +123,13 @@
 { \
     .wander = { \
         .centerPos   = { 591, -139, 30 }, \
-        .wanderSize  = { 50 }, \
+        .wanderSize  = { 50, 20 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
-        .wanderShape = SHAPE_CYLINDER, \
+        .wanderShape = SHAPE_RECT, \
         .detectPos   = { 591, -139, 30 }, \
-        .detectSize  = { 150, 80 }, \
-        .detectShape = SHAPE_RECT, \
-        .isFlying = false, \
+        .detectSize  = { 250 }, \
+        .detectShape = SHAPE_CYLINDER, \
+        .isFlying = FALSE, \
     }, \
 }
 
@@ -153,6 +153,7 @@
 #define GEN_YELLOW_BLOCK_VEC 220,60,-318
 #define GEN_YELLOW_BLOCK_XYZA 220, 60, -318, 0
 #define GEN_YELLOW_BLOCK_ITEM ITEM_MUSHROOM
+#define GEN_YELLOW_BLOCK_FLAG GF_GRS01_ItemBlock_Mushroom
 #define GEN_YELLOW_BLOCK_PARAMS GEN_YELLOW_BLOCK_XYZA, GEN_YELLOW_BLOCK_ITEM
 
 // type: Marker:Entity:SimpleSpring
@@ -176,15 +177,15 @@
 #define GEN_PADLOCK_XYZA 260, -135, 642, 40
 #define GEN_PADLOCK_PARAMS GEN_PADLOCK_XYZA
 
-// type: Marker:Entity:Chest
-// name: Chest
-#define GEN_CHEST_X -155
-#define GEN_CHEST_Y -139
-#define GEN_CHEST_Z 539
-#define GEN_CHEST_DIR 10
-#define GEN_CHEST_VEC -155,-139,539
-#define GEN_CHEST_XYZA -155, -139, 539, 10
-#define GEN_CHEST_PARAMS GEN_CHEST_XYZA
+// type: Marker:Entity:GiantChest
+// name: GiantChest
+#define GEN_GIANT_CHEST_X -150
+#define GEN_GIANT_CHEST_Y -139
+#define GEN_GIANT_CHEST_Z 570
+#define GEN_GIANT_CHEST_DIR 15
+#define GEN_GIANT_CHEST_VEC -150,-139,570
+#define GEN_GIANT_CHEST_XYZA -150, -139, 570, 15
+#define GEN_GIANT_CHEST_PARAMS GEN_GIANT_CHEST_XYZA
 
 // type: Marker:Entity:SimpleSpring
 // name: Spring2

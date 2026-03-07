@@ -63,9 +63,9 @@ Formation A(Formation_09) = {
     OVL_ACTOR_BY_IDX("koopatrol", BTL_POS_GROUND_C, 9),
 };
 
-Formation A(Formation_0A) = {
-    OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_B, 10),
-};
+// Formation A(Formation_0A) = {
+//     OVL_ACTOR_BY_IDX("red_shy_guy", BTL_POS_GROUND_B, 10),
+// };
 
 BattleList A(Formations) = {
     BATTLE(A(Formation_00), A(omo_03), "ビッグカンテラくん"),
@@ -78,7 +78,7 @@ BattleList A(Formations) = {
     BATTLE(A(Formation_07), A(omo_04), "ハンマーブロス（ピーチへん）"),
     BATTLE(A(Formation_08), A(omo_04), "サンボx２（ピーチへん）"),
     BATTLE(A(Formation_09), A(omo_04), "トゲノコx２（ピーチへん）"),
-    BATTLE(A(Formation_0A), A(omo_01), "ヘイホー"),
+    // BATTLE(A(Formation_0A), A(omo_01), "ヘイホー"),
     {},
 };
 

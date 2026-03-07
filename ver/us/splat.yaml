@@ -6322,24 +6322,24 @@ segments:
     - [auto, c, stage/dgb_04]
     - [auto, c, stage/dgb_05]
     - [auto, c, area]
-  - dir: battle/area/omo
-    type: code
-    start: 0x5125D0
-    vram_class: battle_area
-    subalign: 8
-    subsegments:
-    - [auto, c, actor/anti_guy]
-    - [auto, c, actor/groove_guy]
-    - [auto, c, stage/omo_01]
-    - [auto, c, stage/omo_02]
-    - [auto, c, stage/omo_03]
-    - [auto, c, stage/omo_03b]
-    - [auto, c, stage/omo_04]
-    - [auto, c, stage/omo_05]
-    - [auto, c, stage/omo_05b]
-    - [auto, c, stage/omo_06]
-    - [auto, c, stage/omo_07]
-    - [auto, c, area]
+  # - dir: battle/area/omo
+  #   type: code
+  #   start: 0x5125D0
+  #   vram_class: battle_area
+  #   subalign: 8
+  #   subsegments:
+  #   - [auto, c, actor/anti_guy]
+  #   - [auto, c, actor/groove_guy]
+  #   - [auto, c, stage/omo_01]
+  #   - [auto, c, stage/omo_02]
+  #   - [auto, c, stage/omo_03]
+  #   - [auto, c, stage/omo_03b]
+  #   - [auto, c, stage/omo_04]
+  #   - [auto, c, stage/omo_05]
+  #   - [auto, c, stage/omo_05b]
+  #   - [auto, c, stage/omo_06]
+  #   - [auto, c, stage/omo_07]
+  #   - [auto, c, area]
   - dir: battle/area/omo2
     type: code
     start: 0x52B6A0

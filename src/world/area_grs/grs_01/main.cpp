@@ -235,7 +235,7 @@ NpcGroupList DefaultNPCs = {
 };
 
 s32 KeyList[] = {
-    ITEM_RUINS_KEY,
+    ITEM_KOOPA_FORTRESS_KEY,
     ITEM_NONE
 };
 
@@ -252,7 +252,9 @@ EvtScript EVS_Main = {
     Call(MakeNpcs, true, Ref(DefaultNPCs))
     BindPadlock(Ref(EVS_UnlockSpring), TRIGGER_WALL_PRESS_A, EVT_ENTITY_INDEX(0), Ref(KeyList), 0, 1)
     ExecWait(EVS_MakeEntities)
-    Exec(EVS_SpawnChest)
+    IfEq(GF_GRS01_EnemyChestSpawned, false)
+        Exec(EVS_SpawnEnemyChest)
+    EndIf
     Return
     End
 };

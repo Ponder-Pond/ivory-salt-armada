@@ -10,7 +10,7 @@ EvtScript EVS_FocusCam_OnChest = {
     Call(SetCamDistance, CAM_DEFAULT, Float(350.0))
     Call(SetCamPitch, CAM_DEFAULT, Float(12.0), Float(-5.5))
     Call(SetCamPosB, CAM_DEFAULT, Float(500.0), Float(20.0))
-    Call(SetPanTarget, CAM_DEFAULT, GEN_CHEST_VEC)
+    Call(SetPanTarget, CAM_DEFAULT, GEN_ENEMY_CHEST_VEC)
     Call(PanToTarget, CAM_DEFAULT, 0, true)
     Call(WaitForCam, CAM_DEFAULT, Float(1.0))
     Return
@@ -19,7 +19,7 @@ EvtScript EVS_FocusCam_OnChest = {
 
 #include "world/common/entity/Chest.inc.c"
 
-EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_HAMMER_THROW, GF_TRP00_EnemyChest_HammerThrow);
 
 API_CALLABLE(PlayBigSmokePuff) {
     Bytecode* args = script->ptrReadPos;
@@ -32,9 +32,12 @@ API_CALLABLE(PlayBigSmokePuff) {
     return ApiStatus_DONE2;
 }
 
-EvtScript EVS_SpawnTreasureChest = {
+EvtScript EVS_SpawnEnemyChest = {
+    IfEq(GF_TRP00_EnemyChestSpawned, true)
+        Return
+    EndIf
     Loop(0)
-        IfEq(MapVar(0), true)
+        IfEq(MV_EnemiesDefeated, true)
             BreakLoop
         EndIf
         Wait(1)
@@ -42,10 +45,10 @@ EvtScript EVS_SpawnTreasureChest = {
     Call(DisablePlayerInput, true)
     Call(PlaySound, SOUND_CHIME_SOLVED_PUZZLE)
     Wait(30)
-    Call((PlayBigSmokePuff), GEN_CHEST_VEC)
-    Call(PlaySoundAt, SOUND_SMOKE_BURST, SOUND_SPACE_DEFAULT, GEN_CHEST_VEC)
-    Call(MakeEntity, Ref(Entity_Chest), GEN_CHEST_PARAMS, MAKE_ENTITY_END)
-    Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
+    Call(PlayBigSmokePuff, GEN_ENEMY_CHEST_VEC)
+    Call(PlaySoundAt, SOUND_SMOKE_BURST, SOUND_SPACE_DEFAULT, GEN_ENEMY_CHEST_VEC)
+    Call(MakeEntity, Ref(Entity_Chest), GEN_ENEMY_CHEST_PARAMS, MAKE_ENTITY_END)
+    Call(AssignChestFlag, GF_TRP00_EnemyChest_HammerThrow)
     Call(AssignScript, Ref(EVS_OpenChest))
     SetF(LVarA, Float(3.0))
     ExecWait(EVS_FocusCam_OnChest)
@@ -56,8 +59,8 @@ EvtScript EVS_SpawnTreasureChest = {
 };
 
 EvtScript EVS_MakeEntities = {
-    Call(MakeEntity, Ref(Entity_HiddenYellowBlock), GEN_HIDDEN_ITEM_BLOCK1_PARAMS, MAKE_ENTITY_END)
-    Call(AssignBlockFlag, GF_TRP00_ItemBlock_Coin)
+    Call(MakeEntity, Ref(Entity_HiddenYellowBlock), GEN_HIDDEN_YELLOW_BLOCK_PARAMS, MAKE_ENTITY_END)
+    Call(AssignBlockFlag, GF_TRP00_ItemBlock_FireFlower)
     Return
     End
 };

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map desc="Ship Exterior" background="shp_bg" textures="net_tex">
 	<Editor>
-		<Camera pos="-123.356956,124.172485,146.059433" pitch="8.000053" yaw="23.483475"/>
-		<Camera pos="-27.000000,65536.000000,167.000000"/>
-		<Camera pos="65536.000000,227.000000,167.000000"/>
-		<Camera pos="-30.412441,259.709717,65536.000000"/>
+		<Camera pos="-237.948792,260.401031,589.177002" pitch="32.440006" yaw="359.200897"/>
+		<Camera pos="-352.309631,65536.000000,-316.463928"/>
+		<Camera pos="65536.000000,162.000000,-330.000000"/>
+		<Camera pos="-353.846680,127.780190,65536.000000"/>
 	</Editor>
 	<ModelTree>
 		<Node name="Root" id="32">
@@ -63,7 +63,7 @@
 		</Node>
 	</ModelTree>
 	<ColliderTree>
-		<Node name="Root" id="F">
+		<Node name="Root" id="13">
 			<Node name="Floor" id="0"/>
 			<Node name="Wall" id="1"/>
 			<Node name="ShipBound" id="2"/>
@@ -79,6 +79,10 @@
 			<Node name="BoxWall2" id="C"/>
 			<Node name="Boxes" id="D"/>
 			<Node name="Treasure" id="E"/>
+			<Node name="ExtraWall1" id="F"/>
+			<Node name="ExtraWall2" id="10"/>
+			<Node name="ExtraWall3" id="11"/>
+			<Node name="ExtraWall4" id="12"/>
 		</Node>
 	</ColliderTree>
 	<ZoneTree>
@@ -119,7 +123,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Windows" id="30" hidden="true"/>
+			<MapObject name="Windows" id="30"/>
 			<ShapeMesh ver="3" texture="net_window1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -203,7 +207,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="CannonballPile" id="2F" hidden="true"/>
+			<MapObject name="CannonballPile" id="2F"/>
 			<ShapeMesh ver="3" texture="net_cannonballstif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -329,7 +333,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Cannons" id="2E" hidden="true"/>
+			<MapObject name="Cannons" id="2E"/>
 			<ShapeMesh ver="3" texture="net_trim2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -951,7 +955,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Wheel" id="2D" hidden="true"/>
+			<MapObject name="Wheel" id="2D"/>
 			<ShapeMesh ver="3" texture="net_wheeltif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -993,7 +997,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Grate" id="2C" hidden="true"/>
+			<MapObject name="Grate" id="2C"/>
 			<ShapeMesh ver="3" texture="net_grate1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1035,7 +1039,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Rail" id="2B" hidden="true"/>
+			<MapObject name="Rail" id="2B"/>
 			<ShapeMesh ver="3" texture="net_railingtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1485,7 +1489,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Wood" id="2A" hidden="true"/>
+			<MapObject name="Wood" id="2A"/>
 			<ShapeMesh ver="3" texture="net_planks4tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2627,7 +2631,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Mast" id="29" hidden="true"/>
+			<MapObject name="Mast" id="29"/>
 			<ShapeMesh ver="3" texture="net_frametif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3245,7 +3249,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="SailLogo" id="28" hidden="true"/>
+			<MapObject name="SailLogo" id="28"/>
 			<ShapeMesh ver="3" texture="net_logotif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3335,7 +3339,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Sails" id="27" hidden="true"/>
+			<MapObject name="Sails" id="27"/>
 			<ShapeMesh ver="3" texture="net_clothtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -7134,7 +7138,7 @@
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
 			<MapObject name="CannonBallCrate" id="1B"/>
-			<ShapeMesh ver="3" texture="net_crate2tif">
+			<ShapeMesh ver="3" texture="shp_crate2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
 					<F3DEX2 cmd="D9FDFFFF,0"/>
@@ -10402,11 +10406,91 @@
 	</Models>
 	<Colliders>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Root" id="F"/>
+			<MapObject name="Root" id="13"/>
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Treasure" id="E" hidden="true"/>
+			<MapObject name="ExtraWall4" id="12"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="-353,110,349" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,206,307" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,206,349" uv="-512,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,111,308" uv="-2048,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,206,307" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,110,349" uv="-512,-1056" rgba="109,98,61,255"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
+		<Collider ver="0" flags="0" surface="0">
+			<MapObject name="ExtraWall3" id="11"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="-353,100,308" uv="-2048,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,202,309" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-191,-17,309" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-191,-17,309" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,202,309" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-110,89,309" uv="-512,800" rgba="109,98,61,255"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2"/>
+						<Triangle ijk="3,4,5"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
+		<Collider ver="0" flags="0" surface="0">
+			<MapObject name="ExtraWall2" id="10"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="-353,114,-309" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,210,-351" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,210,-309" uv="-512,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,115,-350" uv="-2048,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-354,210,-351" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,114,-309" uv="-512,-1056" rgba="109,98,61,255"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
+		<Collider ver="0" flags="0" surface="0">
+			<MapObject name="ExtraWall1" id="F"/>
+			<HitObject type="HIT"/>
+			<HitMesh ver="0">
+				<TriangleBatch ver="0">
+					<VertexTable>
+						<Vertex xyz="-353,100,-310" uv="-2048,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,202,-309" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-191,-17,-309" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-191,-17,-309" uv="-512,-1056" rgba="109,98,61,255"/>
+						<Vertex xyz="-353,202,-309" uv="-2048,800" rgba="109,98,61,255"/>
+						<Vertex xyz="-110,89,-309" uv="-512,800" rgba="109,98,61,255"/>
+					</VertexTable>
+					<TriangleList>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+					</TriangleList>
+				</TriangleBatch>
+			</HitMesh>
+		</Collider>
+		<Collider ver="0" flags="0" surface="0">
+			<MapObject name="Treasure" id="E"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10466,7 +10550,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Boxes" id="D" hidden="true"/>
+			<MapObject name="Boxes" id="D"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10558,7 +10642,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="BoxWall2" id="C" hidden="true"/>
+			<MapObject name="BoxWall2" id="C"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10580,7 +10664,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="BoxWall1" id="B" hidden="true"/>
+			<MapObject name="BoxWall1" id="B"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10606,7 +10690,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Wheel" id="A" hidden="true"/>
+			<MapObject name="Wheel" id="A"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10636,7 +10720,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="TrapDoor" id="9" hidden="true"/>
+			<MapObject name="TrapDoor" id="9"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10688,7 +10772,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="CannonBallBound" id="8" hidden="true"/>
+			<MapObject name="CannonBallBound" id="8"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10730,7 +10814,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Mast2" id="7" hidden="true"/>
+			<MapObject name="Mast2" id="7"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10838,7 +10922,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Mast1" id="6" hidden="true"/>
+			<MapObject name="Mast1" id="6"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10946,7 +11030,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="CrowsNest" id="5" hidden="true"/>
+			<MapObject name="CrowsNest" id="5"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11054,7 +11138,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="StairWall" id="4" hidden="true"/>
+			<MapObject name="StairWall" id="4"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11073,16 +11157,16 @@
 						<Vertex xyz="-353,0,180" uv="1662,-1728" rgba="115,63,49,255"/>
 					</VertexTable>
 					<TriangleList>
-						<Triangle ijk="0,1,2"/>
-						<Triangle ijk="3,4,5"/>
-						<Triangle ijk="6,7,8"/>
-						<Triangle ijk="9,10,11"/>
+						<Triangle ijk="0,1,2" doubleSided="true"/>
+						<Triangle ijk="3,4,5" doubleSided="true"/>
+						<Triangle ijk="6,7,8" doubleSided="true"/>
+						<Triangle ijk="9,10,11" doubleSided="true"/>
 					</TriangleList>
 				</TriangleBatch>
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Stairs" id="3" hidden="true"/>
+			<MapObject name="Stairs" id="3"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11734,7 +11818,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="ShipBound" id="2" hidden="true"/>
+			<MapObject name="ShipBound" id="2"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11890,7 +11974,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Wall" id="1" hidden="true"/>
+			<MapObject name="Wall" id="1"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11934,7 +12018,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Floor" id="0" hidden="true"/>
+			<MapObject name="Floor" id="0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -12048,7 +12132,7 @@
 			<HitObject type="ROOT"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="Floor" id="0" hidden="true"/>
+			<MapObject name="Floor" id="0"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">

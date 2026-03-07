@@ -84,7 +84,7 @@ BattleArea gBattleAreas[] = {
     BTL_AREA_C(mim, "エリア ＭＩＭ"),
     BTL_AREA_C(arn, "エリア ＡＲＮ"),
     BTL_AREA_C(dgb, "エリア ＤＧＢ"),
-    BTL_AREA_C(omo, "エリア ＯＭＯ"),
+    // BTL_AREA_C(omo, "エリア ＯＭＯ"),
     BTL_AREA_C(omo2, "エリア ＯＭＯ２"),
     BTL_AREA_C(omo3, "エリア ＯＭＯ３"),
     BTL_AREA_C(kgr, "エリア ＫＧＲ"),

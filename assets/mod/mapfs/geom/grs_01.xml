@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map desc="Beach" background="shp_bg" textures="grs_tex">
 	<Editor>
-		<Camera pos="227.595291,76.002228,-235.256485" pitch="21.039995" yaw="4.880056"/>
-		<Camera pos="-896.000000,65536.000000,0.000000"/>
-		<Camera pos="65536.000000,106.149651,308.167297"/>
-		<Camera pos="-965.713562,42.023396,65536.000000"/>
+		<Camera pos="1.742789,311.481201,896.327576" pitch="-17.520037" yaw="312.441742"/>
+		<Camera pos="-201.000000,65536.000000,606.000000"/>
+		<Camera pos="65536.000000,-34.000000,606.000000"/>
+		<Camera pos="-201.000000,-34.000000,65536.000000"/>
 	</Editor>
 	<ModelTree>
 		<Node name="Root" id="48">
@@ -151,7 +151,7 @@
 				<Node name="YellowBlock" id="8"/>
 				<Node name="Spring1" id="9"/>
 				<Node name="Padlock" id="A"/>
-				<Node name="Chest" id="B"/>
+				<Node name="GiantChest" id="B"/>
 				<Node name="Spring2" id="C"/>
 			</Node>
 			<Node name="Foliage" id="19">
@@ -8334,7 +8334,7 @@
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="SpringLockWall" id="21"/>
+			<MapObject name="SpringLockWall" id="21" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8354,7 +8354,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="SpringLockTop" id="20"/>
+			<MapObject name="SpringLockTop" id="20" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8372,7 +8372,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="1F"/>
+			<MapObject name="MeshCollider" id="1F" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8432,7 +8432,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="1E"/>
+			<MapObject name="MeshCollider" id="1E" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8452,7 +8452,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="1D"/>
+			<MapObject name="MeshCollider" id="1D" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8488,7 +8488,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="1C"/>
+			<MapObject name="MeshCollider" id="1C" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8508,7 +8508,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="RockBlockade3" id="1B"/>
+			<MapObject name="RockBlockade3" id="1B" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8660,7 +8660,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="RockBlockade2" id="1A"/>
+			<MapObject name="RockBlockade2" id="1A" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8812,7 +8812,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="RockBlockade1" id="19"/>
+			<MapObject name="RockBlockade1" id="19" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8964,7 +8964,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="18"/>
+			<MapObject name="MeshCollider" id="18" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8984,7 +8984,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="RockStep2" id="17"/>
+			<MapObject name="RockStep2" id="17" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9136,7 +9136,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="RockStep1" id="16"/>
+			<MapObject name="RockStep1" id="16" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9288,7 +9288,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="DrawnCollider" id="15"/>
+			<MapObject name="DrawnCollider" id="15" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9322,7 +9322,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="14"/>
+			<MapObject name="MeshCollider" id="14" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9342,7 +9342,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="13"/>
+			<MapObject name="MeshCollider" id="13" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9362,7 +9362,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="12"/>
+			<MapObject name="MeshCollider" id="12" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9382,7 +9382,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="11"/>
+			<MapObject name="MeshCollider" id="11" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9538,7 +9538,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="10"/>
+			<MapObject name="MeshCollider" id="10" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9558,7 +9558,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="MeshCollider" id="F"/>
+			<MapObject name="MeshCollider" id="F" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9610,7 +9610,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Dock" id="E"/>
+			<MapObject name="Dock" id="E" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9662,7 +9662,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="WallsIsland" id="D"/>
+			<MapObject name="WallsIsland" id="D" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9728,7 +9728,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="FloorIsland" id="C"/>
+			<MapObject name="FloorIsland" id="C" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9792,7 +9792,7 @@
 			<HitObject type="GROUP"/>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush8" id="A"/>
+			<MapObject name="Bush8" id="A" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9812,7 +9812,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush7" id="9"/>
+			<MapObject name="Bush7" id="9" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9832,7 +9832,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush6" id="8"/>
+			<MapObject name="Bush6" id="8" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9852,7 +9852,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush5" id="7"/>
+			<MapObject name="Bush5" id="7" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9872,7 +9872,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush4" id="6"/>
+			<MapObject name="Bush4" id="6" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9892,7 +9892,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush3" id="5"/>
+			<MapObject name="Bush3" id="5" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9912,17 +9912,17 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush2" id="4"/>
+			<MapObject name="Bush2" id="4" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-330,0,433" rgba="0,134,53,255"/>
-						<Vertex xyz="-258,0,433" uv="2048,0" rgba="0,134,53,255"/>
-						<Vertex xyz="-258,34,433" uv="2048,1022" rgba="77,167,117,255"/>
-						<Vertex xyz="-330,0,433" rgba="0,134,53,255"/>
-						<Vertex xyz="-258,34,433" uv="2048,1022" rgba="77,167,117,255"/>
-						<Vertex xyz="-330,34,433" uv="0,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-365,0,220" rgba="0,134,53,255"/>
+						<Vertex xyz="-293,0,220" uv="2048,0" rgba="0,134,53,255"/>
+						<Vertex xyz="-293,34,220" uv="2048,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-365,0,220" rgba="0,134,53,255"/>
+						<Vertex xyz="-293,34,220" uv="2048,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-365,34,220" uv="0,1022" rgba="77,167,117,255"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2" doubleSided="true"/>
@@ -9932,17 +9932,17 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush1" id="3"/>
+			<MapObject name="Bush1" id="3" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-580,0,252" rgba="0,134,53,255"/>
-						<Vertex xyz="-508,0,252" uv="2048,0" rgba="0,134,53,255"/>
-						<Vertex xyz="-508,34,252" uv="2048,1022" rgba="77,167,117,255"/>
-						<Vertex xyz="-580,0,252" rgba="0,134,53,255"/>
-						<Vertex xyz="-508,34,252" uv="2048,1022" rgba="77,167,117,255"/>
-						<Vertex xyz="-580,34,252" uv="0,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-580,0,220" rgba="0,134,53,255"/>
+						<Vertex xyz="-508,0,220" uv="2048,0" rgba="0,134,53,255"/>
+						<Vertex xyz="-508,34,220" uv="2048,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-580,0,220" rgba="0,134,53,255"/>
+						<Vertex xyz="-508,34,220" uv="2048,1022" rgba="77,167,117,255"/>
+						<Vertex xyz="-580,34,220" uv="0,1022" rgba="77,167,117,255"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2" doubleSided="true"/>
@@ -9952,7 +9952,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree3" id="2"/>
+			<MapObject name="Tree3" id="2" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9996,7 +9996,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree2" id="1"/>
+			<MapObject name="Tree2" id="1" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10026,7 +10026,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree1" id="0"/>
+			<MapObject name="Tree1" id="0" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10295,9 +10295,9 @@
 			<MapObject name="Spring2" id="C"/>
 			<Entity type="SimpleSpring" launchDist="60"/>
 		</Marker>
-		<Marker ver="4" type="Entity" pos="-155,-139,539" yaw="10.000000">
-			<MapObject name="Chest" id="B"/>
-			<Entity type="Chest"/>
+		<Marker ver="4" type="Entity" pos="-150,-139,570" yaw="15.000000">
+			<MapObject name="GiantChest" id="B"/>
+			<Entity type="GiantChest"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="260,-135,642" yaw="40.000000">
 			<MapObject name="Padlock" id="A"/>
@@ -10309,7 +10309,7 @@
 		</Marker>
 		<Marker ver="4" type="Entity" pos="220,60,-318" yaw="0.000000">
 			<MapObject name="YellowBlock" id="8"/>
-			<Entity type="YellowBlock" item="ITEM_MUSHROOM"/>
+			<Entity type="YellowBlock" item="ITEM_MUSHROOM" gameFlag="GF_GRS01_ItemBlock_Mushroom"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="Enemies" id="7"/>
@@ -10321,28 +10321,28 @@
 		</Marker>
 		<Marker ver="4" type="NPC" pos="591,-139,30" yaw="0.000000">
 			<MapObject name="KoopaTroopa2" id="5"/>
-			<Movement type="Wander" data="24F,FFFFFF75,1E,32,0,FFFF8001,0,24F,FFFFFF75,1E,96,50,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="24F,FFFFFF75,1E,32,14,FFFF8001,1,24F,FFFFFF75,1E,FA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_KoopaTroopa_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="32,0,143" yaw="0.000000">
 			<MapObject name="KoopaTroopa1" id="4"/>
 			<Movement type="Wander" data="20,0,8F,32,14,FFFF8001,1,20,0,8F,FA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_KoopaTroopa_Still"/>
+			<Sprite animation="ANIM_KoopaTroopa_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="421,-139,-128" yaw="0.000000">
 			<MapObject name="SpikedGoomba" id="3"/>
-			<Movement type="Wander" data="1A5,FFFFFF75,FFFFFF80,32,0,FFFF8001,0,1A5,FFFFFF75,FFFFFF80,96,50,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="1A5,FFFFFF75,FFFFFF80,28,14,FFFF8001,1,1A5,FFFFFF75,FFFFFF80,A5,96,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_SpikedGoomba_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-440,0,220" yaw="0.000000">
 			<MapObject name="Goomba2" id="2"/>
-			<Movement type="Wander" data="FFFFFE48,0,DC,32,0,FFFF8001,0,FFFFFE48,0,DC,96,50,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Goomba_Still"/>
+			<Movement type="Wander" data="FFFFFE48,0,DC,1E,14,FFFF8001,1,FFFFFE48,0,DC,78,82,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite animation="ANIM_Goomba_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-179,0,-251" yaw="0.000000">
 			<MapObject name="Goomba1" id="1"/>
-			<Movement type="Wander" data="FFFFFF4D,0,FFFFFF05,32,0,FFFF8001,0,FFFFFF4D,0,FFFFFF05,96,50,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Goomba_Still"/>
+			<Movement type="Wander" data="FFFFFF4D,0,FFFFFF05,1E,14,FFFF8001,1,FFFFFF4D,0,FFFFFF05,78,82,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Sprite animation="ANIM_Goomba_Idle"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="Entries" id="0"/>

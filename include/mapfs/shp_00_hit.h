@@ -1,4 +1,8 @@
-#define COLLIDER_Root           0xF
+#define COLLIDER_Root           0x13
+#define COLLIDER_ExtraWall4     0x12
+#define COLLIDER_ExtraWall3     0x11
+#define COLLIDER_ExtraWall2     0x10
+#define COLLIDER_ExtraWall1     0xF
 #define COLLIDER_Treasure       0xE
 #define COLLIDER_Boxes          0xD
 #define COLLIDER_BoxWall2       0xC

@@ -35,13 +35,13 @@
 { \
     .wander = { \
         .centerPos   = { -343, 0, 260 }, \
-        .wanderSize  = { 100 }, \
+        .wanderSize  = { 200 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
         .wanderShape = SHAPE_CYLINDER, \
         .detectPos   = { -343, 0, 260 }, \
-        .detectSize  = { 250 }, \
+        .detectSize  = { 400 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
@@ -57,13 +57,13 @@
 { \
     .wander = { \
         .centerPos   = { 255, 0, 594 }, \
-        .wanderSize  = { 100 }, \
+        .wanderSize  = { 50 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
         .wanderShape = SHAPE_CYLINDER, \
         .detectPos   = { 255, 0, 594 }, \
-        .detectSize  = { 250 }, \
+        .detectSize  = { 500 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
@@ -79,13 +79,13 @@
 { \
     .wander = { \
         .centerPos   = { -38, 0, -512 }, \
-        .wanderSize  = { 100 }, \
+        .wanderSize  = { 200 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
         .wanderShape = SHAPE_CYLINDER, \
         .detectPos   = { -38, 0, -512 }, \
-        .detectSize  = { 300 }, \
+        .detectSize  = { 400 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
@@ -101,19 +101,19 @@
 { \
     .wander = { \
         .centerPos   = { 490, 0, -205 }, \
-        .wanderSize  = { 100 }, \
+        .wanderSize  = { 50 }, \
         .moveSpeedOverride = NO_OVERRIDE_MOVEMENT_SPEED, \
         .wanderShape = SHAPE_CYLINDER, \
         .detectPos   = { 490, 0, -205 }, \
-        .detectSize  = { 250 }, \
+        .detectSize  = { 500 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: Cleft
-// anim: ANIM_Cleft_Anim02
+// anim: ANIM_Cleft_Anim14
 #define GEN_CLEFT_X 93
 #define GEN_CLEFT_Y 0
 #define GEN_CLEFT_Z 254
@@ -129,7 +129,7 @@
         .detectPos   = { 93, 0, 254 }, \
         .detectSize  = { 125 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
@@ -151,8 +151,20 @@
 #define GEN_YELLOW_BLOCK_DIR 0
 #define GEN_YELLOW_BLOCK_VEC 479,60,-360
 #define GEN_YELLOW_BLOCK_XYZA 479, 60, -360, 0
-#define GEN_YELLOW_BLOCK_ITEM ITEM_NONE
+#define GEN_YELLOW_BLOCK_ITEM ITEM_REPEL_GEL
 #define GEN_YELLOW_BLOCK_PARAMS GEN_YELLOW_BLOCK_XYZA, GEN_YELLOW_BLOCK_ITEM
+#define GEN_YELLOW_BLOCK_FLAG GF_DST01_ItemBlock_RepelGel
+
+// type: Marker:Entity:MulticoinBlock
+// name: MulticoinBlock
+#define GEN_MULTICOIN_BLOCK_X 479
+#define GEN_MULTICOIN_BLOCK_Y 60
+#define GEN_MULTICOIN_BLOCK_Z -360
+#define GEN_MULTICOIN_BLOCK_DIR 0
+#define GEN_MULTICOIN_BLOCK_VEC 479,60,-360
+#define GEN_MULTICOIN_BLOCK_XYZA 479, 60, -360, 0
+#define GEN_MULTICOIN_BLOCK_PARAMS GEN_MULTICOIN_BLOCK_XYZA
+#define GEN_MULTICOIN_BLOCK_FLAG GF_DST01_MulticoinBlock
 
 // type: Marker:Entity:Chest
 // name: EnemyChest
@@ -191,3 +203,4 @@
 #define GEN_BUSH1_Z -331
 #define GEN_BUSH1_DIR 0
 #define GEN_BUSH1_VEC -102,0,-331
+

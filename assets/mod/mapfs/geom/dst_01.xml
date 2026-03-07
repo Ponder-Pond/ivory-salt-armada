@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map desc="Beach" background="shp_bg" textures="dst_tex">
 	<Editor>
-		<Camera pos="313.108551,96.630051,420.549866" pitch="19.040030" yaw="63.760567"/>
+		<Camera pos="-266.781586,89.827354,42.953911" pitch="10.240001" yaw="345.521393"/>
 		<Camera pos="73.000000,65536.000000,-35.000000"/>
 		<Camera pos="65536.000000,80.000000,-35.000000"/>
 		<Camera pos="73.000000,80.000000,65536.000000"/>
@@ -59,7 +59,7 @@
 		</Node>
 	</ZoneTree>
 	<MarkerTree>
-		<Node name="Root" id="F">
+		<Node name="Root" id="10">
 			<Node name="Entries" id="0">
 				<Node name="Entry0" id="FFFFFFFF"/>
 			</Node>
@@ -70,15 +70,16 @@
 				<Node name="Bandit2" id="4"/>
 				<Node name="Cleft" id="5"/>
 			</Node>
-			<Node name="Entities" id="B">
+			<Node name="Entities" id="C">
 				<Node name="Chest" id="7"/>
 				<Node name="YellowBlock" id="8"/>
-				<Node name="EnemyChest" id="9"/>
-				<Node name="DriedFruit" id="A"/>
+				<Node name="MulticoinBlock" id="9"/>
+				<Node name="EnemyChest" id="A"/>
+				<Node name="DriedFruit" id="B"/>
 			</Node>
-			<Node name="Foliage" id="E">
-				<Node name="Tree1" id="C"/>
-				<Node name="Bush1" id="D"/>
+			<Node name="Foliage" id="F">
+				<Node name="Tree1" id="D"/>
+				<Node name="Bush1" id="E"/>
 			</Node>
 		</Node>
 	</MarkerTree>
@@ -6092,11 +6093,11 @@
 							<Vertex xyz="-284,54,-83" uv="1335,349" rgba="239,166,117,255"/>
 							<Vertex xyz="-281,43,-83" uv="1336,164" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,47,-83" uv="1745,352" rgba="239,166,117,255"/>
+							<Vertex xyz="-298,61,-78" uv="1565,536" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
-							<Vertex xyz="-298,61,-78" uv="1565,536" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,47,-83" uv="1745,352" rgba="239,166,117,255"/>
-							<Vertex xyz="-298,61,-78" uv="1565,536" rgba="239,166,117,255"/>
 							<Vertex xyz="-291,61,-79" uv="1354,503" rgba="239,166,117,255"/>
+							<Vertex xyz="-298,61,-78" uv="1565,536" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,47,-83" uv="1745,352" rgba="239,166,117,255"/>
 							<Vertex xyz="-291,61,-79" uv="1354,503" rgba="239,166,117,255"/>
 							<Vertex xyz="-288,57,-81" uv="1343,426" rgba="239,166,117,255"/>
@@ -6104,11 +6105,11 @@
 							<Vertex xyz="-288,57,-81" uv="1343,426" rgba="239,166,117,255"/>
 							<Vertex xyz="-284,54,-83" uv="1335,349" rgba="239,166,117,255"/>
 							<Vertex xyz="-309,45,-64" uv="2149,353" rgba="239,166,117,255"/>
+							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
 							<Vertex xyz="-307,58,-66" uv="2149,537" rgba="239,166,117,255"/>
-							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
 							<Vertex xyz="-309,45,-64" uv="2149,353" rgba="239,166,117,255"/>
-							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,47,-83" uv="1745,352" rgba="239,166,117,255"/>
+							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
 							<Vertex xyz="-298,61,-78" uv="1565,536" rgba="239,166,117,255"/>
 							<Vertex xyz="-303,59,-78" uv="1745,537" rgba="239,166,117,255"/>
 							<Vertex xyz="-307,58,-66" uv="2149,537" rgba="239,166,117,255"/>
@@ -8286,7 +8287,7 @@
 			<HitObject type="ROOT"/>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Rock" id="E"/>
+			<MapObject name="Rock" id="E" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8508,7 +8509,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Rocks2" id="D"/>
+			<MapObject name="Rocks2" id="D" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8836,7 +8837,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Bush1" id="C"/>
+			<MapObject name="Bush1" id="C" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8864,7 +8865,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Tree1" id="B"/>
+			<MapObject name="Tree1" id="B" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -8948,7 +8949,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Rocks" id="A"/>
+			<MapObject name="Rocks" id="A" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -9460,7 +9461,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cliff" id="9"/>
+			<MapObject name="Cliff" id="9" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -10676,7 +10677,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus6" id="8"/>
+			<MapObject name="Cactus6" id="8" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11284,7 +11285,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus5" id="7"/>
+			<MapObject name="Cactus5" id="7" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11336,7 +11337,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus4" id="6"/>
+			<MapObject name="Cactus4" id="6" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11396,7 +11397,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus3" id="5"/>
+			<MapObject name="Cactus3" id="5" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11464,7 +11465,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus2" id="4"/>
+			<MapObject name="Cactus2" id="4" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11516,7 +11517,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Cactus1" id="3"/>
+			<MapObject name="Cactus1" id="3" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11568,31 +11569,31 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="Dock" id="2"/>
+			<MapObject name="Dock" id="2" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-1051,271,47"/>
-						<Vertex xyz="-742,271,47"/>
-						<Vertex xyz="-742,0,47"/>
-						<Vertex xyz="-1051,0,47"/>
-						<Vertex xyz="-1051,271,-46"/>
-						<Vertex xyz="-1051,0,-46"/>
-						<Vertex xyz="-743,271,-46"/>
-						<Vertex xyz="-743,0,-46"/>
-						<Vertex xyz="-743,0,47" uv="5888,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,-46" uv="6912,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="3840,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,-46" uv="2816,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,266,47"/>
+						<Vertex xyz="-742,266,47"/>
+						<Vertex xyz="-742,-5,47"/>
+						<Vertex xyz="-1051,-5,47"/>
+						<Vertex xyz="-1051,266,-46"/>
+						<Vertex xyz="-1051,-5,-46"/>
+						<Vertex xyz="-743,266,-46"/>
+						<Vertex xyz="-743,-5,-46"/>
+						<Vertex xyz="-743,-5,47" uv="5888,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,-46" uv="6912,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="3840,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,-46" uv="2816,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2"/>
@@ -11610,41 +11611,41 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="WallsIsland" id="1"/>
+			<MapObject name="WallsIsland" id="1" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-649,0,-378"/>
-						<Vertex xyz="-743,271,-46"/>
-						<Vertex xyz="-743,0,-46"/>
-						<Vertex xyz="-649,271,-378"/>
-						<Vertex xyz="-649,271,378"/>
-						<Vertex xyz="-742,0,47"/>
-						<Vertex xyz="-742,271,47"/>
-						<Vertex xyz="-649,0,378"/>
-						<Vertex xyz="-378,271,649"/>
-						<Vertex xyz="-649,0,378"/>
-						<Vertex xyz="-649,271,378"/>
-						<Vertex xyz="-378,0,649"/>
-						<Vertex xyz="0,271,756"/>
-						<Vertex xyz="0,0,756"/>
-						<Vertex xyz="378,271,649"/>
-						<Vertex xyz="378,0,649"/>
-						<Vertex xyz="649,271,378"/>
-						<Vertex xyz="649,0,378"/>
-						<Vertex xyz="756,271,0"/>
-						<Vertex xyz="756,0,0"/>
-						<Vertex xyz="649,271,-378"/>
-						<Vertex xyz="649,0,-378"/>
-						<Vertex xyz="378,271,-649"/>
-						<Vertex xyz="378,0,-649"/>
-						<Vertex xyz="0,271,-756"/>
-						<Vertex xyz="0,0,-756"/>
-						<Vertex xyz="-378,271,-649"/>
-						<Vertex xyz="-378,0,-649"/>
-						<Vertex xyz="-649,271,-378"/>
-						<Vertex xyz="-649,0,-378"/>
+						<Vertex xyz="-649,-5,-378"/>
+						<Vertex xyz="-743,266,-46"/>
+						<Vertex xyz="-743,-5,-46"/>
+						<Vertex xyz="-649,266,-378"/>
+						<Vertex xyz="-649,266,378"/>
+						<Vertex xyz="-742,-5,47"/>
+						<Vertex xyz="-742,266,47"/>
+						<Vertex xyz="-649,-5,378"/>
+						<Vertex xyz="-378,266,649"/>
+						<Vertex xyz="-649,-5,378"/>
+						<Vertex xyz="-649,266,378"/>
+						<Vertex xyz="-378,-5,649"/>
+						<Vertex xyz="0,266,756"/>
+						<Vertex xyz="0,-5,756"/>
+						<Vertex xyz="378,266,649"/>
+						<Vertex xyz="378,-5,649"/>
+						<Vertex xyz="649,266,378"/>
+						<Vertex xyz="649,-5,378"/>
+						<Vertex xyz="756,266,0"/>
+						<Vertex xyz="756,-5,0"/>
+						<Vertex xyz="649,266,-378"/>
+						<Vertex xyz="649,-5,-378"/>
+						<Vertex xyz="378,266,-649"/>
+						<Vertex xyz="378,-5,-649"/>
+						<Vertex xyz="0,266,-756"/>
+						<Vertex xyz="0,-5,-756"/>
+						<Vertex xyz="-378,266,-649"/>
+						<Vertex xyz="-378,-5,-649"/>
+						<Vertex xyz="-649,266,-378"/>
+						<Vertex xyz="-649,-5,-378"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2"/>
@@ -11676,7 +11677,7 @@
 			</HitMesh>
 		</Collider>
 		<Collider ver="0" flags="0" surface="0">
-			<MapObject name="FloorIsland" id="0"/>
+			<MapObject name="FloorIsland" id="0" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11742,23 +11743,23 @@
 			<HitObject type="ROOT"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="Dock" id="1"/>
+			<MapObject name="Dock" id="1" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-743,0,47" uv="5888,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,-46" uv="6912,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="3840,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,-46" uv="2816,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,-5,47" uv="5888,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,-46" uv="6912,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="3840,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,-46" uv="2816,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2"/>
@@ -11771,7 +11772,7 @@
 			<Camera type="TYPE_0" flag="false" boomLength="450.000000" boomPitch="16.000000" viewPitch="-6.000000" posA="0,10,50" posB="0,10,-50" posC="10,0,10"/>
 		</Zone>
 		<Zone ver="0">
-			<MapObject name="FloorIsland" id="0"/>
+			<MapObject name="FloorIsland" id="0" hidden="true"/>
 			<HitObject type="HIT"/>
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
@@ -11862,31 +11863,35 @@
 	</Zones>
 	<Markers>
 		<Marker ver="4" type="Root">
-			<MapObject name="Root" id="F"/>
+			<MapObject name="Root" id="10"/>
 		</Marker>
 		<Marker ver="4" type="Group">
-			<MapObject name="Foliage" id="E"/>
+			<MapObject name="Foliage" id="F"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="-102,0,-331" yaw="0.000000">
-			<MapObject name="Bush1" id="D"/>
+			<MapObject name="Bush1" id="E"/>
 		</Marker>
 		<Marker ver="4" type="Position" pos="594,0,-66" yaw="0.000000">
-			<MapObject name="Tree1" id="C"/>
+			<MapObject name="Tree1" id="D"/>
 		</Marker>
 		<Marker ver="4" type="Group">
-			<MapObject name="Entities" id="B"/>
+			<MapObject name="Entities" id="C"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="446,27,432" yaw="0.000000">
-			<MapObject name="DriedFruit" id="A"/>
+			<MapObject name="DriedFruit" id="B"/>
 			<Entity type="Item" item="ITEM_DRIED_FRUIT" gameFlag="GF_DST01_ItemDriedFruit" spawnMode="ITEM_SPAWN_MODE_FIXED_NEVER_VANISH"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="75,80,-40" yaw="0.000000">
-			<MapObject name="EnemyChest" id="9"/>
+			<MapObject name="EnemyChest" id="A"/>
 			<Entity type="Chest"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="479,60,-360" yaw="0.000000">
+			<MapObject name="MulticoinBlock" id="9"/>
+			<Entity type="MulticoinBlock" gameFlag="GF_DST01_MulticoinBlock"/>
+		</Marker>
+		<Marker ver="4" type="Entity" pos="479,60,-360" yaw="0.000000">
 			<MapObject name="YellowBlock" id="8"/>
-			<Entity type="YellowBlock" item="ITEM_NONE"/>
+			<Entity type="YellowBlock" item="ITEM_REPEL_GEL" gameFlag="GF_DST01_ItemBlock_RepelGel"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="0,0,-610" yaw="-0.000000">
 			<MapObject name="Chest" id="7"/>
@@ -11898,26 +11903,26 @@
 		<Marker ver="4" type="NPC" pos="93,0,254" yaw="0.000000">
 			<MapObject name="Cleft" id="5"/>
 			<Movement type="Wander" data="5D,0,FE,0,0,FFFF8001,0,5D,0,FE,7D,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-			<Sprite animation="ANIM_Cleft_Anim02"/>
+			<Sprite animation="ANIM_Cleft_Anim14"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="490,0,-205" yaw="0.000000">
 			<MapObject name="Bandit2" id="4"/>
-			<Movement type="Wander" data="1EA,0,FFFFFF33,64,0,FFFF8001,0,1EA,0,FFFFFF33,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="1EA,0,FFFFFF33,32,0,FFFF8001,0,1EA,0,FFFFFF33,1F4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_Bandit_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-38,0,-512" yaw="0.000000">
 			<MapObject name="Pokey2" id="3"/>
-			<Movement type="Wander" data="FFFFFFDA,0,FFFFFE00,64,0,FFFF8001,0,FFFFFFDA,0,FFFFFE00,12C,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="FFFFFFDA,0,FFFFFE00,C8,0,FFFF8001,0,FFFFFFDA,0,FFFFFE00,190,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_Pokey_Idle4"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="255,0,594" yaw="0.000000">
 			<MapObject name="Bandit1" id="2"/>
-			<Movement type="Wander" data="FF,0,252,64,0,FFFF8001,0,FF,0,252,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="FF,0,252,32,0,FFFF8001,0,FF,0,252,1F4,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_Bandit_Idle"/>
 		</Marker>
 		<Marker ver="4" type="NPC" pos="-343,0,260" yaw="0.000000">
 			<MapObject name="Pokey1" id="1"/>
-			<Movement type="Wander" data="FFFFFEA9,0,104,64,0,FFFF8001,0,FFFFFEA9,0,104,FA,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+			<Movement type="Wander" data="FFFFFEA9,0,104,C8,0,FFFF8001,0,FFFFFEA9,0,104,190,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
 			<Sprite animation="ANIM_Pokey_Idle4"/>
 		</Marker>
 		<Marker ver="4" type="Group">

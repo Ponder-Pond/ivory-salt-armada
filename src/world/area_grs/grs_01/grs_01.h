@@ -31,6 +31,6 @@ extern EvtScript EVS_TexPan;
 extern EvtScript EVS_SetFoliage;
 extern EvtScript EVS_UnlockSpring;
 extern EvtScript EVS_MakeEntities;
-extern EvtScript EVS_SpawnChest;
+extern EvtScript EVS_SpawnEnemyChest;
 
 }; // namespace grs_01

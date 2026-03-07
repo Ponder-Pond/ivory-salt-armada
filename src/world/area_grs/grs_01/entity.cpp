@@ -10,7 +10,7 @@ EvtScript EVS_FocusCam_OnChest = {
     Call(SetCamDistance, CAM_DEFAULT, Float(350.0))
     Call(SetCamPitch, CAM_DEFAULT, Float(12.0), Float(-5.5))
     Call(SetCamPosB, CAM_DEFAULT, Float(500.0), Float(20.0))
-    Call(SetPanTarget, CAM_DEFAULT, GEN_CHEST_VEC)
+    Call(SetPanTarget, CAM_DEFAULT, GEN_GIANT_CHEST_VEC)
     Call(PanToTarget, CAM_DEFAULT, 0, true)
     Call(WaitForCam, CAM_DEFAULT, Float(1.0))
     Return
@@ -19,7 +19,54 @@ EvtScript EVS_FocusCam_OnChest = {
 
 #include "world/common/entity/Chest.inc.c"
 
-EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+API_CALLABLE(DismissGotItem) {
+    Entity* bigChest = get_entity_by_index(4);
+    bigChest->dataBuf.chest->gotItemDone = true;
+    return ApiStatus_DONE2;
+}
+
+EvtScript EVS_PlayUpgradeSong = {
+    Call(PushSong, SONG_ITEM_UPGRADE, 1)
+    Wait(130)
+    Call(PopSong)
+    Return
+    End
+};
+
+// EvtScript EVS_OpenChest = EVT_OPEN_CHEST(ITEM_PYRAMID_STONE, GF_TRP00_Chest_PyramidStone);
+
+EvtScript EVS_SetupGiantChest_SuperHammer = {
+    IfEq(GF_GRS01_GiantChest, false)
+        Loop(0)
+            IfEq(GF_GRS01_GiantChest, true)
+                BreakLoop
+            EndIf
+            Wait(1)
+        EndLoop
+        // Call(PartnerIsFlying, LVar0)
+        // IfEq(LVar0, false)
+        //     Thread
+        //         Call(DisablePartnerAI, 0)
+        //         Call(NpcFlyTo, NPC_PARTNER, -222, -347, -531, 20, 0, EASING_LINEAR)
+        //         Call(InterpNpcYaw, NPC_PARTNER, 70, 0)
+        //         Loop(0)
+        //             IfEq(GB_StoryProgress, STORY_CH2_GOT_SUPER_HAMMER)
+        //                 BreakLoop
+        //             EndIf
+        //             Wait(1)
+        //         EndLoop
+        //         Call(EnablePartnerAI)
+        //     EndThread
+        // EndIf
+        Wait(60)
+        Exec(EVS_PlayUpgradeSong)
+        Call(ShowMessageAtScreenPos, MSG_Menus_017D, 160, 40)
+        Call(DismissGotItem)
+        // Set(GB_StoryProgress, STORY_CH2_GOT_SUPER_HAMMER)
+    EndIf
+    Return
+    End
+};
 
 API_CALLABLE(PlayBigSmokePuff) {
     Bytecode* args = script->ptrReadPos;
@@ -32,8 +79,8 @@ API_CALLABLE(PlayBigSmokePuff) {
     return ApiStatus_DONE2;
 }
 
-EvtScript EVS_SpawnChest = {
-    IfEq(GF_GRS01_ChestSpawned, true)
+EvtScript EVS_SpawnEnemyChest = {
+    IfEq(GF_GRS01_EnemyChestSpawned, true)
         Return
     EndIf
     Loop(0)
@@ -43,13 +90,13 @@ EvtScript EVS_SpawnChest = {
         Wait(1)
     EndLoop
     Call(DisablePlayerInput, true)
-    Set(GF_GRS01_ChestSpawned, true)
-    Call((PlayBigSmokePuff), GEN_CHEST_VEC)
-    Call(MakeEntity, Ref(Entity_Chest), GEN_CHEST_PARAMS, MAKE_ENTITY_END)
-    Call(AssignChestFlag, GF_TRP00_Chest_PyramidStone)
-    Call(AssignScript, Ref(EVS_OpenChest))
-    SetF(LVarA, Float(3.0))
-    ExecWait(EVS_FocusCam_OnChest)
+    Set(GF_GRS01_EnemyChestSpawned, true)
+    Call(PlayBigSmokePuff, GEN_GIANT_CHEST_VEC)
+    Call(MakeEntity, Ref(Entity_GiantChest), GEN_GIANT_CHEST_PARAMS, ITEM_SUPER_HAMMER, MAKE_ENTITY_END)
+    Call(AssignChestFlag, GF_GRS01_GiantChest)
+    Call(AssignScript, Ref(EVS_SetupGiantChest_SuperHammer))
+    // SetF(LVarA, Float(3.0))
+    // ExecWait(EVS_FocusCam_OnChest)
     Wait(45)
     Call(DisablePlayerInput, false)
     Return
@@ -105,7 +152,7 @@ EvtScript EVS_MakeEntities = {
         Call(ModifyColliderFlags, MODIFY_COLLIDER_FLAGS_SET_BITS, COLLIDER_SpringLockWall, COLLIDER_FLAGS_UPPER_MASK)
     EndIf
     Call(MakeEntity, Ref(Entity_YellowBlock), GEN_YELLOW_BLOCK_PARAMS, MAKE_ENTITY_END)
-    Call(AssignBlockFlag, GF_TRP00_ItemBlock_Coin)
+    Call(AssignBlockFlag, GEN_YELLOW_BLOCK_FLAG)
     Call(MakeEntity, Ref(Entity_SimpleSpring), GEN_SPRING1_PARAMS, MAKE_ENTITY_END)
     Call(MakeEntity, Ref(Entity_SimpleSpring), GEN_SPRING2_PARAMS, MAKE_ENTITY_END)
     Return

@@ -534,7 +534,7 @@ HitResult calc_enemy_damage_target(Actor* attacker) {
     }
 
     if ((gBattleStatus.flags1 & BS_FLAGS1_TRIGGER_EVENTS)
-        && (battleStatus->curAttackElement & (DAMAGE_TYPE_POW | DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_JUMP))
+        && (battleStatus->curAttackElement & (DAMAGE_TYPE_POW | DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_JUMP | DAMAGE_TYPE_SMASH))
         && (targetPart->eventFlags & ACTOR_EVENT_FLAG_FLIPABLE)
     ) {
         if (event == EVENT_HIT) {
@@ -546,7 +546,7 @@ HitResult calc_enemy_damage_target(Actor* attacker) {
     }
 
     if (!(gBattleStatus.flags1 & BS_FLAGS1_TRIGGER_EVENTS)
-        && (battleStatus->curAttackElement & (DAMAGE_TYPE_POW | DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_JUMP))
+        && (battleStatus->curAttackElement & (DAMAGE_TYPE_POW | DAMAGE_TYPE_QUAKE | DAMAGE_TYPE_JUMP | DAMAGE_TYPE_SMASH))
         && (targetPart->eventFlags & ACTOR_EVENT_FLAG_FLIPABLE)
     ) {
         if (event == EVENT_HIT_COMBO) {

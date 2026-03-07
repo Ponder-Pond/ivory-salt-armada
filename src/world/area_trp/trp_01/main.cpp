@@ -230,7 +230,7 @@ EvtScript EVS_NpcInit_SpearGuy3 = {
 NpcData NpcData_SpearGuy3[] = {
     {
         .id = NPC_SpearGuy3,
-        .settings = &N(NpcSettings_SpearGuy_Wander),
+        .settings = &NpcSettings_SpearGuy_Wander,
         .pos = { GEN_SPEAR_GUY3_VEC },
         .flags = ENEMY_FLAG_IGNORE_ENTITY_COLLISION | ENEMY_FLAG_FLYING,
         .init = &EVS_NpcInit_SpearGuy3,
@@ -239,7 +239,7 @@ NpcData NpcData_SpearGuy3[] = {
         .territory = GEN_SPEAR_GUY3_TERRITORY,
         .animations = SPEAR_GUY_ANIMS,
         .aiDetectFlags = AI_DETECT_SIGHT | AI_DETECT_SENSITIVE_MOTION,
-        .extraAnimations = N(ExtraAnims_SpearGuy),
+        .extraAnimations = ExtraAnims_SpearGuy,
     },
     SPEAR_GUY_HITBOX(NPC_SpearGuy3Hitbox)
 };
@@ -263,7 +263,7 @@ EvtScript EVS_Main = {
     Exec(EVS_SetFoliage)
     Call(MakeNpcs, true, Ref(DefaultNPCs))
     ExecWait(EVS_MakeEntities)
-    Exec(EVS_SpawnChests)
+    Exec(EVS_SpawnEnemyChest)
     Return
     End
 };

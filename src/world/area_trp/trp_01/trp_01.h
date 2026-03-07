@@ -32,6 +32,6 @@ extern EvtScript EVS_BindExitTriggers;
 extern EvtScript EVS_TexPan;
 extern EvtScript EVS_SetFoliage;
 extern EvtScript EVS_MakeEntities;
-extern EvtScript EVS_SpawnChests;
+extern EvtScript EVS_SpawnEnemyChest;
 
 }; // namespace trp_01

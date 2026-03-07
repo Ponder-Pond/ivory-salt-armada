@@ -1,111 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Map desc="Beach" background="shp_bg" textures="trp_tex">
 	<Editor>
-		<Camera pos="-143.060883,150.801453,505.587097" pitch="6.119991" yaw="14.200800"/>
-		<Camera pos="426.000000,65536.000000,-58.000000"/>
-		<Camera pos="65536.000000,76.000000,-58.000000"/>
-		<Camera pos="426.000000,74.159492,65536.000000"/>
+		<Camera pos="-572.146423,420.177307,510.201813" pitch="31.519985" yaw="67.001556"/>
+		<Camera pos="-147.000000,65536.000000,0.000000"/>
+		<Camera pos="65536.000000,135.000000,0.000000"/>
+		<Camera pos="-789.537903,54.859802,65536.000000"/>
 	</Editor>
 	<ModelTree>
-		<Node name="Root" id="52">
-			<Node name="Island" id="6">
+		<Node name="Root" id="51">
+			<Node name="Island" id="5">
 				<Node name="IslandWall1" id="0"/>
 				<Node name="IslandWall2" id="1"/>
 				<Node name="HillWall" id="2"/>
 				<Node name="Floor" id="3"/>
-				<Node name="Trim" id="4"/>
-				<Node name="Dock" id="5"/>
+				<Node name="Dock" id="4"/>
 			</Node>
-			<Node name="Sea" id="A">
-				<Node name="Waves" id="7"/>
-				<Node name="WaterSurface" id="8"/>
-				<Node name="OceanFloor" id="9"/>
+			<Node name="Sea" id="9">
+				<Node name="Waves" id="6"/>
+				<Node name="WaterSurface" id="7"/>
+				<Node name="OceanFloor" id="8"/>
 			</Node>
-			<Node name="Tree1" id="E">
-				<Node name="TreeTrunk1" id="B"/>
-				<Node name="TreeLeaves1" id="C"/>
-				<Node name="Coconuts1" id="D"/>
+			<Node name="Tree1" id="D">
+				<Node name="TreeTrunk1" id="A"/>
+				<Node name="TreeLeaves1" id="B"/>
+				<Node name="Coconuts1" id="C"/>
 			</Node>
-			<Node name="Tree2" id="12">
-				<Node name="TreeTrunk2" id="F"/>
-				<Node name="TreeLeaves2" id="10"/>
-				<Node name="Coconuts2" id="11"/>
+			<Node name="Tree2" id="11">
+				<Node name="TreeTrunk2" id="E"/>
+				<Node name="TreeLeaves2" id="F"/>
+				<Node name="Coconuts2" id="10"/>
 			</Node>
-			<Node name="Tree3" id="16">
-				<Node name="TreeTrunk3" id="13"/>
-				<Node name="TreeLeaves3" id="14"/>
-				<Node name="Coconuts3" id="15"/>
+			<Node name="Tree3" id="15">
+				<Node name="TreeTrunk3" id="12"/>
+				<Node name="TreeLeaves3" id="13"/>
+				<Node name="Coconuts3" id="14"/>
 			</Node>
-			<Node name="Tree4" id="1A">
-				<Node name="TreeTrunk4" id="17"/>
-				<Node name="TreeLeaves4" id="18"/>
-				<Node name="Coconuts4" id="19"/>
+			<Node name="Tree4" id="19">
+				<Node name="TreeTrunk4" id="16"/>
+				<Node name="TreeLeaves4" id="17"/>
+				<Node name="Coconuts4" id="18"/>
 			</Node>
-			<Node name="Tree5" id="1E">
-				<Node name="TreeTrunk5" id="1B"/>
-				<Node name="TreeLeaves5" id="1C"/>
-				<Node name="Coconuts5" id="1D"/>
+			<Node name="Tree5" id="1D">
+				<Node name="TreeTrunk5" id="1A"/>
+				<Node name="TreeLeaves5" id="1B"/>
+				<Node name="Coconuts5" id="1C"/>
 			</Node>
-			<Node name="Tree6" id="22">
-				<Node name="TreeTrunk6" id="1F"/>
-				<Node name="TreeLeaves6" id="20"/>
-				<Node name="Coconuts6" id="21"/>
+			<Node name="Tree6" id="21">
+				<Node name="TreeTrunk6" id="1E"/>
+				<Node name="TreeLeaves6" id="1F"/>
+				<Node name="Coconuts6" id="20"/>
 			</Node>
-			<Node name="Tree7" id="26">
-				<Node name="TreeTrunk7" id="23"/>
-				<Node name="TreeLeaves7" id="24"/>
-				<Node name="Coconuts7" id="25"/>
+			<Node name="Tree7" id="25">
+				<Node name="TreeTrunk7" id="22"/>
+				<Node name="TreeLeaves7" id="23"/>
+				<Node name="Coconuts7" id="24"/>
 			</Node>
-			<Node name="Tree8" id="2A">
-				<Node name="TreeTrunk8" id="27"/>
-				<Node name="TreeLeaves8" id="28"/>
-				<Node name="Coconuts8" id="29"/>
+			<Node name="Tree8" id="29">
+				<Node name="TreeTrunk8" id="26"/>
+				<Node name="TreeLeaves8" id="27"/>
+				<Node name="Coconuts8" id="28"/>
 			</Node>
-			<Node name="Tree9" id="2E">
-				<Node name="TreeTrunk9" id="2B"/>
-				<Node name="TreeLeaves9" id="2C"/>
-				<Node name="Coconuts9" id="2D"/>
+			<Node name="Tree9" id="2D">
+				<Node name="TreeTrunk9" id="2A"/>
+				<Node name="TreeLeaves9" id="2B"/>
+				<Node name="Coconuts9" id="2C"/>
 			</Node>
-			<Node name="Tree10" id="32">
-				<Node name="TreeTrunk10" id="2F"/>
-				<Node name="TreeLeaves10" id="30"/>
-				<Node name="Coconuts10" id="31"/>
+			<Node name="Tree10" id="31">
+				<Node name="TreeTrunk10" id="2E"/>
+				<Node name="TreeLeaves10" id="2F"/>
+				<Node name="Coconuts10" id="30"/>
 			</Node>
-			<Node name="BigTree1" id="36">
-				<Node name="TreeBigTrunk1" id="33"/>
-				<Node name="TreeBigLeaves1" id="34"/>
-				<Node name="CoconutBig1" id="35"/>
+			<Node name="BigTree1" id="35">
+				<Node name="TreeBigTrunk1" id="32"/>
+				<Node name="TreeBigLeaves1" id="33"/>
+				<Node name="CoconutBig1" id="34"/>
 			</Node>
-			<Node name="BigTree2" id="39">
-				<Node name="TreeBigTrunk2" id="37"/>
-				<Node name="TreeBigLeaves2" id="38"/>
+			<Node name="BigTree2" id="38">
+				<Node name="TreeBigTrunk2" id="36"/>
+				<Node name="TreeBigLeaves2" id="37"/>
 			</Node>
-			<Node name="Campfire" id="3D">
-				<Node name="Wood1" id="3A"/>
-				<Node name="Wood2" id="3B"/>
-				<Node name="Fire" id="3C"/>
+			<Node name="Campfire" id="3C">
+				<Node name="Wood1" id="39"/>
+				<Node name="Wood2" id="3A"/>
+				<Node name="Fire" id="3B"/>
 			</Node>
-			<Node name="Pond" id="41">
-				<Node name="PondSurface" id="3E"/>
-				<Node name="PondWalls" id="3F"/>
-				<Node name="PondBottom" id="40"/>
+			<Node name="Pond" id="40">
+				<Node name="PondSurface" id="3D"/>
+				<Node name="PondWalls" id="3E"/>
+				<Node name="PondBottom" id="3F"/>
 			</Node>
-			<Node name="Bush1" id="42"/>
-			<Node name="Bush2" id="43"/>
-			<Node name="Bush3" id="44"/>
-			<Node name="Bush4" id="45"/>
-			<Node name="Bush5" id="46"/>
-			<Node name="Bush6" id="47"/>
-			<Node name="Bush7" id="48"/>
-			<Node name="Bush8" id="49"/>
-			<Node name="Bush9" id="4A"/>
-			<Node name="Bush10" id="4B"/>
-			<Node name="RockTable" id="4C"/>
-			<Node name="Fence" id="4D"/>
-			<Node name="BushesBack" id="4E"/>
-			<Node name="RocksBack" id="4F"/>
-			<Node name="Flowers" id="50"/>
-			<Node name="Leaves" id="51"/>
+			<Node name="Bush1" id="41"/>
+			<Node name="Bush2" id="42"/>
+			<Node name="Bush3" id="43"/>
+			<Node name="Bush4" id="44"/>
+			<Node name="Bush5" id="45"/>
+			<Node name="Bush6" id="46"/>
+			<Node name="Bush7" id="47"/>
+			<Node name="Bush8" id="48"/>
+			<Node name="Bush9" id="49"/>
+			<Node name="Bush10" id="4A"/>
+			<Node name="RockTable" id="4B"/>
+			<Node name="Fence" id="4C"/>
+			<Node name="BushesBack" id="4D"/>
+			<Node name="RocksBack" id="4E"/>
+			<Node name="Flowers" id="4F"/>
+			<Node name="Leaves" id="50"/>
 		</Node>
 	</ModelTree>
 	<ColliderTree>
@@ -162,8 +161,8 @@
 			</Node>
 			<Node name="Entities" id="A">
 				<Node name="YellowBlock" id="7"/>
-				<Node name="Chest1" id="8"/>
-				<Node name="Chest2" id="9"/>
+				<Node name="EnemyChest" id="8"/>
+				<Node name="Chest" id="9"/>
 			</Node>
 			<Node name="Foliage" id="1F">
 				<Node name="Tree1" id="B"/>
@@ -197,13 +196,13 @@
 	</LightSets>
 	<Models>
 		<Model ver="2" type="ROOT" lightset="1">
-			<MapObject name="Root" id="52" dumped="true" fileOffset="96D4"/>
+			<MapObject name="Root" id="51" dumped="true" fileOffset="96D4"/>
 			<BoundingBox empty="false" min="-1699,-115,-1875" max="1701,292,1695"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Leaves" id="51"/>
+			<MapObject name="Leaves" id="50"/>
 			<ShapeMesh ver="3" texture="trp_misc2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -497,7 +496,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Flowers" id="50"/>
+			<MapObject name="Flowers" id="4F"/>
 			<ShapeMesh ver="3" texture="trp_misc3tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -663,7 +662,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="RocksBack" id="4F"/>
+			<MapObject name="RocksBack" id="4E"/>
 			<ShapeMesh ver="3" texture="trp_rocktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -997,7 +996,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="BushesBack" id="4E"/>
+			<MapObject name="BushesBack" id="4D"/>
 			<ShapeMesh ver="3" texture="trp_bushback1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1187,7 +1186,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Fence" id="4D"/>
+			<MapObject name="Fence" id="4C"/>
 			<ShapeMesh ver="3" texture="trp_fencetif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1341,7 +1340,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="RockTable" id="4C"/>
+			<MapObject name="RockTable" id="4B"/>
 			<ShapeMesh ver="3" texture="trp_rocktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1575,7 +1574,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush10" id="4B"/>
+			<MapObject name="Bush10" id="4A"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1657,7 +1656,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush9" id="4A"/>
+			<MapObject name="Bush9" id="49"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1683,7 +1682,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush8" id="49"/>
+			<MapObject name="Bush8" id="48"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1709,7 +1708,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush7" id="48"/>
+			<MapObject name="Bush7" id="47"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1735,7 +1734,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush6" id="47"/>
+			<MapObject name="Bush6" id="46"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1761,7 +1760,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush5" id="46"/>
+			<MapObject name="Bush5" id="45"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1787,7 +1786,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush4" id="45"/>
+			<MapObject name="Bush4" id="44"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1813,7 +1812,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush3" id="44"/>
+			<MapObject name="Bush3" id="43"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1839,7 +1838,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush2" id="43"/>
+			<MapObject name="Bush2" id="42"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1865,7 +1864,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Bush1" id="42"/>
+			<MapObject name="Bush1" id="41"/>
 			<ShapeMesh ver="3" texture="trp_bush1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1891,7 +1890,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Pond" id="41"/>
+			<MapObject name="Pond" id="40"/>
 			<BoundingBox empty="false" min="-204,-50,223" max="219,0,662"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -1899,7 +1898,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="PondBottom" id="40"/>
+			<MapObject name="PondBottom" id="3F"/>
 			<ShapeMesh ver="3" texture="trp_sandtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1937,7 +1936,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="PondWalls" id="3F"/>
+			<MapObject name="PondWalls" id="3E"/>
 			<ShapeMesh ver="3" texture="trp_sandshoretif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -1999,7 +1998,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="1">
-			<MapObject name="PondSurface" id="3E"/>
+			<MapObject name="PondSurface" id="3D"/>
 			<ShapeMesh ver="3" texture="trp_waves3tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2051,13 +2050,13 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Campfire" id="3D"/>
+			<MapObject name="Campfire" id="3C"/>
 			<BoundingBox empty="false" min="256,58,-264" max="312,92,-208"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="1">
-			<MapObject name="Fire" id="3C"/>
+			<MapObject name="Fire" id="3B"/>
 			<ShapeMesh ver="3" texture="trp_campfire1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2109,7 +2108,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Wood2" id="3B"/>
+			<MapObject name="Wood2" id="3A"/>
 			<ShapeMesh ver="3" texture="trp_sandtif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2124,29 +2123,29 @@
 							<Vertex xyz="285,59,-211" uv="290,60" rgba="122,86,33,255"/>
 							<Vertex xyz="284,63,-208" uv="-5,195" rgba="122,86,33,255"/>
 							<Vertex xyz="277,61,-215" uv="270,475" rgba="122,86,33,255"/>
-							<Vertex xyz="292,67,-224" uv="135,475" rgba="134,0,0,255"/>
 							<Vertex xyz="292,63,-224" uv="411,334" rgba="146,154,114,255"/>
 							<Vertex xyz="292,67,-224" uv="135,475" rgba="134,0,0,255"/>
+							<Vertex xyz="292,67,-224" uv="135,475" rgba="134,0,0,255"/>
+							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="304,71,-233" uv="135,475" rgba="18,7,0,255"/>
-							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="292,67,-224" uv="135,475" rgba="134,0,0,255"/>
-							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="292,63,-224" uv="411,334" rgba="146,154,114,255"/>
+							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="311,73,-226" uv="-5,195" rgba="122,86,33,255"/>
+							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="312,67,-229" uv="290,60" rgba="122,86,33,255"/>
-							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="311,73,-226" uv="-5,195" rgba="122,86,33,255"/>
-							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="304,71,-233" uv="135,475" rgba="18,7,0,255"/>
-							<Vertex xyz="292,63,-224" uv="411,334" rgba="146,154,114,255"/>
 							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
+							<Vertex xyz="292,63,-224" uv="411,334" rgba="146,154,114,255"/>
 							<Vertex xyz="292,61,-223" uv="577,168" rgba="122,86,33,255"/>
+							<Vertex xyz="308,64,-235" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
+							<Vertex xyz="280,59,-220" uv="-9,195" rgba="122,86,33,255"/>
 							<Vertex xyz="280,59,-230" uv="270,475" rgba="134,0,0,255"/>
-							<Vertex xyz="280,59,-220" uv="-9,195" rgba="122,86,33,255"/>
 							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
-							<Vertex xyz="280,59,-220" uv="-9,195" rgba="122,86,33,255"/>
 							<Vertex xyz="256,59,-230" uv="-9,195" rgba="122,86,33,255"/>
+							<Vertex xyz="280,59,-220" uv="-9,195" rgba="122,86,33,255"/>
 							<Vertex xyz="280,59,-230" uv="270,475" rgba="134,0,0,255"/>
 							<Vertex xyz="295,59,-223" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="289,59,-215" uv="-9,195" rgba="122,86,33,255"/>
@@ -2160,23 +2159,23 @@
 							<Vertex xyz="289,59,-215" uv="-9,195" rgba="122,86,33,255"/>
 							<Vertex xyz="295,59,-223" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="263,67,-239" uv="-37,782" rgba="122,86,33,255"/>
+							<Vertex xyz="295,59,-223" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="295,67,-223" uv="-37,782" rgba="134,0,0,255"/>
-							<Vertex xyz="295,59,-223" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="263,67,-239" uv="-37,782" rgba="122,86,33,255"/>
+							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
 							<Vertex xyz="295,59,-223" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
-							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
+							<Vertex xyz="258,64,-233" uv="-145,495" rgba="122,86,33,255"/>
 							<Vertex xyz="256,59,-230" uv="-9,195" rgba="122,86,33,255"/>
-							<Vertex xyz="258,64,-233" uv="-145,495" rgba="122,86,33,255"/>
 							<Vertex xyz="263,59,-239" uv="270,475" rgba="18,7,0,255"/>
-							<Vertex xyz="258,64,-233" uv="-145,495" rgba="122,86,33,255"/>
 							<Vertex xyz="263,67,-239" uv="-37,782" rgba="122,86,33,255"/>
+							<Vertex xyz="258,64,-233" uv="-145,495" rgba="122,86,33,255"/>
 							<Vertex xyz="277,61,-215" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="292,63,-224" uv="411,334" rgba="146,154,114,255"/>
 							<Vertex xyz="292,61,-223" uv="577,168" rgba="122,86,33,255"/>
 							<Vertex xyz="277,61,-215" uv="270,475" rgba="122,86,33,255"/>
-							<Vertex xyz="292,61,-223" uv="577,168" rgba="122,86,33,255"/>
 							<Vertex xyz="282,59,-217" uv="577,168" rgba="122,86,33,255"/>
+							<Vertex xyz="292,61,-223" uv="577,168" rgba="122,86,33,255"/>
 							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
 							<Vertex xyz="273,59,-239" uv="549,754" rgba="18,7,0,255"/>
 							<Vertex xyz="273,64,-242" uv="685,455" rgba="18,7,0,255"/>
@@ -2184,26 +2183,26 @@
 							<Vertex xyz="273,64,-242" uv="685,455" rgba="18,7,0,255"/>
 							<Vertex xyz="273,67,-250" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="273,67,-250" uv="577,168" rgba="18,7,0,255"/>
-							<Vertex xyz="312,67,-251" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="312,59,-251" uv="270,475" rgba="122,86,33,255"/>
+							<Vertex xyz="312,67,-251" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="273,67,-250" uv="577,168" rgba="18,7,0,255"/>
-							<Vertex xyz="312,59,-251" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
+							<Vertex xyz="312,59,-251" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="312,67,-251" uv="577,168" rgba="18,7,0,255"/>
+							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
 							<Vertex xyz="312,64,-242" uv="685,455" rgba="122,86,33,255"/>
-							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
 							<Vertex xyz="312,67,-251" uv="577,168" rgba="18,7,0,255"/>
 							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
 							<Vertex xyz="312,59,-251" uv="270,475" rgba="122,86,33,255"/>
 							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
+							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
 							<Vertex xyz="312,59,-251" uv="270,475" rgba="122,86,33,255"/>
-							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
-							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
-							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
-							<Vertex xyz="292,59,-239" uv="549,754" rgba="134,0,0,255"/>
 							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
 							<Vertex xyz="292,59,-239" uv="549,754" rgba="134,0,0,255"/>
+							<Vertex xyz="312,59,-239" uv="549,754" rgba="122,86,33,255"/>
+							<Vertex xyz="273,59,-250" uv="270,475" rgba="18,7,0,255"/>
 							<Vertex xyz="273,59,-239" uv="549,754" rgba="18,7,0,255"/>
+							<Vertex xyz="292,59,-239" uv="549,754" rgba="134,0,0,255"/>
 							<Vertex xyz="299,76,-250" uv="-37,782" rgba="18,7,0,255"/>
 							<Vertex xyz="299,71,-242" uv="270,475" rgba="18,7,0,255"/>
 							<Vertex xyz="307,67,-247" uv="549,754" rgba="18,7,0,255"/>
@@ -2285,7 +2284,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Wood1" id="3A"/>
+			<MapObject name="Wood1" id="39"/>
 			<ShapeMesh ver="3" texture="trp_campfire2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2330,8 +2329,8 @@
 							<Vertex xyz="280,60,-264" uv="4374,1880" rgba="254,254,124,255"/>
 							<Vertex xyz="278,59,-264" uv="4374,2048" rgba="254,254,124,255"/>
 							<Vertex xyz="280,67,-260" uv="3499,1475" rgba="134,0,0,255"/>
-							<Vertex xyz="296,76,-250" uv="3499,0" rgba="18,7,0,255"/>
 							<Vertex xyz="300,71,-253" uv="4374,0" rgba="18,7,0,255"/>
+							<Vertex xyz="296,76,-250" uv="3499,0" rgba="18,7,0,255"/>
 							<Vertex xyz="280,67,-260" uv="3499,1475" rgba="134,0,0,255"/>
 							<Vertex xyz="300,71,-253" uv="4374,0" rgba="18,7,0,255"/>
 							<Vertex xyz="280,60,-264" uv="4374,1880" rgba="254,254,124,255"/>
@@ -2413,13 +2412,13 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="BigTree2" id="39"/>
+			<MapObject name="BigTree2" id="38"/>
 			<BoundingBox empty="false" min="433,60,-523" max="631,220,-337"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeBigLeaves2" id="38"/>
+			<MapObject name="TreeBigLeaves2" id="37"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2471,7 +2470,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeBigTrunk2" id="37"/>
+			<MapObject name="TreeBigTrunk2" id="36"/>
 			<ShapeMesh ver="3" texture="trp_treebark2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2623,13 +2622,13 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="BigTree1" id="36"/>
+			<MapObject name="BigTree1" id="35"/>
 			<BoundingBox empty="false" min="-241,0,-767" max="114,292,-433"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="CoconutBig1" id="35"/>
+			<MapObject name="CoconutBig1" id="34"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2657,7 +2656,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeBigLeaves1" id="34"/>
+			<MapObject name="TreeBigLeaves1" id="33"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2709,7 +2708,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeBigTrunk1" id="33"/>
+			<MapObject name="TreeBigTrunk1" id="32"/>
 			<ShapeMesh ver="3" texture="trp_treebark2tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2861,7 +2860,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree10" id="32" dumped="true" fileOffset="8840"/>
+			<MapObject name="Tree10" id="31" dumped="true" fileOffset="8840"/>
 			<BoundingBox empty="false" min="-583,0,-381" max="-441,143,-320"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -2869,7 +2868,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts10" id="31" dumped="true" fileOffset="87A4"/>
+			<MapObject name="Coconuts10" id="30" dumped="true" fileOffset="87A4"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2895,7 +2894,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves10" id="30" dumped="true" fileOffset="871C"/>
+			<MapObject name="TreeLeaves10" id="2F" dumped="true" fileOffset="871C"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -2938,7 +2937,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk10" id="2F" dumped="true" fileOffset="8694"/>
+			<MapObject name="TreeTrunk10" id="2E" dumped="true" fileOffset="8694"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3000,7 +2999,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree9" id="2E" dumped="true" fileOffset="860C"/>
+			<MapObject name="Tree9" id="2D" dumped="true" fileOffset="860C"/>
 			<BoundingBox empty="false" min="564,0,266" max="706,173,327"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3008,7 +3007,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts9" id="2D" dumped="true" fileOffset="8570"/>
+			<MapObject name="Coconuts9" id="2C" dumped="true" fileOffset="8570"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3034,7 +3033,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves9" id="2C" dumped="true" fileOffset="84E8"/>
+			<MapObject name="TreeLeaves9" id="2B" dumped="true" fileOffset="84E8"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3077,7 +3076,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk9" id="2B" dumped="true" fileOffset="8460"/>
+			<MapObject name="TreeTrunk9" id="2A" dumped="true" fileOffset="8460"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3139,7 +3138,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree8" id="2A" dumped="true" fileOffset="83D8"/>
+			<MapObject name="Tree8" id="29" dumped="true" fileOffset="83D8"/>
 			<BoundingBox empty="false" min="338,0,494" max="480,173,555"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3147,7 +3146,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts8" id="29" dumped="true" fileOffset="833C"/>
+			<MapObject name="Coconuts8" id="28" dumped="true" fileOffset="833C"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3173,7 +3172,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves8" id="28" dumped="true" fileOffset="82B4"/>
+			<MapObject name="TreeLeaves8" id="27" dumped="true" fileOffset="82B4"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3216,7 +3215,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk8" id="27" dumped="true" fileOffset="822C"/>
+			<MapObject name="TreeTrunk8" id="26" dumped="true" fileOffset="822C"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3278,7 +3277,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree7" id="26" dumped="true" fileOffset="81A4"/>
+			<MapObject name="Tree7" id="25" dumped="true" fileOffset="81A4"/>
 			<BoundingBox empty="false" min="537,58,-169" max="679,201,-108"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3286,7 +3285,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts7" id="25" dumped="true" fileOffset="8108"/>
+			<MapObject name="Coconuts7" id="24" dumped="true" fileOffset="8108"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3312,7 +3311,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves7" id="24" dumped="true" fileOffset="8080"/>
+			<MapObject name="TreeLeaves7" id="23" dumped="true" fileOffset="8080"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3355,7 +3354,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk7" id="23" dumped="true" fileOffset="7FF8"/>
+			<MapObject name="TreeTrunk7" id="22" dumped="true" fileOffset="7FF8"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3417,7 +3416,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree6" id="22"/>
+			<MapObject name="Tree6" id="21"/>
 			<BoundingBox empty="false" min="-162,0,-393" max="-20,143,-332"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3425,7 +3424,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts6" id="21"/>
+			<MapObject name="Coconuts6" id="20"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3453,7 +3452,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves6" id="20"/>
+			<MapObject name="TreeLeaves6" id="1F"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3505,7 +3504,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk6" id="1F"/>
+			<MapObject name="TreeTrunk6" id="1E"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3629,7 +3628,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree5" id="1E" dumped="true" fileOffset="7D3C"/>
+			<MapObject name="Tree5" id="1D" dumped="true" fileOffset="7D3C"/>
 			<BoundingBox empty="false" min="-344,0,-183" max="-202,163,-122"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3637,7 +3636,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts5" id="1D" dumped="true" fileOffset="7CA0"/>
+			<MapObject name="Coconuts5" id="1C" dumped="true" fileOffset="7CA0"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3663,7 +3662,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves5" id="1C" dumped="true" fileOffset="7C18"/>
+			<MapObject name="TreeLeaves5" id="1B" dumped="true" fileOffset="7C18"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3706,7 +3705,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk5" id="1B" dumped="true" fileOffset="7B90"/>
+			<MapObject name="TreeTrunk5" id="1A" dumped="true" fileOffset="7B90"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3768,7 +3767,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree4" id="1A" dumped="true" fileOffset="7B08"/>
+			<MapObject name="Tree4" id="19" dumped="true" fileOffset="7B08"/>
 			<BoundingBox empty="false" min="97,58,-394" max="239,221,-333"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3776,7 +3775,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts4" id="19" dumped="true" fileOffset="7A6C"/>
+			<MapObject name="Coconuts4" id="18" dumped="true" fileOffset="7A6C"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3802,7 +3801,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves4" id="18" dumped="true" fileOffset="79E4"/>
+			<MapObject name="TreeLeaves4" id="17" dumped="true" fileOffset="79E4"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3845,7 +3844,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk4" id="17" dumped="true" fileOffset="795C"/>
+			<MapObject name="TreeTrunk4" id="16" dumped="true" fileOffset="795C"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3907,7 +3906,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree3" id="16" dumped="true" fileOffset="78D4"/>
+			<MapObject name="Tree3" id="15" dumped="true" fileOffset="78D4"/>
 			<BoundingBox empty="false" min="-200,0,100" max="-58,143,161"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -3915,7 +3914,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts3" id="15" dumped="true" fileOffset="7838"/>
+			<MapObject name="Coconuts3" id="14" dumped="true" fileOffset="7838"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3941,7 +3940,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves3" id="14" dumped="true" fileOffset="77B0"/>
+			<MapObject name="TreeLeaves3" id="13" dumped="true" fileOffset="77B0"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -3984,7 +3983,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk3" id="13" dumped="true" fileOffset="7728"/>
+			<MapObject name="TreeTrunk3" id="12" dumped="true" fileOffset="7728"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4046,7 +4045,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree2" id="12" dumped="true" fileOffset="76A0"/>
+			<MapObject name="Tree2" id="11" dumped="true" fileOffset="76A0"/>
 			<BoundingBox empty="false" min="-700,0,0" max="-558,173,61"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -4054,7 +4053,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts2" id="11" dumped="true" fileOffset="7604"/>
+			<MapObject name="Coconuts2" id="10" dumped="true" fileOffset="7604"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4080,7 +4079,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves2" id="10" dumped="true" fileOffset="757C"/>
+			<MapObject name="TreeLeaves2" id="F" dumped="true" fileOffset="757C"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4123,7 +4122,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk2" id="F" dumped="true" fileOffset="74F4"/>
+			<MapObject name="TreeTrunk2" id="E" dumped="true" fileOffset="74F4"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4185,7 +4184,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Tree1" id="E" dumped="true" fileOffset="746C"/>
+			<MapObject name="Tree1" id="D" dumped="true" fileOffset="746C"/>
 			<BoundingBox empty="false" min="-500,0,300" max="-358,163,361"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
@@ -4193,7 +4192,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Coconuts1" id="D" dumped="true" fileOffset="73D0"/>
+			<MapObject name="Coconuts1" id="C" dumped="true" fileOffset="73D0"/>
 			<ShapeMesh ver="3" texture="trp_misc1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4219,7 +4218,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeLeaves1" id="C" dumped="true" fileOffset="7348"/>
+			<MapObject name="TreeLeaves1" id="B" dumped="true" fileOffset="7348"/>
 			<ShapeMesh ver="3" texture="trp_treeleaves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4262,7 +4261,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="TreeTrunk1" id="B" dumped="true" fileOffset="72C0"/>
+			<MapObject name="TreeTrunk1" id="A" dumped="true" fileOffset="72C0"/>
 			<ShapeMesh ver="3" texture="trp_treebark1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4324,13 +4323,13 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Sea" id="A"/>
+			<MapObject name="Sea" id="9"/>
 			<BoundingBox empty="false" min="-1699,-115,-1875" max="1701,-13,1695"/>
 			<PropertyList>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="OceanFloor" id="9"/>
+			<MapObject name="OceanFloor" id="8"/>
 			<ShapeMesh ver="3" texture="trp_seatif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4446,7 +4445,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="1">
-			<MapObject name="WaterSurface" id="8"/>
+			<MapObject name="WaterSurface" id="7"/>
 			<ShapeMesh ver="3" texture="trp_waves3tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4562,7 +4561,7 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0" panUnit="1">
-			<MapObject name="Waves" id="7"/>
+			<MapObject name="Waves" id="6"/>
 			<ShapeMesh ver="3" texture="trp_waves1tif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -4882,15 +4881,15 @@
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="GROUP" lightset="0">
-			<MapObject name="Island" id="6"/>
-			<BoundingBox empty="false" min="-1074,-112,-990" max="990,59,990"/>
+			<MapObject name="Island" id="5"/>
+			<BoundingBox empty="false" min="-1074,-112,-990" max="990,58,990"/>
 			<PropertyList>
 				<Property v="60,0,0"/>
 				<Property v="60,0,1"/>
 			</PropertyList>
 		</Model>
 		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Dock" id="5"/>
+			<MapObject name="Dock" id="4"/>
 			<ShapeMesh ver="3" texture="trp_docktif">
 				<DisplayList>
 					<F3DEX2 cmd="E7000000,0"/>
@@ -5374,90 +5373,6 @@
 							<Vertex xyz="-1049,-54,-59" uv="5273,255" rgba="255,255,255,0"/>
 							<Vertex xyz="-1049,-54,-46" uv="5580,255" rgba="255,255,255,0"/>
 							<Vertex xyz="-1049,-33,-59" uv="5273,895" rgba="160,134,95,255"/>
-						</VertexTable>
-						<TriangleList>
-							<Triangle ijk="0,1,2"/>
-							<Triangle ijk="3,4,5"/>
-							<Triangle ijk="6,7,8"/>
-							<Triangle ijk="9,10,11"/>
-							<Triangle ijk="12,13,14"/>
-							<Triangle ijk="15,16,17"/>
-							<Triangle ijk="18,19,20"/>
-							<Triangle ijk="21,22,23"/>
-							<Triangle ijk="24,25,26"/>
-							<Triangle ijk="27,28,29"/>
-							<Triangle ijk="30,31,32"/>
-							<Triangle ijk="33,34,35"/>
-							<Triangle ijk="36,37,38"/>
-							<Triangle ijk="39,40,41"/>
-							<Triangle ijk="42,43,44"/>
-							<Triangle ijk="45,46,47"/>
-						</TriangleList>
-					</TriangleBatch>
-				</DisplayList>
-			</ShapeMesh>
-			<PropertyList>
-				<Property v="5C,0,1"/>
-				<Property v="5F,0,0"/>
-			</PropertyList>
-		</Model>
-		<Model ver="2" type="MODEL" lightset="0">
-			<MapObject name="Trim" id="4"/>
-			<ShapeMesh ver="3" texture="trp_terraintif">
-				<DisplayList>
-					<F3DEX2 cmd="E7000000,0"/>
-					<F3DEX2 cmd="D9FDFFFF,0"/>
-					<F3DEX2 cmd="D9FFFFFF,200400"/>
-					<TriangleBatch ver="0">
-						<VertexTable>
-							<Vertex xyz="751,42,1" uv="-3592,816" rgba="0,147,197,255"/>
-							<Vertex xyz="751,59,1" uv="-3592,80" rgba="0,147,197,255"/>
-							<Vertex xyz="626,42,56" uv="-6141,816" rgba="124,189,255,255"/>
-							<Vertex xyz="626,42,56" uv="-6141,816" rgba="124,189,255,255"/>
-							<Vertex xyz="751,59,1" uv="-3592,80" rgba="0,147,197,255"/>
-							<Vertex xyz="626,59,56" uv="-6141,80" rgba="124,189,255,255"/>
-							<Vertex xyz="626,42,56" uv="-6141,816" rgba="124,189,255,255"/>
-							<Vertex xyz="626,59,56" uv="-6141,80" rgba="124,189,255,255"/>
-							<Vertex xyz="367,42,80" uv="-10240,816" rgba="124,189,255,255"/>
-							<Vertex xyz="367,42,80" uv="-10240,816" rgba="124,189,255,255"/>
-							<Vertex xyz="626,59,56" uv="-6141,80" rgba="124,189,255,255"/>
-							<Vertex xyz="367,59,80" uv="-10240,80" rgba="124,189,255,255"/>
-							<Vertex xyz="367,42,80" uv="-10240,816" rgba="124,189,255,255"/>
-							<Vertex xyz="367,59,80" uv="-10240,80" rgba="124,189,255,255"/>
-							<Vertex xyz="86,42,-82" uv="-3028,816" rgba="124,189,255,255"/>
-							<Vertex xyz="86,42,-82" uv="-3028,816" rgba="124,189,255,255"/>
-							<Vertex xyz="367,59,80" uv="-10240,80" rgba="124,189,255,255"/>
-							<Vertex xyz="86,59,-82" uv="-3028,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-368" uv="1385,817" rgba="124,189,255,255"/>
-							<Vertex xyz="86,59,-82" uv="-3028,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-368" uv="1385,80" rgba="124,189,255,255"/>
-							<Vertex xyz="86,42,-82" uv="-3028,816" rgba="124,189,255,255"/>
-							<Vertex xyz="86,59,-82" uv="-3028,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-368" uv="1385,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-368" uv="1385,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-368" uv="1385,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-758" uv="12024,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-758" uv="12024,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-368" uv="1385,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-758" uv="12024,80" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,42,-758" uv="12024,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-758" uv="12024,80" rgba="124,189,255,255"/>
-							<Vertex xyz="379,42,-650" uv="9628,817" rgba="124,189,255,255"/>
-							<Vertex xyz="379,42,-650" uv="9628,817" rgba="124,189,255,255"/>
-							<Vertex xyz="-2,59,-758" uv="12024,80" rgba="124,189,255,255"/>
-							<Vertex xyz="379,59,-650" uv="9628,80" rgba="124,189,255,255"/>
-							<Vertex xyz="379,42,-650" uv="9628,817" rgba="124,189,255,255"/>
-							<Vertex xyz="379,59,-650" uv="9628,80" rgba="124,189,255,255"/>
-							<Vertex xyz="651,42,-378" uv="1587,817" rgba="124,189,255,255"/>
-							<Vertex xyz="651,42,-378" uv="1587,817" rgba="124,189,255,255"/>
-							<Vertex xyz="379,59,-650" uv="9628,80" rgba="124,189,255,255"/>
-							<Vertex xyz="651,59,-378" uv="1587,80" rgba="124,189,255,255"/>
-							<Vertex xyz="651,42,-378" uv="1587,817" rgba="124,189,255,255"/>
-							<Vertex xyz="651,59,-378" uv="1587,80" rgba="124,189,255,255"/>
-							<Vertex xyz="751,42,1" uv="-4909,816" rgba="0,147,197,255"/>
-							<Vertex xyz="751,42,1" uv="-4909,816" rgba="0,147,197,255"/>
-							<Vertex xyz="651,59,-378" uv="1587,80" rgba="124,189,255,255"/>
-							<Vertex xyz="751,59,1" uv="-4909,80" rgba="0,147,197,255"/>
 						</VertexTable>
 						<TriangleList>
 							<Triangle ijk="0,1,2"/>
@@ -7636,26 +7551,26 @@
 			<HitMesh ver="0">
 				<TriangleBatch ver="0">
 					<VertexTable>
-						<Vertex xyz="-1051,271,47"/>
-						<Vertex xyz="-742,271,47"/>
-						<Vertex xyz="-742,0,47"/>
-						<Vertex xyz="-1051,0,47"/>
-						<Vertex xyz="-1051,271,-46"/>
-						<Vertex xyz="-1051,0,-46"/>
-						<Vertex xyz="-743,271,-46"/>
-						<Vertex xyz="-743,0,-46"/>
-						<Vertex xyz="-743,0,47" uv="5888,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="5888,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,0,-46" uv="6912,0" rgba="160,134,95,255"/>
-						<Vertex xyz="-743,6,-46" uv="6912,256" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,47" uv="3840,0" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,-46" uv="2816,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-1051,6,47" uv="3840,4096" rgba="255,239,210,255"/>
-						<Vertex xyz="-743,6,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,266,47"/>
+						<Vertex xyz="-742,266,47"/>
+						<Vertex xyz="-742,-5,47"/>
+						<Vertex xyz="-1051,-5,47"/>
+						<Vertex xyz="-1051,266,-46"/>
+						<Vertex xyz="-1051,-5,-46"/>
+						<Vertex xyz="-743,266,-46"/>
+						<Vertex xyz="-743,-5,-46"/>
+						<Vertex xyz="-743,-5,47" uv="5888,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="5888,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,-5,-46" uv="6912,0" rgba="160,134,95,255"/>
+						<Vertex xyz="-743,1,-46" uv="6912,256" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,47" uv="3840,0" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,-46" uv="2816,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-1051,1,47" uv="3840,4096" rgba="255,239,210,255"/>
+						<Vertex xyz="-743,1,-46" uv="2816,0" rgba="255,239,210,255"/>
 					</VertexTable>
 					<TriangleList>
 						<Triangle ijk="0,1,2"/>
@@ -8232,16 +8147,16 @@
 			<MapObject name="Entities" id="A"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="-165,0,-435" yaw="0.000000">
-			<MapObject name="Chest2" id="9"/>
+			<MapObject name="Chest" id="9"/>
 			<Entity type="Chest"/>
 		</Marker>
-		<Marker ver="4" type="Entity" pos="365,60,-315" yaw="0.000000">
-			<MapObject name="Chest1" id="8"/>
+		<Marker ver="4" type="Entity" pos="360,60,-340" yaw="0.000000">
+			<MapObject name="EnemyChest" id="8"/>
 			<Entity type="Chest"/>
 		</Marker>
 		<Marker ver="4" type="Entity" pos="560,60,180" yaw="0.000000">
 			<MapObject name="YellowBlock" id="7"/>
-			<Entity type="YellowBlock" item="ITEM_NONE"/>
+			<Entity type="YellowBlock" item="ITEM_SUPER_SHROOM" gameFlag="GF_TRP01_ItemBlock_SuperShroom"/>
 		</Marker>
 		<Marker ver="4" type="Group">
 			<MapObject name="NPCs" id="6"/>

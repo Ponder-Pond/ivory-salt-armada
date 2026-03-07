@@ -19,7 +19,7 @@ extern EvtScript N(EVS_SummonShyGuy);
 extern EvtScript N(EVS_SummonGrooveGuy);
 extern EvtScript N(EVS_SummonMediGuy);
 
-extern Formation N(ShyGuyFormation);
+// extern Formation N(ShyGuyFormation);
 extern Formation N(GrooveGuyFormation);
 extern Formation N(MediGuyFormation);
 
@@ -718,7 +718,7 @@ EvtScript N(EVS_SummonShyGuy) = {
     Call(UseIdleAnimation, ACTOR_SELF, false)
     Call(EnableIdleScript, ACTOR_SELF, IDLE_SCRIPT_DISABLE)
     ExecWait(N(EVS_PerformSummonDance))
-    Call(SummonEnemy, Ref(N(ShyGuyFormation)), false)
+    // Call(SummonEnemy, Ref(N(ShyGuyFormation)), false)
     Set(LVarB, LVar0)
     Set(LVar0, 200)
     Set(LVar1, 0)
@@ -828,9 +828,9 @@ EvtScript N(EVS_SummonMediGuy) = {
 
 Vec3i N(SummonPos) = { NPC_DISPOSE_LOCATION };
 
-Formation N(ShyGuyFormation) = {
-    OVL_ACTOR_BY_POS("red_shy_guy", N(SummonPos), 100),
-};
+// Formation N(ShyGuyFormation) = {
+//     OVL_ACTOR_BY_POS("red_shy_guy", N(SummonPos), 100),
+// };
 
 Formation N(GrooveGuyFormation) = {
     ACTOR_BY_POS(NAMESPACE, N(SummonPos), 100),

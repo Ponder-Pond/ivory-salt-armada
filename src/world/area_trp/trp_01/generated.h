@@ -25,7 +25,7 @@
 
 // type: Marker:NPC
 // name: JungleFuzzy1
-// anim: ANIM_Fuzzy_Jungle_Still
+// anim: ANIM_Fuzzy_Jungle_Idle
 #define GEN_JUNGLE_FUZZY1_X -550
 #define GEN_JUNGLE_FUZZY1_Y 0
 #define GEN_JUNGLE_FUZZY1_Z 290
@@ -41,13 +41,13 @@
         .detectPos   = { -550, 0, 290 }, \
         .detectSize  = { 200 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: SpearGuy1
-// anim: ANIM_SpearGuy_Anim00
+// anim: ANIM_SpearGuy_Anim03
 #define GEN_SPEAR_GUY1_X -420
 #define GEN_SPEAR_GUY1_Y 0
 #define GEN_SPEAR_GUY1_Z -290
@@ -63,13 +63,13 @@
         .detectPos   = { -420, 0, -290 }, \
         .detectSize  = { 100 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: SpearGuy2
-// anim: ANIM_SpearGuy_Anim00
+// anim: ANIM_SpearGuy_Anim03
 #define GEN_SPEAR_GUY2_X 70
 #define GEN_SPEAR_GUY2_Y 0
 #define GEN_SPEAR_GUY2_Z 110
@@ -85,13 +85,13 @@
         .detectPos   = { 70, 0, 110 }, \
         .detectSize  = { 100 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: JungleFuzzy2
-// anim: ANIM_Fuzzy_Jungle_Still
+// anim: ANIM_Fuzzy_Jungle_Idle
 #define GEN_JUNGLE_FUZZY2_X 550
 #define GEN_JUNGLE_FUZZY2_Y 0
 #define GEN_JUNGLE_FUZZY2_Z 200
@@ -107,13 +107,13 @@
         .detectPos   = { 550, 0, 200 }, \
         .detectSize  = { 200 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = true, \
+        .isFlying = TRUE, \
     }, \
 }
 
 // type: Marker:NPC
 // name: SpearGuy3
-// anim: ANIM_SpearGuy_Anim00
+// anim: ANIM_SpearGuy_Anim03
 #define GEN_SPEAR_GUY3_X 350
 #define GEN_SPEAR_GUY3_Y 59
 #define GEN_SPEAR_GUY3_Z -163
@@ -129,7 +129,7 @@
         .detectPos   = { 350, 59, -163 }, \
         .detectSize  = { 100 }, \
         .detectShape = SHAPE_CYLINDER, \
-        .isFlying = false, \
+        .isFlying = FALSE, \
     }, \
 }
 
@@ -141,28 +141,29 @@
 #define GEN_YELLOW_BLOCK_DIR 0
 #define GEN_YELLOW_BLOCK_VEC 560,60,180
 #define GEN_YELLOW_BLOCK_XYZA 560, 60, 180, 0
-#define GEN_YELLOW_BLOCK_ITEM ITEM_NONE
+#define GEN_YELLOW_BLOCK_ITEM ITEM_SUPER_SHROOM
 #define GEN_YELLOW_BLOCK_PARAMS GEN_YELLOW_BLOCK_XYZA, GEN_YELLOW_BLOCK_ITEM
+#define GEN_YELLOW_BLOCK_FLAG GF_TRP01_ItemBlock_SuperShroom
 
 // type: Marker:Entity:Chest
-// name: Chest1
-#define GEN_CHEST1_X 365
-#define GEN_CHEST1_Y 60
-#define GEN_CHEST1_Z -315
-#define GEN_CHEST1_DIR 0
-#define GEN_CHEST1_VEC 365,60,-315
-#define GEN_CHEST1_XYZA 365, 60, -315, 0
-#define GEN_CHEST1_PARAMS GEN_CHEST1_XYZA
+// name: EnemyChest
+#define GEN_ENEMY_CHEST_X 360
+#define GEN_ENEMY_CHEST_Y 60
+#define GEN_ENEMY_CHEST_Z -340
+#define GEN_ENEMY_CHEST_DIR 0
+#define GEN_ENEMY_CHEST_VEC 360,60,-340
+#define GEN_ENEMY_CHEST_XYZA 360, 60, -340, 0
+#define GEN_ENEMY_CHEST_PARAMS GEN_ENEMY_CHEST_XYZA
 
 // type: Marker:Entity:Chest
-// name: Chest2
-#define GEN_CHEST2_X -165
-#define GEN_CHEST2_Y 0
-#define GEN_CHEST2_Z -435
-#define GEN_CHEST2_DIR 0
-#define GEN_CHEST2_VEC -165,0,-435
-#define GEN_CHEST2_XYZA -165, 0, -435, 0
-#define GEN_CHEST2_PARAMS GEN_CHEST2_XYZA
+// name: Chest
+#define GEN_CHEST_X -165
+#define GEN_CHEST_Y 0
+#define GEN_CHEST_Z -435
+#define GEN_CHEST_DIR 0
+#define GEN_CHEST_VEC -165,0,-435
+#define GEN_CHEST_XYZA -165, 0, -435, 0
+#define GEN_CHEST_PARAMS GEN_CHEST_XYZA
 
 // type: Marker:Position
 // name: Tree1
@@ -323,3 +324,4 @@
 #define GEN_BUSH10_Z -58
 #define GEN_BUSH10_DIR 0
 #define GEN_BUSH10_VEC 427,68,-58
+

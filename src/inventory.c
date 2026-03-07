@@ -61,11 +61,11 @@ void clear_player_data(void) {
     playerData->curHP = 10;
     playerData->curMaxHP = 10;
     playerData->hardMaxHP = 10;
-    playerData->curFP = 5;
-    playerData->curMaxFP = 5;
-    playerData->hardMaxFP = 5;
-    playerData->maxBP = 3;
-    playerData->level = 1;
+    playerData->curFP = 15;
+    playerData->curMaxFP = 15;
+    playerData->hardMaxFP = 15;
+    playerData->maxBP = 12;
+    playerData->level = 5;
     playerData->bootsLevel = 0;
     playerData->hammerLevel = 0;
     playerData->hasActionCommands = true;

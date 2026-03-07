@@ -53,7 +53,7 @@ EvtScript EVS_NpcDefeat_SpearGuy = {
     Call(GetBattleOutcome, LVar0)
     Switch(LVar0)
         CaseEq(OUTCOME_PLAYER_WON)
-            Set(MapVar(0), true)
+            Set(MV_EnemiesDefeated, true)
             Call(DoNpcDefeat)
         CaseEq(OUTCOME_PLAYER_LOST)
         CaseEq(OUTCOME_PLAYER_FLED)
@@ -72,12 +72,12 @@ NpcData NpcData_SpearGuy[] = {
     {
         .id = NPC_SpearGuy,
         .settings = &NpcSettings_SpearGuy_Wander,
-        .pos = { GEN_ENEMY1_VEC },
+        .pos = { GEN_SPEAR_GUY_VEC },
         .flags = ENEMY_FLAG_IGNORE_ENTITY_COLLISION | ENEMY_FLAG_FLYING,
         .init = &EVS_NpcInit_SpearGuy,
-        .yaw = GEN_ENEMY1_DIR,
+        .yaw = GEN_SPEAR_GUY_DIR,
         .drops = SPEAR_GUY_DROPS,
-        .territory = GEN_ENEMY1_TERRITORY,
+        .territory = GEN_SPEAR_GUY_TERRITORY,
         .animations = SPEAR_GUY_ANIMS,
         .aiDetectFlags = AI_DETECT_SIGHT | AI_DETECT_SENSITIVE_MOTION,
         .extraAnimations = ExtraAnims_SpearGuy,
@@ -99,7 +99,7 @@ EvtScript EVS_Main = {
     // Call(DisablePlayerInput, true)
     // Call(DisablePlayerPhysics, true)
     Exec(EVS_SetFoliage)
-    Exec(EVS_SpawnTreasureChest)
+    Exec(EVS_SpawnEnemyChest)
     Call(MakeNpcs, true, Ref(DefaultNPCs))
     ExecWait(EVS_MakeEntities)
     Return

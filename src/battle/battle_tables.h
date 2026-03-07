@@ -53,8 +53,8 @@ EXTERN_C StageList b_area_arn_Stages;
 EXTERN_C BattleList b_area_dgb_Formations;
 EXTERN_C StageList b_area_dgb_Stages;
 
-EXTERN_C BattleList b_area_omo_Formations;
-EXTERN_C StageList b_area_omo_Stages;
+// EXTERN_C BattleList b_area_omo_Formations;
+// EXTERN_C StageList b_area_omo_Stages;
 
 EXTERN_C BattleList b_area_omo2_Formations;
 EXTERN_C StageList b_area_omo2_Stages;

@@ -1,5 +1,25 @@
 #include "script_api/macros.h"
 
+enum NewGameFlags {
+    GF_GRS01_EnemyChestSpawned                  = GameFlag(0x000),
+    GF_GRS01_UnlockedSpring                     = GameFlag(0x001),
+    GF_GRS01_GiantChest                         = GameFlag(0x002),
+    GF_GRS01_ItemBlock_Mushroom                 = GameFlag(0x003),
+    GF_DST01_EnemyChestSpawned                  = GameFlag(0x004),
+    GF_DST01_EnemyChest_PowerPlusA              = GameFlag(0x005),
+    GF_DST01_Chest_DefendPlusA                  = GameFlag(0x006),
+    GF_DST01_ItemDriedFruit                     = GameFlag(0x007),
+    GF_DST01_ItemBlock_RepelGel                 = GameFlag(0x008),
+    GF_DST01_MulticoinBlock                     = GameFlag(0x009),
+    GF_TRP00_EnemyChestSpawned                  = GameFlag(0x00A),
+    GF_TRP00_EnemyChest_HammerThrow             = GameFlag(0x00B),
+    GF_TRP00_ItemBlock_FireFlower               = GameFlag(0x00C),
+    GF_TRP01_EnemyChestSpawned                  = GameFlag(0x00D),
+    GF_TRP01_EnemyChest_IcePower                = GameFlag(0x00E),
+    GF_TRP01_ItemBlock_SuperShroom              = GameFlag(0x00F),
+    GF_TRP01_Chest_ShootingStar                 = GameFlag(0x010),
+};
+
 enum GameFlags {
     GF_Unused_EVT_00                            = GameFlag(0x000),
     GF_StartedChapter1                          = GameFlag(0x001),
@@ -26,11 +46,11 @@ enum GameFlags {
     GF_Unused_EVT_16                            = GameFlag(0x016),
     GF_Unused_EVT_17                            = GameFlag(0x017),
     GF_Unused_EVT_18                            = GameFlag(0x018),
-    GF_DST01_ItemDriedFruit                     = GameFlag(0x019),
-    GF_GRS01_ChestSpawned                       = GameFlag(0x01A),
-    GF_GRS01_UnlockedSpring                     = GameFlag(0x01B),
-    GF_TRP00_Chest_PyramidStone                 = GameFlag(0x01C),
-    GF_TRP00_ItemBlock_Coin                     = GameFlag(0x01D),
+    GF_Unused_EVT_19                            = GameFlag(0x019),
+    GF_Unused_EVT_1A                            = GameFlag(0x01A),
+    GF_Unused_EVT_1B                            = GameFlag(0x01B),
+    GF_Unused_EVT_1C                            = GameFlag(0x01C),
+    GF_Unused_EVT_1D                            = GameFlag(0x01D),
     GF_KMR04_Tree3_Dolly                        = GameFlag(0x01E),
     GF_KMR02_KeptDolly                          = GameFlag(0x01F),
     GF_KMR02_Met_Goompapa                       = GameFlag(0x020),

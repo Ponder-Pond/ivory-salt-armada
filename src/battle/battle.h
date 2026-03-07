@@ -222,7 +222,7 @@ typedef struct BattleArea {
     /* 0x1C */ DmaTable* dmaTable;
 } BattleArea; // size = 0x20
 
-EXTERN_C BattleArea gBattleAreas[0x30];
+EXTERN_C BattleArea gBattleAreas[0x2D];
 
 #define BATTLE(formation, stage, name) { name, ARRAY_COUNT(formation), (Formation*) formation, &stage }
 #define BATTLE_WITH_SCRIPT(formation, stage, script, name) { name, ARRAY_COUNT(formation), (Formation*) formation, &stage, &script }

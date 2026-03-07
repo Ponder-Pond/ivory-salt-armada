@@ -41,7 +41,6 @@ enum ActorVars {
     AVAR_Anim_Hurt          = 1,
     AVAR_FlippedTurns       = 2, // turns left to remain flipped
     AVAR_CoinsToDrop        = 3, // remaining coins that can drop via Spin Smashing while flipped over
-    AVAR_FlipResistance     = 4, // number of hits before flipping over
 };
 
 // Actor Stats
@@ -78,20 +77,17 @@ s32 CoinAnims[] = {
 };
 
 s32 NormalDefense[] = {
-    ELEMENT_NORMAL,    3,
-    ELEMENT_BLAST,     0,
+    ELEMENT_NORMAL,    1,
     ELEMENT_END,
 };
 
 s32 FlippedDefense[] = {
     ELEMENT_NORMAL,    0,
-    ELEMENT_BLAST,    -1,
     ELEMENT_END,
 };
 
 s32 FlippedTailDefense[] = {
     ELEMENT_NORMAL,   -2,
-    ELEMENT_BLAST,    -3,
     ELEMENT_END,
 };
 
@@ -265,7 +261,6 @@ EvtScript EVS_Init = {
     Call(SetActorVar, ACTOR_SELF, AVAR_Anim_Hurt, ANIM_KentCKoopa_Kroxin_Anim1C)
     Call(SetActorVar, ACTOR_SELF, AVAR_FlippedTurns, 0)
     Call(SetActorVar, ACTOR_SELF, AVAR_CoinsToDrop, 40)
-    Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
     Return
     End
 };
@@ -276,7 +271,6 @@ EvtScript EVS_HandlePhase = {
     Call(GetBattlePhase, LVar0)
     Switch(LVar0)
         CaseEq(PHASE_PLAYER_BEGIN)
-            Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
     EndSwitch
     Call(EnableIdleScript, ACTOR_SELF, IDLE_SCRIPT_ENABLE)
     Call(UseIdleAnimation, ACTOR_SELF, true)
@@ -307,7 +301,6 @@ EvtScript EVS_HandleEvent = {
             SetConst(LVar0, PRT_MAIN)
             Call(GetActorVar, ACTOR_SELF, AVAR_Anim_Hurt, LVar1)
             ExecWait(EVS_Enemy_Hit)
-            Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
         CaseEq(EVENT_DEATH)
             SetConst(LVar0, PRT_MAIN)
             Call(GetActorVar, ACTOR_SELF, AVAR_Anim_Hurt, LVar1)
@@ -318,27 +311,26 @@ EvtScript EVS_HandleEvent = {
             ExecWait(EVS_Enemy_Death)
             Return
         CaseEq(EVENT_BURN_HIT)
-            Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
-                Set(LVar0, 1)
+            IfEq(LVar0, false)
+                Set(LVar0, PRT_MAIN)
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim15)
                 Set(LVar2, ANIM_KentCKoopa_Kroxin_Anim16)
                 ExecWait(EVS_Enemy_BurnHit)
             Else
-                Set(LVar0, 1)
+                Set(LVar0, PRT_MAIN)
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim17)
                 Set(LVar2, ANIM_KentCKoopa_Kroxin_Anim18)
                 ExecWait(EVS_Enemy_BurnHit)
             EndIf
         CaseEq(EVENT_BURN_DEATH)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
-                Set(LVar0, 1)
+            IfEq(LVar0, false)
+                Set(LVar0, PRT_MAIN)
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim15)
                 Set(LVar2, ANIM_KentCKoopa_Kroxin_Anim16)
             Else
-                Set(LVar0, 1)
+                Set(LVar0, PRT_MAIN)
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim17)
                 Set(LVar2, ANIM_KentCKoopa_Kroxin_Anim18)
             EndIf
@@ -349,9 +341,8 @@ EvtScript EVS_HandleEvent = {
             ExecWait(EVS_Enemy_Death)
             Return
         CaseEq(EVENT_SPIN_SMASH_HIT)
-            Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 SetConst(LVar0, PRT_MAIN)
                 Call(GetActorVar, ACTOR_SELF, AVAR_Anim_Hurt, LVar1)
                 ExecWait(EVS_Enemy_Hit)
@@ -362,7 +353,7 @@ EvtScript EVS_HandleEvent = {
             EndIf
         CaseEq(EVENT_SPIN_SMASH_DEATH)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 SetConst(LVar0, PRT_MAIN)
                 Call(GetActorVar, ACTOR_SELF, AVAR_Anim_Hurt, LVar1)
                 ExecWait(EVS_Enemy_Hit)
@@ -399,7 +390,7 @@ EvtScript EVS_HandleEvent = {
             Return
         CaseEq(EVENT_ZERO_DAMAGE)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 SetConst(LVar0, PRT_MAIN)
                 SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim09)
                 ExecWait(EVS_Enemy_NoDamageHit)
@@ -409,9 +400,8 @@ EvtScript EVS_HandleEvent = {
                 ExecWait(EVS_Enemy_NoDamageHit)
             EndIf
         CaseEq(EVENT_IMMUNE)
-            Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 SetConst(LVar0, PRT_MAIN)
                 SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim09)
                 ExecWait(EVS_Enemy_NoDamageHit)
@@ -428,19 +418,19 @@ EvtScript EVS_HandleEvent = {
             EndIf
         CaseEq(EVENT_AIR_LIFT_FAILED)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim01)
             Else
                 Set(LVar1, ANIM_KentCKoopa_Kroxin_Anim1A)
             EndIf
-            Set(LVar0, 1)
+            Set(LVar0, PRT_MAIN)
             ExecWait(EVS_Enemy_NoDamageHit)
         CaseEq(EVENT_END_FIRST_STRIKE)
             ExecWait(EVS_Kroxin_GoHome)
             Call(HPBarToHome, ACTOR_SELF)
         CaseEq(EVENT_RECOVER_STATUS)
             Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 0)
+            IfEq(LVar0, false)
                 SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim01)
                 SetConst(LVar0, PRT_MAIN)
                 ExecWait(EVS_Enemy_Recover)
@@ -450,36 +440,18 @@ EvtScript EVS_HandleEvent = {
                 ExecWait(EVS_Enemy_NoDamageHit)
             EndIf
         CaseEq(EVENT_FLIP_TRIGGER)
-            Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-            IfEq(LVar0, 1)
-                SetConst(LVar0, PRT_MAIN)
-                SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim12)
-                ExecWait(EVS_Enemy_Hit)
-                Return
-            EndIf
-            // each flip trigger decrements AVAR_FlipResistance by 1
-            Call(GetActorVar, ACTOR_SELF, AVAR_FlipResistance, LVar0)
+            Call(GetLastDamage, ACTOR_SELF, LVar0)
             IfGt(LVar0, 0)
-                Sub(LVar0, 1)
-                Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, LVar0)
-            EndIf
-            // POW blocks immediately set AVAR_FlipResistance to 0
-            Call(GetDamageSource, LVar0)
-            IfEq(LVar0, DMG_SRC_POW_BLOCK)
-                Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 0)
-            EndIf
-            // if AVAR_FlipResistance is depleted, flip over
-            Call(GetActorVar, ACTOR_SELF, AVAR_FlipResistance, LVar0)
-            IfEq(LVar0, 0)
-                Call(GetBattleFlags, LVarD)
-                IfFlag(LVarD, BS_FLAGS1_TRIGGER_EVENTS)
-                    Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
+                Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
+                IfEq(LVar0, true)
+                    SetConst(LVar0, PRT_MAIN)
+                    SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim12)
+                    ExecWait(EVS_Enemy_Hit)
+                    Return
                 EndIf
                 ExecWait(EVS_FlipOver)
-            Else
                 Call(GetBattleFlags, LVarD)
                 IfFlag(LVarD, BS_FLAGS1_TRIGGER_EVENTS)
-                    Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
                     Call(GetLastDamage, ACTOR_SELF, LVar0)
                     IfGt(LVar0, 0)
                         SetConst(LVar0, PRT_MAIN)
@@ -496,10 +468,17 @@ EvtScript EVS_HandleEvent = {
                             Wait(8)
                         EndIf
                     EndIf
-                Else
-                    SetConst(LVar0, PRT_MAIN)
-                    SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim1C)
-                    ExecWait(EVS_Enemy_Hit)
+                EndIf
+            Else
+                Call(SetActorVar, ACTOR_SELF, AVAR_FlippedTurns, 0)
+                SetConst(LVar0, PRT_MAIN)
+                SetConst(LVar1, ANIM_KentCKoopa_Kroxin_Anim09)
+                ExecWait(EVS_Enemy_NoDamageHit)
+                Call(GetStatusFlags, ACTOR_SELF, LVar2)
+                IfEq(LVar2, 0)
+                    Wait(20)
+                    Call(SetAnimation, ACTOR_SELF, PRT_MAIN, ANIM_KentCKoopa_Kroxin_Anim0C)
+                    Wait(8)
                 EndIf
             EndIf
         CaseDefault
@@ -514,9 +493,8 @@ EvtScript EVS_HandleEvent = {
 #include "common/battle/SetAbsoluteStatusOffsets.inc.c"
 
 EvtScript EVS_TakeTurn = {
-    Call(SetActorVar, ACTOR_SELF, AVAR_FlipResistance, 2)
     Call(GetActorVar, ACTOR_SELF, AVAR_IsFlipped, LVar0)
-    IfEq(LVar0, 1)
+    IfEq(LVar0, true)
         Call(UseIdleAnimation, ACTOR_SELF, false)
         Call(EnableIdleScript, ACTOR_SELF, IDLE_SCRIPT_DISABLE)
         Call(UseBattleCamPreset, BTL_CAM_ACTOR)
@@ -726,7 +704,7 @@ EvtScript EVS_Attack_ShellToss = {
             IfNotFlag(LVarE, STATUS_FLAG_SHRINK)
                 Call(SetDamageSource, DMG_SRC_CRUSH)
             EndIf
-            Call(EnemyDamageTarget, ACTOR_SELF, LVarF, 0, SUPPRESS_EVENT_ALL, 0, dmgShellTossPlayer, BS_FLAGS1_TRIGGER_EVENTS)
+            Call(EnemyDamageTarget, ACTOR_SELF, LVarF, 0, SUPPRESS_EVENT_ALL, DMG_STATUS_KEY(STATUS_FLAG_POISON, 2, 100), dmgShellTossPlayer, BS_FLAGS1_TRIGGER_EVENTS)
             Call(GetCurrentPartnerID, LVar6)
             IfEq(LVar6, PARTNER_NONE)
                 Set(LVarA, 0)
@@ -951,7 +929,7 @@ EvtScript EVS_Attack_HeavyStomp = {
     IfNotFlag(LVarF, STATUS_FLAG_SHRINK)
         Call(SetDamageSource, DMG_SRC_CRUSH)
     EndIf
-    Call(EnemyDamageTarget, ACTOR_SELF, LVarF, 0, SUPPRESS_EVENT_ALL, 0, dmgHeavyStomp, BS_FLAGS1_TRIGGER_EVENTS)
+    Call(EnemyDamageTarget, ACTOR_SELF, LVarF, 0, SUPPRESS_EVENT_ALL, DMG_STATUS_KEY(STATUS_FLAG_POISON, 3, 100), dmgHeavyStomp, BS_FLAGS1_TRIGGER_EVENTS)
     Switch(LVarF)
         CaseOrEq(HIT_RESULT_HIT)
         CaseOrEq(HIT_RESULT_NO_DAMAGE)
