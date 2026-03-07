@@ -259,14 +259,14 @@ EvtScript EVS_Main = {
 
 }; // namespace grs_01
 
-MapSettings grs_01_settings = {
+extern "C" export MapSettings grs_01_settings = {
     .main = &grs_01::EVS_Main,
     .entryList = &grs_01::Entrances,
     .entryCount = ENTRY_COUNT(grs_01::Entrances),
     .background = &gBackgroundImage,
 };
 
-s32 grs_01_map_init(void) {
+extern "C" export s32 grs_01_map_init(void) {
     sprintf(wMapBgName, "shp_bg");
     return false;
 }

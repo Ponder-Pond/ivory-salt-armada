@@ -15,7 +15,7 @@ EvtScript EVS_Main = {
 
 }; // namespace dst_05
 
-MapSettings dst_05_settings = {
+extern "C" export MapSettings dst_05_settings = {
     .main = &dst_05::EVS_Main,
     .entryList = &dst_05::Entrances,
     .entryCount = ENTRY_COUNT(dst_05::Entrances),

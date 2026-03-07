@@ -62,14 +62,14 @@ EvtScript EVS_Main = {
 
 }; // namespace dst_00
 
-MapSettings dst_00_settings = {
+extern "C" export MapSettings dst_00_settings = {
     .main = &dst_00::EVS_Main,
     .entryList = &dst_00::Entrances,
     .entryCount = ENTRY_COUNT(dst_00::Entrances),
     .background = &gBackgroundImage,
 };
 
-s32 dst_00_map_init(void) {
+extern "C" export s32 dst_00_map_init(void) {
     sprintf(wMapBgName, "shp_bg");
     return false;
 }

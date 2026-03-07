@@ -1,4 +1,4 @@
-#include "shp_00.hpp"
+#include "shp_00.h"
 #include "effects.h"
 #include "dx/debug_menu.h"
 
@@ -137,7 +137,7 @@ EvtScript EVS_NpcInteract_CaptainKuribo = {
 EvtScript EVS_EnterMap = {
     Call(GetEntryID, LVar0)
     Switch(LVar0)
-    CaseEq(0)
+    CaseEq(shp_00_ENTRY_0)
         Call(SetPlayerPos, GEN_MARIO_POS_VEC)
         // ExecWait(EVS_Scene_CaptainKuriboPreBattle)
     EndSwitch
@@ -161,7 +161,7 @@ EvtScript EVS_Main = {
 
 }; // namespace shp_00
 
-MapSettings shp_00_settings = {
+extern "C" export MapSettings shp_00_settings = {
     .main = &shp_00::EVS_Main,
     .entryList = &shp_00::Entrances,
     .entryCount = ENTRY_COUNT(shp_00::Entrances),

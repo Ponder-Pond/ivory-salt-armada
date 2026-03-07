@@ -1,6 +1,15 @@
 #ifndef _ENTRANCES_H_
 #define _ENTRANCES_H_
 
+enum NewEntrances {
+    shp_00_ENTRY_0   = 0,
+    prt_00_ENTRY_0   = 0,
+    grs_01_ENTRY_0   = 0,
+    dst_00_ENTRY_0   = 0,
+    dst_01_ENTRY_0   = 0,
+    dst_05_ENTRY_0   = 0,
+};
+
 enum {
     kmr_00_ENTRY_0   = 0,
     kmr_02_ENTRY_0   = 0,

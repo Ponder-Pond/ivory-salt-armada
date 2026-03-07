@@ -237,14 +237,14 @@ EvtScript EVS_Main = {
 
 }; // namespace prt_00
 
-MapSettings prt_00_settings = {
+extern "C" export MapSettings prt_00_settings = {
     .main = &prt_00::EVS_Main,
     .entryList = &prt_00::Entrances,
     .entryCount = ENTRY_COUNT(prt_00::Entrances),
     .background = &gBackgroundImage,
 };
 
-s32 prt_00_map_init(void) {
+extern "C" export s32 prt_00_map_init(void) {
     sprintf(wMapBgName, "shp_bg");
     return false;
 }

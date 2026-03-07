@@ -108,14 +108,14 @@ EvtScript EVS_Main = {
 
 }; // namespace trp_00
 
-MapSettings trp_00_settings = {
+extern "C" export MapSettings trp_00_settings = {
     .main = &trp_00::EVS_Main,
     .entryList = &trp_00::Entrances,
     .entryCount = ENTRY_COUNT(trp_00::Entrances),
     .background = &gBackgroundImage,
 };
 
-s32 trp_00_map_init(void) {
+extern "C" export s32 trp_00_map_init(void) {
     sprintf(wMapBgName, "shp_bg");
     return false;
 }
